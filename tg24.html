@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tg24</title>
+    <!--jquery luôn ở trên cùng để load thư viện cho file js-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <!--my web-->
+    <!-- <link href="css/login.css" rel="stylesheet" /> -->
+
+    <link href="css/trangchu.css" rel="stylesheet" />
+    <script src="js/trangchu.js"></script>
+    <link href="css/tranggame1.css" rel="stylesheet" />
+    <script src="js/tranggame1.js"></script>
+    <script src="js/tranggame2.js"></script>
+    <link href="css/tranggame2.css" rel="stylesheet">
+
+    <!-- <script src="js/login.js"></script> -->
+
+    <!--thư viện internet-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css">
+
+    <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!--bootrap font-awesome luôn nằm dưới font-awesomw-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body onload=init()>
+    <header class="animate__animated animate__fadeInDown">
+        <div class="logo">
+            <h1 class="animate__animated animate__bounce"><a href="#">WebHoc360</a></h1>
+            <div id="navBar">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="search..">
+            <input type="button" value="search">
+        </div>
+        <nav class="menu">
+            <ul class="menu-x">
+                <li><a href="#" class="trangchu">Trang chủ</a></li>
+                <li><a href="#">Lập Trình</a></li>
+                <li class="sub">
+                    <a href="#" class="games">Dịch Vụ Game</a>
+                </li>
+            </ul>
+
+            <ul class="menuSign">
+                <li><a href="login.html" class="btnL"><i class="fas fa-sign-in-alt"></i>  Đăng Nhập</a></li>
+
+                <ul class="popHover">
+                    <li>Tài khoản:<span>.....</span></li>
+                    <li>Email:<span>.....</span></li>
+                    <li>Số Tiền:<span>0 &#36;</span></li>
+
+                </ul>
+
+                <li><a href="register.html" class="btnR">  Đăng Ký</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <div class="giaoDich container">
+        <h2 style="font-family: myFont1;color: #fd8c2f;">WebHoc<span style="font-family: myFont1;color: rgb(221, 14, 248)">360</span></h2>
+        <img src="img/chucmung.gif" alt="chim" width="150px">
+        <h1 class="thanhCong">Giao Dịch Thành Công!!!</h1>
+        <div class="keo">
+            <hr> <i class="fas fa-cut"></i></hr>
+
+        </div>
+        <h3 class="TAIKHOAN">TÀI KHOẢN GIAO DỊCH</h3>
+        <p>Mã số: <span class="ms" value="229933">#</span></p>
+        <p>Giá Trị: <span class="gt">.vnd</span></p>
+        <div class="keo">
+            <hr> <i class="fas fa-cut"></i></hr>
+
+        </div>
+        <h3 class="TAIKHOAN">THÔNG TIN CHI TIẾT</h3>
+        <p>Server: <span class="sv">.</span></p>
+        <p>Đăng Ký: <span class="dk">.</span></p>
+        <p>Hành Tinh: <span class="ht">.</span></p>
+        <p>Có Đệ tử: <span class="dt">.</span></p>
+
+        <p>Trang phục: <span class="tp">.</span></p>
+        <div class="keo">
+            <hr> <i class="fas fa-cut"></i></hr>
+
+        </div>
+        <h3 class="TAIKHOAN">TÀI KHOẢN && MẬT KHẨU</h3>
+        <div class="showTKMK">
+            <p>Tài Khoản: <span class="tkAcc">daicalobun123@.yahoo.vn</span></p>
+            <p>Mật Khẩu: <span class="mkAcc">matkhau123</span></p>
+        </div>
+
+        <h4 style="color:#fd8c2f">Lưu Ý: Khi Nhận được tài khoản, Bạn hãy vào game check ngay. Nếu gặp vấn đề hoặc liên quan đến thông tin bị sai lệch hãy liên hệ với chúng tôi qua đường dây nóng 01234567890</h4>
+        <div class="thanks">
+            <p> Xin Chân Thành Cảm Ơn Quý Khách!!!</p>
+        </div>
+    </div>
+
+    <div class="alertVi">
+        <h2 style="font-family: myFont1;color: #fd8c2f;">WebHoc<span style="font-family: myFont1;color: rgb(221, 14, 248)">360</span></h2>
+        <p style="color: #111111">Thành thật Xin Lỗi các Bạn Hiện tại Chức Năng chưa được UPDATE!!!</p>
+        <p style="color:#111111">Mong các bạn Thanh toán bằng phương án Khác</p>
+        <a href="javascript:;" class="icon-close">&#10006;</a>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <section class="container infomation">
+        <section class="TaiKhoanLienQuan ngaygio">
+            <h2 class="tieuDeTrangGame2"><span>CHI TIẾT TÀI KHOẢN</span></h2>
+
+        </section>
+        <div class="maSoMuas">
+            <div class="maSoMua">
+                <h3 style="color: black; font-weight: bolder;font-size: 25px;">#229933</h3>
+                <p style="color: red; font-size: 15px">Ngọc rồng Online</p>
+            </div>
+            <div class="maSoMua" style="text-align: center;">
+                <h1 class="soTien">500,000 ATM</h1>
+                <p style="font-weight: bold;color:#fd8c2f">OR</p>
+                <h1 class="soTien tienCard" value="870000">870,000 CARD</h1>
+            </div>
+
+            <div class="maSoMua">
+
+                <input type="button" class="btnMua" value="MUA NGAY" />
+
+
+                <input type="button" class="btnNap card" value="NẠP CARD" />
+                <input type="button" class="btnNap vi" value="VÍ ĐIỆN TỬ" />
+
+            </div>
+
+        </div>
+        <div class="hr ">
+            <i class="fas fa-circle"></i>
+        </div>
+        <div class="thongTin">
+            <p class="p">HÀNH TINH: <span class="span HT">Earth</span></p>
+            <p class="p">SERVER: <span class="span SV">USA</span></p>
+            <p class="p">TRANG PHỤC: <span class="span TP">Có</span></p>
+            <p class="p">ĐĂNG KÝ: <span class="span DK">Ảo</span></p>
+            <p class="p">NỔI BẬT: <span class="span">GIÁ RẺ</span></p>
+            <p class="p">CÓ ĐỆ TỬ: <span class="span DT">Có</span></p>
+
+        </div>
+        <div class="hr ">
+            <i class="fas fa-circle"></i>
+        </div>
+        <div class="showAccs">
+            <div class="showAcc">
+                <img src="img/acc/nro5.jpg" id="mainImg" alt="accountpic" />
+                <div class="thumb">
+                    <div><img src="img/acc/nro5.1.jpg" alt="accountpic" /></div>
+                    <div><img src="img/acc/nro5.2.jpg" alt="accountpic" /></div>
+                    <div><img src="img/acc/nro5.3.jpg" alt="accountpic" /></div>
+                    <div><img src="img/acc/nro5.4.jpg" alt="accountpic" /></div>
+
+                </div>
+            </div>
+        </div>
+        <section class="TaiKhoanLienQuan">
+            <h2 class="tieuDeTrangGame2"><span>TÀI KHOẢN LIÊN QUAN</span></h2>
+            <div class="boxs">
+                <div class="box ">
+                    <div>
+                        <div class="anh">
+                            <img src="img/acc/nro2.jpg" alt="pic" />
+                            <span class="mssv" value="123456">#123456</span>
+
+                        </div>
+                        <div class="afterimg">
+                            <h3>Nick Ngon Giá Rẻ</h3>
+                        </div>
+                        <div class="detail">
+                            <div>
+                                <p class="mucs">Hành tinh: <span class="muc hanhTinh">Xayda</span></p>
+                                <p class="mucs">Trang phục: <span class="muc yKien">No</span></p>
+                            </div>
+                            <div>
+                                <p class="mucs">Server: <span class="muc server">VN</span></p>
+                                <p class="mucs">Đăng ký: <span class="muc dki">Thật</span></p>
+                            </div>
+
+                        </div>
+                        <div class="lastItem">
+                            <span class="money" value="400000">400,000 đ</span>
+                            <a class="chiTiet" href="tranggame2.html"><span>CHI TIẾT</span> </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="anh">
+                            <img src="img/acc/nro1.jpg" alt="pic" />
+                            <span class="mssv" value="134567">#134567</span>
+
+                        </div>
+                        <div class="afterimg">
+                            <h3>Nick Ngon Giá Rẻ</h3>
+                        </div>
+                        <div class="detail">
+                            <div>
+                                <p class="mucs">Hành tinh: <span class="muc hanhTinh">Xayda</span></p>
+                                <p class="mucs">Trang phục: <span class="muc yKien">No</span></p>
+                            </div>
+                            <div>
+                                <p class="mucs">Server: <span class="muc server">VN</span></p>
+                                <p class="mucs">Đăng ký: <span class="muc dki">Thật</span></p>
+                            </div>
+
+
+                        </div>
+                        <div class="lastItem">
+                            <span class="money" value="100000">100,000 đ</span>
+                            <a class="chiTiet" href="tg21.html"><span>CHI TIẾT</span> </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="anh">
+                            <img src="img/acc/nro3.jpg" alt="pic" />
+                            <span class="mssv" value="299093">#299093</span>
+
+                        </div>
+                        <div class="afterimg">
+                            <h3>Nick Ngon Giá Rẻ</h3>
+                        </div>
+                        <div class="detail">
+                            <div>
+                                <p class="mucs">Hành tinh: <span class="muc hanhTinh">Xayda</span></p>
+                                <p class="mucs">Trang phục: <span class="muc yKien">Có</span></p>
+                            </div>
+                            <div>
+                                <p class="mucs">Server: <span class="muc server">USA</span></p>
+                                <p class="mucs">Đăng ký: <span class="muc dki">Ảo</span></p>
+                            </div>
+
+                        </div>
+                        <div class="lastItem">
+                            <span class="money" value="300000">300,000 đ</span>
+                            <a class="chiTiet" href="tg22.html"><span>CHI TIẾT</span> </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="anh">
+                            <img src="img/acc/nro4.jpg" alt="pic" />
+                            <span class="mssv" value="529033">#529033</span>
+
+                        </div>
+                        <div class="afterimg">
+                            <h3>Nick Ngon Giá Rẻ</h3>
+                        </div>
+                        <div class="detail">
+                            <div>
+                                <p class="mucs">Hành tinh: <span class="muc hanhTinh">Xayda</span></p>
+                                <p class="mucs">Trang phục: <span class="muc yKien">No</span></p>
+                            </div>
+                            <div>
+                                <p class="mucs">Server: <span class="muc server">VN</span></p>
+                                <p class="mucs">Đăng ký: <span class="muc dki">Thật</span></p>
+                            </div>
+
+                        </div>
+                        <div class="lastItem">
+                            <span class="money" value="600000">600,000 đ</span>
+                            <a class="chiTiet" href="tg23.html"><span>CHI TIẾT</span> </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="anh">
+                            <img src="img/acc/nro5.jpg" alt="pic" />
+                            <span class="mssv" value="229933">#229933</span>
+
+                        </div>
+                        <div class="afterimg">
+                            <h3>Nick Ngon Giá Rẻ</h3>
+                        </div>
+                        <div class="detail">
+                            <div>
+                                <p class="mucs">Hành tinh: <span class="muc hanhTinh">Earth</span></p>
+                                <p class="mucs">Trang phục: <span class="muc yKien">Có</span></p>
+                            </div>
+                            <div>
+                                <p class="mucs">Server: <span class="muc server">USA</span></p>
+                                <p class="mucs">Đăng ký: <span class="muc dki">Ảo</span></p>
+                            </div>
+
+                        </div>
+                        <div class="lastItem">
+                            <span class="money" value="870000">870,000 đ</span>
+                            <a class="chiTiet" href="tg24.html"><span>CHI TIẾT</span> </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="anh">
+                            <img src="img/acc/nro5.jpg" alt="pic" />
+                            <span class="mssv" value="222733">#222733</span>
+
+                        </div>
+                        <div class="afterimg">
+                            <h3>Nick Ngon Giá Rẻ</h3>
+                        </div>
+                        <div class="detail">
+                            <div>
+                                <p class="mucs">Hành tinh: <span class="muc hanhTinh">Earth</span></p>
+                                <p class="mucs">Trang phục: <span class="muc yKien">Có</span></p>
+                            </div>
+                            <div>
+                                <p class="mucs">Server: <span class="muc server">VN</span></p>
+                                <p class="mucs">Đăng ký: <span class="muc dki">Ảo</span></p>
+                            </div>
+
+                        </div>
+                        <div class="lastItem">
+                            <span class="money" value="350000">350,000 đ</span>
+                            <a class="chiTiet" href="tg25.html"><span>CHI TIẾT</span> </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="anh">
+                            <img src="img/acc/nro2.jpg" alt="pic" />
+                            <span class="mssv" value="124453">#124453</span>
+
+                        </div>
+                        <div class="afterimg">
+                            <h3>Nick Ngon Giá Rẻ</h3>
+                        </div>
+                        <div class="detail">
+                            <div>
+                                <p class="mucs">Hành tinh: <span class="muc hanhTinh">Earth</span></p>
+                                <p class="mucs">Trang phục: <span class="muc yKien">Có</span></p>
+                            </div>
+                            <div>
+                                <p class="mucs">Server: <span class="muc server">VN</span></p>
+                                <p class="mucs">Đăng ký: <span class="muc dki">Ảo</span></p>
+                            </div>
+
+                        </div>
+                        <div class="lastItem">
+                            <span class="money" value="800000">800,000 đ</span>
+                            <a class="chiTiet" href="tg26.html"><span>CHI TIẾT</span> </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="anh">
+                            <img src="img/acc/nro4.jpg" alt="pic" />
+                            <span class="mssv" value="123450">#123450</span>
+
+                        </div>
+                        <div class="afterimg">
+                            <h3>Nick Ngon Giá Rẻ</h3>
+                        </div>
+                        <div class="detail">
+                            <div>
+                                <p class="mucs">Hành tinh: <span class="muc hanhTinh">Earth</span></p>
+                                <p class="mucs">Trang phục: <span class="muc yKien">Có</span></p>
+                            </div>
+                            <div>
+                                <p class="mucs">Server: <span class="muc server">VN</span></p>
+                                <p class="mucs">Đăng ký: <span class="muc dki">Ảo</span></p>
+                            </div>
+
+                        </div>
+                        <div class="lastItem">
+                            <span class="money" value="810000">810,000 đ</span>
+                            <a class="chiTiet" href="tg27.html"><span>CHI TIẾT</span> </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="anh">
+                            <img src="img/acc/nro4.jpg" alt="pic" />
+                            <span class="mssv" value="123789">#123789</span>
+
+                        </div>
+                        <div class="afterimg">
+                            <h3>Nick Ngon Giá Rẻ</h3>
+                        </div>
+                        <div class="detail">
+                            <div>
+                                <p class="mucs">Hành tinh: <span class="muc hanhTinh">Earth</span></p>
+                                <p class="mucs">Trang phục: <span class="muc yKien">Có</span></p>
+                            </div>
+                            <div>
+                                <p class="mucs">Server: <span class="muc server">VN</span></p>
+                                <p class="mucs">Đăng ký: <span class="muc dki">Ảo</span></p>
+                            </div>
+
+                        </div>
+                        <div class="lastItem">
+                            <span class="money" value="860000">860,000 đ</span>
+                            <a class="chiTiet" href="tg28.html"><span>CHI TIẾT</span> </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div>
+                        <!-- <img class="sold" src="img/sold.jpg" alt="sold"> -->
+                        <!--đã bán-->
+                        <div class="anh">
+                            <img src="img/acc/nro1.jpg" alt="pic" />
+                            <span class="mssv" value="133322">#133322</span>
+
+                        </div>
+                        <div class="afterimg">
+                            <h3>Nick Ngon Giá Rẻ</h3>
+                        </div>
+                        <div class="detail">
+                            <div>
+                                <p class="mucs">Hành tinh: <span class="muc hanhTinh">Earth</span></p>
+                                <p class="mucs">Trang phục: <span class="muc yKien">Có</span></p>
+                            </div>
+                            <div>
+                                <p class="mucs">Server: <span class="muc server">VN</span></p>
+                                <p class="mucs">Đăng ký: <span class="muc dki">Ảo</span></p>
+                            </div>
+
+                        </div>
+                        <div class="lastItem">
+                            <span class="money" value="797000">797,000 đ</span>
+                            <a class="chiTiet" href="tg29.html"><span>CHI TIẾT</span> </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+    <br/>
+    <footer>
+        <div class="boxFoots">
+            <div class="boxFoot about-us">
+                <div>
+
+                    <h3>GIỚI THIỆU</h3>
+                    <p>Chúng tôi luôn nỗ lực hàng ngày để gắn kết mối chia sẻ giao lưu và học hỏi cùng các bạn. Chúc các bạn 1 ngày học hỏi thật tốt</p>
+
+                    <ul class="netWork">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boxFoot lienket">
+                <div>
+                    <h3>LIÊN KẾT</h3>
+                    <ul class="link">
+                        <li><a href="#"><i class="far fa-hand-point-right"></i>  Trang chủ</a></li>
+                        <li><a href="#"><i class="far fa-hand-point-right"></i>  Lập trình</a></li>
+                        <li><a href="#"><i class="far fa-hand-point-right"></i>  Dịch Vụ Game</a></li>
+                        <li><a href="#"><i class="far fa-hand-point-right"></i>  Nạp thẻ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boxFoot">
+                <div>
+                    <h3>LIÊN HỆ</h3>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker"></i></span>
+                            <span><a href="#">Đường xa lộ Hà Nội, phường Bình Thắng, tp Dĩ An, tỉnh Bình Dương</a></span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                            <a href="#">+84 234 790 109</a>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <a href="#">vongngocthank@gmail.com</a></li>
+                        <li>
+                            <input type="text" placeholder="Liên hệ qua Email..." />
+                            <input type="button" value="subscriber" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

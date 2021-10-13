@@ -1,0 +1,610 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: regular;
+    }
+    
+    @font-face {
+        font-family: myFont1;
+        src: url('../font/Vbutlong.ttf');
+    }
+    
+    body {
+        background: linear-gradient(#e4de88ec, rgb(240, 221, 221), lightblue, #f3e7cc, #5f186d63, blue);
+        /* background-image: url("../img/nen3.jpg"); */
+        /* background-position: fixed; */
+    }
+    
+    header {
+        display: flex;
+        align-items: center;
+        background: linear-gradient(rgba(255, 94, 0, 0.596), #e46f3acc, #c0720c);
+        font-family: Arial, Helvetica, sans-serif;
+        left: 0;
+        z-index: 100000;
+    }
+    
+    .logo {
+        display: flex;
+        padding-left: 60px;
+    }
+    
+    .logo a {
+        text-decoration: none;
+        animation: doiMauLogo 3s infinite;
+    }
+    
+    @keyframes doiMauLogo {
+        from {
+            color: #3f0bfd;
+        }
+        to {
+            color: #0bfd47;
+        }
+    }
+    
+    .logo>#navBar {
+        margin-left: auto;
+        padding-top: 22px;
+    }
+    
+    #navBar>i {
+        background: gray;
+        /*to mau bar*/
+        padding: 5px;
+    }
+    /*tim kiem*/
+    
+    .search {
+        padding: 5px;
+    }
+    
+    header input[type=text],
+    footer input[type=text] {
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        background-color: #ecdcdc;
+        opacity: 0.7;
+        padding: 5px;
+    }
+    
+    header input[type=button],
+    footer input[type=button] {
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        background-color: #ebe7e7;
+        opacity: 0.7;
+        padding: 5px;
+    }
+    /*nav menu-x*/
+    
+    nav.menu {
+        display: flex;
+        margin-left: auto;
+    }
+    
+    nav.menu>ul {
+        /*chung*/
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul.menu-x li a {
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+    }
+    
+    ul.menu-x li:hover a {
+        color: blue;
+    }
+    /*nav menuSign*/
+    
+    ul.menuSign li a {
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        border-radius: 20px;
+        background: linear-gradient(green, gold);
+        outline: none;
+        border: none;
+    }
+    
+    ul.menuSign li:hover a {
+        color: lightblue;
+    }
+    
+    #navBar {
+        display: none;
+        padding: 5px;
+        font-size: 25px;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /*banner*/
+    
+    .banner {
+        animation: doinen 10s infinite;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    @keyframes doinen {
+        0% {
+            background-image: url("img/muabanthe.jpg");
+        }
+        25% {
+            background-image: url("img/gokuAcadic.jpg");
+        }
+        50% {
+            background-image: url("img/banner.gif");
+        }
+    }
+    
+    .banner>img {
+        width: 100%;
+    }
+    /*Danh mục môn học*/
+    
+    @keyframes doiMauBorder {
+        from {
+            border-color: #0bfd47;
+        }
+        to {
+            border-color: #3f0bfd;
+        }
+    }
+    
+    .subject>h1>span {
+        color: rgb(5, 4, 2)
+    }
+    
+    .subject>h1 {
+        text-align: center;
+        padding-top: 15px;
+    }
+    
+    .subject>h1::after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid #34fd0b;
+        border-radius: 2px;
+        margin: 10px auto;
+        width: 10%;
+    }
+    
+    .subject {
+        background: linear-gradient(rgba(187, 129, 21, 0.541), rgba(173, 216, 230, 0.699), rgba(211, 131, 10, 0.575));
+    }
+    
+    figure h2 {
+        font-size: 20px;
+    }
+    
+    .figures {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .figures>div {
+        width: 25%;
+        padding: 20px !important;
+    }
+    
+    figure {
+        border: 5px double rgb(79, 218, 25);
+        border-radius: 15px !important;
+        box-shadow: 3px 0px 5px rgb(17, 1, 75);
+    }
+    
+    figure:hover {
+        background: rgba(37, 167, 184, 0.637);
+        box-shadow: 8px 0px 10px rgb(17, 1, 75);
+    }
+    
+    figure img {
+        max-height: 180px !important;
+        max-width: 100% !important;
+    }
+    /*dịch vụ game*/
+    
+    .bos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .bo {
+        width: 25%;
+        padding: 20px;
+        font-family: regular;
+    }
+    
+    .bo>div>img {
+        width: 100%;
+        padding: 4px;
+    }
+    
+    img.muabtn {
+        width: 120px;
+        transition: transform 0.5s;
+    }
+    
+    img.muabtn:hover,
+    img.muabtn1:hover {
+        opacity: 1.5;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    
+    .giamgia {
+        position: absolute;
+        top: -6px;
+        right: -4px;
+        max-width: 90px;
+    }
+    
+    .bo>div {
+        position: relative;
+        border-radius: 4px;
+        background: rgba(37, 192, 231, 0.89);
+        box-shadow: -2px 2px 4px pink;
+    }
+    
+    div.chiTiet {
+        text-align: center;
+    }
+    
+    div.chiTiet h4 {
+        color: #f7b03c;
+        font-weight: bold;
+    }
+    
+    div.chiTiet p {
+        padding: 8px;
+    }
+    
+    @font-face {
+        font-family: regular;
+        src: url('../font/RobotoCondensed-Regular.ttf')
+    }
+    /*footer*/
+    
+    footer {
+        font-family: regular;
+        overflow: hidden;
+        /*chặn tràn fooetr*/
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(rgba(255, 94, 0, 0.596), #e46f3acc, #c0720c);
+        padding-top: 10px;
+    }
+    
+    footer h3::after {
+        content: " ";
+        width: 30px;
+        height: 2px;
+        display: block;
+        background: blue;
+        text-align: center;
+        margin: 7px auto;
+    }
+    
+    footer h3 {
+        text-align: center;
+    }
+    
+    .about-us {
+        padding-left: 30px;
+    }
+    
+    .boxFoots {
+        display: flex;
+    }
+    
+    .boxFoot {
+        width: 33.33%;
+        padding: 10px;
+    }
+    
+    ul.netWork {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    li a {
+        text-decoration: none;
+    }
+    
+    ul.netWork li {
+        padding: 5px;
+    }
+    
+    ul.netWork li a {
+        display: block;
+        padding: 10px;
+        background: #94a7e0;
+        color: #fff4f4;
+    }
+    
+    ul.link li {
+        padding: 10px;
+        border-bottom: 1px solid #e6f1e3;
+    }
+    
+    ul.link li:hover a {
+        color: #ebe7e7;
+    }
+    
+    ul.info>li {
+        padding-bottom: 10px;
+        /*từng địa chỉ giãn ra chiều xuống*/
+    }
+    /*Thông kê top nạp*/
+    
+    div.topNapThe {
+        background: #dd4b39;
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+        padding: 20px;
+        font-family: regular;
+    }
+    
+    div.topNapThe h2 {
+        font-weight: lighter;
+        color: #ffffff;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgb(11, 175, 204);
+    }
+    
+    .thongKe {
+        width: 50%;
+        margin: 10px;
+        border: 1px solid red;
+        border-radius: 10px;
+    }
+    
+    .thongKe2 {
+        border-bottom: none;
+        width: 50%;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    
+    .thongKe2 .topNapThe {
+        background-color: #dd4b39;
+    }
+    
+    .thongKe2 .topNapThe h2 {
+        border-bottom: none;
+    }
+    
+    section.top {
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .sta {
+        display: flex;
+        align-items: center;
+        /*căn theo chiều dọc*/
+        background: #f3e7cc;
+    }
+    
+    .sta:last-child {
+        border-radius: 0 0 10px 10px;
+    }
+    
+    .sta>div {
+        padding: 15px;
+    }
+    
+    .col27 {
+        width: 27%;
+        text-align: right;
+    }
+    
+    .col65 {
+        width: 65%;
+    }
+    
+    .col8 {
+        width: 8%;
+    }
+    
+    span.coinMax {
+        border-radius: 10px;
+        background: #dd4b39;
+        padding: 7px 15px;
+        color: #ffffff;
+        cursor: pointer;
+        transition: transform 0.5s;
+    }
+    
+    .col27:hover {
+        color: lightgreen;
+        transform: rotate(5deg);
+    }
+    
+    .stt {
+        font-size: 30px;
+    }
+    /*phần thưởng*/
+    
+    div.prize {
+        background: #f3e7cc;
+        padding: 10px;
+    }
+    
+    .chuY {
+        color: rgb(204, 43, 43);
+        font-weight: bolder;
+        padding: 10px;
+    }
+    
+    .chuY2 {
+        color: #45bed3;
+        font-weight: bolder;
+        padding: 10px;
+        padding-bottom: 50px;
+    }
+    
+    .prize li {
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+    .prize h4 {
+        padding: 10px;
+        color: rgb(204, 43, 43);
+        font-weight: bolder;
+    }
+    /*respondsive*/
+    
+    @media screen and (max-width: 1000px) {
+        section.top {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            width: 90%;
+        }
+        .thongKe,
+        .thongKe2 {
+            width: 100%;
+        }
+        .figures>div {
+            width: 49%;
+        }
+        #navBar {
+            display: block;
+        }
+        header {
+            flex-direction: column;
+        }
+        /**/
+        .logo {
+            background: linear-gradient(lightblue, lightblue);
+            opacity: 0.8;
+            width: 100%;
+            padding: 0;
+            font-size: small;
+        }
+        nav.menu {
+            flex-direction: column;
+            margin: 0;
+            width: 100%;
+            /*xoa margin-left auto*/
+        }
+        nav>ul {
+            flex-direction: column;
+            text-align: center;
+        }
+        nav ul li {
+            border-bottom: 0.8px solid gray;
+        }
+        nav.menu>ul.menuSign li a {
+            background: rgba(106, 106, 119, 0.534);
+        }
+        /*items*/
+        section.subject h1 span {
+            width: 50%;
+            font-size: 15px;
+        }
+        .bo {
+            width: 50%;
+        }
+        /*footer*/
+        footer {
+            width: 100%;
+        }
+        .boxFoots {
+            flex-direction: column;
+            width: 100%;
+        }
+        .boxFoot {
+            width: 100%;
+        }
+        ul.link {
+            width: 100%;
+        }
+        ul.netWork {
+            /* padding-left: 70px; */
+            /*căn giữa 4 cái facebook*/
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width:600px) {
+        #navBar {
+            display: block;
+        }
+        header {
+            flex-direction: column;
+        }
+        /**/
+        .logo {
+            background: linear-gradient(lightblue, lightblue);
+            opacity: 0.8;
+            width: 100%;
+            padding: 0;
+            font-size: small;
+        }
+        nav.menu {
+            flex-direction: column;
+            margin: 0;
+            width: 100%;
+            /*xoa margin-left auto*/
+        }
+        nav>ul {
+            flex-direction: column;
+            text-align: center;
+        }
+        nav ul li {
+            border-bottom: 0.8px solid gray;
+        }
+        nav.menu>ul.menuSign li a {
+            background: rgba(106, 106, 119, 0.534);
+        }
+        /*items*/
+        section.subject h1 span {
+            width: 50%;
+            font-size: 20px;
+        }
+        div.figures>div {
+            width: 90%;
+        }
+        .bo {
+            width: 100%;
+        }
+        /*footer*/
+        footer {
+            width: 100%;
+        }
+        .boxFoots {
+            flex-direction: column;
+            width: 100%;
+        }
+        .boxFoot {
+            width: 100%;
+        }
+        ul.netWork {
+            /* padding-left: 70px; */
+            /*căn giữa 4 cái facebook*/
+            width: 100%;
+        }
+    }

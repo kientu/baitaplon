@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!--jquery luôn ở trên cùng để load thư viện cho file js-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <!--my web-->
+
+    <link href="css/trangchu.css" rel="stylesheet" />
+    <script src="js/trangchu.js"></script>
+
+    <link href="css/login.css" rel="stylesheet" />
+    <!-- <script src="js/login.js"></script> -->
+
+
+    <!--thư viện internet-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css">
+    <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!--bootrap font-awesome luôn nằm dưới font-awesomw-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <div class="logo">
+            <h1 class="animate__animated animate__bounce"><a href="#">WebHoc360</a></h1>
+            <div id="navBar">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="search..">
+            <input type="button" value="search">
+        </div>
+        <nav class="menu">
+            <ul class="menu-x">
+                <li><a href="#" class="trangchu">Trang chủ</a></li>
+                <li><a href="#">Lập Trình</a></li>
+                <li class="sub">
+                    <a href="#" class="games">Dịch Vụ Game</a>
+                </li>
+            </ul>
+
+            <ul class="menuSign">
+                <li><a href="login.html" class="btnL"><i class="fas fa-sign-in-alt"></i>  Đăng Nhập</a></li>
+
+
+                <li><a href="register.html" class="btnR"><i class="fas fa-user-plus"></i>  Đăng Ký</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+
+
+
+    <div class="tableLogIn showLogin">
+        <p class="title">ĐĂNG NHẬP</p>
+        <form class="formLogin">
+            <p class="NoteLogin"></p>
+            <div class="user">
+                <div><input type="username" class="userLogin in" placeholder="Username"></div>
+                <div class="icon-w3">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+            </div>
+            <br/>
+            <br/>
+
+            <div class="pass">
+                <div><input type="password" class="passLogin in" placeholder="Password"></div>
+                <div class="icon-w3">
+                    <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="remember">
+                <div id="rememberId"><input type="checkbox" class="checkbox"><span id="textRemember">Remember</span></div>
+                <a id="forget" href="login1.html" style="font-size: 14px;">quên mật khẩu</a>
+            </div>
+            <div class="logIn">
+                <input type="submit" value="ĐĂNG NHẬP" class="login">
+            </div>
+
+            <br/>
+
+            <div class="taotaikhoanlink">
+                <a id="taoTk" href="register.html">Tạo tài khoản</a>
+            </div>
+
+        </form>
+        <script>
+            var formLogin = document.querySelector(".formLogin")
+            var userLogin = document.querySelector(".userLogin")
+            var passLogin = document.querySelector(".passLogin")
+
+            var users = JSON.parse(localStorage.getItem("users")) || []
+
+            formLogin.onsubmit = function() {
+                var taikhoan = userLogin.value.trim()
+                var matkhau = passLogin.value.trim()
+                var id
+                var NoteLogin = document.querySelector(".NoteLogin")
+                var ex = false
+                if (taikhoan && matkhau) {
+
+                    for (var i = 0; i < users.length; i++) {
+                        if (users[i].tk == taikhoan && users[i].mk == matkhau) {
+                            id = i;
+                            ex = true;
+                        }
+                    }
+                    if (ex == true) {
+                        users[id].laCo = true;
+                        localStorage.setItem("users", JSON.stringify(users))
+                            // alert("CHÚC MỪNG " + users[i].tk + "đã đăng nhập thành công")
+
+                        // this.setAttribute("action", "trangchu.html") // để nộp file đến trang khác nhưng mình cần back lại nơi mà nó đăng
+                        //nhập nên dùng history.back , và return false để chặn xử lí ko cho sk submit load lại trang login
+                        history.back();
+
+
+                        return false // sk submit thường hay load lại trang vì nó là true(mặc định),
+                            // nhưng ở đây ta ko cần nó load lại trang hoặc dẫn đén trang cụ thể nào
+                            // mà cần back lại trang nào đằng trc nó
+
+                    } else {
+                        while (NoteLogin.firstChild) {
+                            NoteLogin.removeChild(NoteLogin.firstChild)
+                        }
+                        NoteLogin.insertAdjacentHTML("afterbegin", `<span class="red"><i class="fas fa-times-circle"></i>Đăng Nhập thất bại!</span>`)
+                    }
+
+
+                } else {
+                    alert("chưa nhập đầy đủ thông tin")
+                }
+                return false // tức là tk mk nhập sai KO CHO LOAD LẠI TRANG
+
+            }
+        </script>
+    </div>
+
+    <footer>
+        <div class="boxFoots">
+            <div class="boxFoot about-us">
+                <div>
+
+                    <h3>GIỚI THIỆU</h3>
+                    <p>Chúng tôi luôn nỗ lực hàng ngày để gắn kết mối chia sẻ giao lưu và học hỏi cùng các bạn. Chúc các bạn 1 ngày học hỏi thật tốt</p>
+
+                    <ul class="netWork">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boxFoot lienket">
+                <div>
+                    <h3>LIÊN KẾT</h3>
+                    <ul class="link">
+                        <li><a href="#"><i class="far fa-hand-point-right"></i>  Trang chủ</a></li>
+                        <li><a href="#"><i class="far fa-hand-point-right"></i>  Diễn Đàn</a></li>
+                        <li><a href="#"><i class="far fa-hand-point-right"></i>  Mini game</a></li>
+                        <li><a href="#"><i class="far fa-hand-point-right"></i>  Học bài</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boxFoot">
+                <div>
+                    <h3>LIÊN HỆ</h3>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker"></i></span>
+                            <span><a href="#">Đường xa lộ Hà Nội, phường Bình Thắng, tp Dĩ An, tỉnh Bình Dương</a></span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                            <a href="#">+84 234 790 109</a>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <a href="#">vongngocthank@gmail.com</a></li>
+                        <li>
+                            <input type="text" placeholder="Liên hệ qua Email..." />
+                            <input type="button" value="subscriber" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!--jquery luôn ở trên cùng để load thư viện cho file js-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <!--my web-->
+
+    <link href="css/trangchu.css" rel="stylesheet" />
+    <script src="js/trangchu.js"></script>
+
+    <link href="css/login.css" rel="stylesheet" />
+    <!-- <script src="js/login.js"></script> -->
+
+
+    <!--thư viện internet-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css">
+    <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!--bootrap font-awesome luôn nằm dưới font-awesomw-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="#">WebHoc360</a></h1>
+            <div id="navBar">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="search..">
+            <input type="button" value="search">
+        </div>
+        <nav class="menu">
+            <ul class="menu-x">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Lập Trình</a></li>
+                <li class="sub">
+                    <a href="#">Dịch Vụ Game</a>
+                </li>
+            </ul>
+
+            <ul class="menuSign">
+                <li><a href="login.html" class="btnL"><i class="fas fa-sign-in-alt"></i>  Đăng Nhập</a></li>
+                <li><a href="register.html" class="btnR"><i class="fas fa-user-plus"></i>  Đăng Ký</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <style>
+        /*Quên mật khẩu*/
+        
+        .boxquenmatkhau {
+            margin: 150px auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        form.khoiphuc {
+            display: flex;
+            flex-direction: column;
+            border: 5px double #1763b9;
+            background: #8ddbd580;
+            box-shadow: -2px -2px 5px #222222;
+            border-radius: 10px;
+            align-items: center;
+            /*theo chieu ngang*/
+        }
+        
+        .khoiphuc input {
+            width: 30%;
+            padding: 5px;
+            outline: none;
+            margin: 5px;
+            border-radius: 20px;
+        }
+        
+        .khoiphuc input[type=username] {
+            border: 2px dotted #095af1;
+        }
+        
+        .khoiphuc input[type=email] {
+            border: 2px dotted #0933f1;
+        }
+        
+        .khoiphuc h3 {
+            text-align: center;
+            background: #1880e2c7;
+            display: block;
+            color: #ffffff;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        /*Đổi mật khẩu.................................................................................*/
+        
+        .doimatkhau h3 {
+            text-align: center;
+            background: #f18509;
+            display: block;
+            color: #ffffff;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .boxquenmatkhau {
+            margin: 150px auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        form.doimatkhau {
+            display: flex;
+            flex-direction: column;
+            border: 5px double #b96017;
+            background: #8ddbd580;
+            box-shadow: -2px -2px 5px #222222;
+            border-radius: 10px;
+            align-items: center;
+        }
+        
+        .doimatkhau input {
+            width: 30%;
+            padding: 5px;
+            outline: none;
+            margin: 5px;
+            border-radius: 20px;
+        }
+        
+        .doimatkhau input[type=username] {
+            border: 2px dotted #f18509;
+        }
+        
+        .doimatkhau input[type=password] {
+            border: 2px dotted #f17109;
+        }
+        
+        .boxquenmatkhau a {
+            text-decoration: none;
+        }
+        
+        .green {
+            color: #5632d6;
+            font-weight: bold;
+        }
+        
+        .red {
+            color: #f10909;
+            font-weight: bold;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .boxquenmatkhau input {
+                width: 70%;
+            }
+        }
+    </style>
+    <div class="boxquenmatkhau container BOXFORGET">
+        <form class="khoiphuc">
+            <h3> Vui lòng nhập tài khoản và email khôi phục để chúng tôi lấy mật khẩu cho bạn:</h3>
+            <input type="username" class="userKhoiPhuc" placeholder="username..." />
+            <input type="email" class="emailKhoiPhuc" placeholder="email..." />
+            <input type="submit" value="KHÔI PHỤC MẬT KHẨU" />
+            <h4>mật khẩu mới: </h4>
+            <p> "<span class="mkNew">xcvsdvf</span>"</p>
+            <p style="color: red;">Bạn có thể đổi mật khẩu để bảo mật !!!</p>
+            <a href="javascript:;" class="linkDoiMatKhau" style="color:blue;text-shadow: 2px 2px 3px black">Đổi mật khẩu</a>
+        </form>
+
+    </div>
+
+
+    <div class="boxquenmatkhau container BOXCHANGE" style="display:none">
+        <form class="doimatkhau" style="">
+            <h3> Biểu Mẫu Đổi Mật Khẩu An Toàn:</h3>
+            <p class="Note"></p>
+            <input type="username" class="userMain" placeholder="username..." />
+            <input type="password" class="passMain" placeholder="password..." />
+            <input type="password" class="passChange" placeholder="New password ..." />
+
+            <input type="submit" value="ĐỔI MẬT KHẨU" />
+            <a href="login.html" style="color:darkorange;text-shadow: 2px 2px 3px black">Trở về Đăng Nhập</a>
+        </form>
+
+    </div>
+    <script>
+        // Quên mật khẩu......................
+        var users = JSON.parse(localStorage.getItem("users")) || []
+        var khoiphuc = document.querySelector(".khoiphuc")
+        var userKhoiPhuc = document.querySelector(".userKhoiPhuc")
+        var emailKhoiPhuc = document.querySelector(".emailKhoiPhuc")
+        var tontai = false
+
+        khoiphuc.onsubmit = function() {
+
+                taikhoan = userKhoiPhuc.value.trim()
+                email = emailKhoiPhuc.value.trim()
+                for (var i = 0; i < users.length; i++) {
+
+                    if (email === users[i].em && taikhoan === users[i].tk) {
+                        users[i].mk = "matkhaumoi"
+                        localStorage.setItem("users", JSON.stringify(users))
+                        document.querySelector("span.mkNew").innerHTML = users[i].mk;
+                        alert("Mật khẩu mới của bạn là: " + users[i].mk)
+                        tontai = true;
+
+                    }
+                }
+                if (tontai == false) {
+                    alert("KHÔNG tồn tại Username hoặc email này trên web ,vui lòng kiểm tra lại !")
+                }
+                return false
+
+            }
+            // Đổi mật khẩu
+
+        var userMain = document.querySelector(".userMain")
+        var passMain = document.querySelector(".passMain")
+
+        var passChange = document.querySelector(".passChange")
+        var users = JSON.parse(localStorage.getItem("users")) || []
+        var doimatkhau = document.querySelector("form.doimatkhau")
+        var linkDoiMk = document.querySelector("a.linkDoiMatKhau")
+        var BOXCHANGE = document.querySelector(".BOXCHANGE")
+        var BOXFORGET = document.querySelector(".BOXFORGET")
+        var Note = document.querySelector("p.Note")
+        linkDoiMk.onclick = function() {
+            BOXCHANGE.style.display = "block"
+            BOXFORGET.style.display = "none"
+        }
+        doimatkhau.onsubmit = function() {
+            taikhoan = userMain.value.trim()
+            matkhau = passMain.value.trim()
+            matkhaumoi = passChange.value.trim()
+            var tontai = false
+            if (matkhaumoi.length >= 6) {
+                for (var i = 0; i < users.length; i++) {
+                    if (users[i].tk === taikhoan && users[i].mk === matkhau) {
+                        users[i].mk = matkhaumoi;
+                        localStorage.setItem("users", JSON.stringify(users))
+                        while (Note.firstChild) {
+                            Note.removeChild(Note.firstChild)
+                        }
+                        Note.insertAdjacentHTML("afterbegin", `<span class="green"><i class="far fa-check-circle"></i> Bạn đã đổi mật khẩu thành công !</span>`)
+                        tontai = true;
+                        break;
+                    }
+                }
+                if (tontai == false) {
+                    alert("KHÔNG tồn tại tài khoản bên dưới ,vui lòng kiểm tra lại !")
+                }
+            } else {
+                while (Note.firstChild) {
+                    Note.removeChild(Note.firstChild)
+                }
+                Note.insertAdjacentHTML("afterbegin", `<span class="red"><i class="fas fa-times-circle"></i>Mật khẩu phải dài hơn 6 ký tự !</span>`)
+
+            }
+            return false // chặn tải lại trang
+        }
+    </script>
+    <footer>
+        <div class="boxFoots">
+            <div class="boxFoot about-us">
+                <div>
+
+                    <h3>GIỚI THIỆU</h3>
+                    <p>Chúng tôi luôn nỗ lực hàng ngày để gắn kết mối chia sẻ giao lưu và học hỏi cùng các bạn. Chúc các bạn 1 ngày học hỏi thật tốt</p>
+
+                    <ul class="netWork">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boxFoot lienket">
+                <div>
+                    <h3>LIÊN KẾT</h3>
+                    <ul class="link">
+                        <li><a href="#"><i class="far fa-hand-point-right"></i>  Trang chủ</a></li>
+                        <li><a href="#"><i class="far fa-hand-point-right"></i>  Diễn Đàn</a></li>
+                        <li><a href="#"><i class="far fa-hand-point-right"></i>  Mini game</a></li>
+                        <li><a href="#"><i class="far fa-hand-point-right"></i>  Học bài</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boxFoot">
+                <div>
+                    <h3>LIÊN HỆ</h3>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker"></i></span>
+                            <span><a href="#">Đường xa lộ Hà Nội, phường Bình Thắng, tp Dĩ An, tỉnh Bình Dương</a></span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                            <a href="#">+84 234 790 109</a>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <a href="#">vongngocthank@gmail.com</a></li>
+                        <li>
+                            <input type="text" placeholder="Liên hệ qua Email..." />
+                            <input type="button" value="subscriber" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>

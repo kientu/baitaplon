@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body style="background:rgb(76, 117, 165)">
+    <form class="formsub" style="display:flex;flex-direction: column;">
+        <!-- <p>maso</p> <input type="number" class="ma" />
+        <p>taikhoan</p> <input type="text" class="tkacc" />
+        <p>matkhau</p><input type=" text " class="mkacc " /> -->
+        <input type="submit">
+
+    </form>
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="button" value="nạp dữ liệu" class="acc10">
+    </div>
+    <script>
+        var form = document.querySelector('.formsub')
+        var first = true;
+
+        var keys = JSON.parse(localStorage.getItem('keys')) || []
+        form.onsubmit = function() {
+            // var taikhoan = document.querySelector('.tkacc').value.trim()
+            // var maso = document.querySelector('.ma').value.trim()
+            // var matkhau = document.querySelector('.mkacc').value.trim()
+
+            // var obj = {
+
+            //     tk: taikhoan,
+            //     mk: matkhau,
+            //     ms: maso,
+            //     gt: 0,
+            //     buy: false, // chua ai mua
+            // }
+            // keys.push(obj)
+            // localStorage.setItem("keys", JSON.stringify(keys))
+
+        }
+        var muoiacc = document.querySelector('.acc10')
+        muoiacc.onclick = function() {
+            var obj1 = {
+
+                tk: 'huytu1@.vlpl',
+                mk: '3267tudaica',
+                ms: 123456,
+                gt: 0,
+                buy: false, // chua ai mua
+            }
+            var obj2 = {
+
+                tk: 'trandaica1@O.cc',
+                mk: 'thansssok123',
+                ms: 134567,
+                gt: 0,
+                buy: false, // chua ai mua
+            }
+            var obj3 = {
+
+                tk: 'trungkin2@.vlpl',
+                mk: '3267tudaica',
+                ms: 299093,
+                gt: 0,
+                buy: false, // chua ai mua
+            }
+            var obj4 = {
+
+                tk: 'cattmeo@O.cc',
+                mk: 'thansssok123',
+                ms: 529033,
+                gt: 0,
+                buy: false, // chua ai mua
+            }
+            var obj5 = {
+
+                tk: 'kientrung@.vlpl',
+                mk: '3267tudaica',
+                ms: 229933,
+                gt: 0,
+                buy: false, // chua ai mua
+            }
+            var obj6 = {
+
+                tk: 'nguoica@O.cc',
+                mk: 'thansssok123',
+                ms: 222733,
+                gt: 0,
+                buy: false, // chua ai mua
+            }
+            var obj7 = {
+
+                tk: 'namtrung@.vlpl',
+                mk: '3adaica21@.com',
+                ms: 124453,
+                gt: 0,
+                buy: false, // chua ai mua
+            }
+            var obj8 = {
+
+                tk: 'trandaica@O.cc',
+                mk: 'thansssok123',
+                ms: 123450,
+                gt: 0,
+                buy: false, // chua ai mua
+            }
+            var obj9 = {
+
+                tk: 'trinhgi123@.vlpl',
+                mk: '3267tudaica',
+                ms: 123789,
+                gt: 0,
+                buy: false, // chua ai mua
+            }
+            var obj10 = {
+
+                tk: 'accvip12222@O.cc',
+                mk: 'thansssok123',
+                ms: 133322,
+                gt: 0,
+                buy: false, // chua ai mua
+            }
+
+            keys.push(obj1, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10)
+            if (first == true) {
+                localStorage.setItem('keys', JSON.stringify(keys))
+                first = false
+            } else {
+                alert("bạn đã nạp dữ liệu rồi")
+            }
+        }
+
+
+
+
+
+        // localStorage.clear(); // xóa khi cần
+    </script>
+</body>
+
+</html>

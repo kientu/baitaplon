@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chu </title>
+    <!--jquery luôn ở trên cùng để load thư viện cho file js-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <!--my web-->
+
+    <link href="css/trangchu.css" rel="stylesheet" />
+    <script src="js/trangchu.js"></script>
+
+    <!--thư viện internet-->
+    <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
+
+    <!--bootrap font-awesome nằm dưới font-awesomw-->
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <div class="logo">
+            <h1 class="animate__animated animate__bounce"><a href="#">WebHoc360</a></h1>
+            <div id="navBar">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="search..">
+            <input type="button" value="search">
+        </div>
+        <nav class="menu">
+            <ul class="menu-x">
+                <li><a href="#" class="trangchu">Trang chủ</a></li>
+                <li><a href="#">Lập Trình</a></li>
+                <li class="sub">
+                    <a href="#" class="games">Dịch Vụ Game</a>
+                </li>
+            </ul>
+
+            <ul class="menuSign">
+                <li><a href="login.html" class="btnL"><i class="fas fa-sign-in-alt"></i>  Đăng Nhập</a></li>
+
+
+                <li><a href="register.html" class="btnR"><i class="fas fa-user-plus"></i>  Đăng Ký</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <br/>
+    <br/>
+
+
+    <section class="banner container">
+        <img src="img/muabanthe.jpg" alt="banner">
+
+    </section>
+
+    <section class="container subject">
+        <h1><span>DANH MỤC MÔN HỌC</span></h1>
+        <div class="figures">
+            <div>
+                <figure class="c4-izmir c4-border-corners-1 c4-image-zoom-out c4-gradient-bottom" tabindex="0" style="--primary-color: #E0EAFC; --secondary-color: #CFDEF3; --text-color: #1f467b; --border-color: #1f467b; --image-opacity: .1;">
+
+                    <img src="img/lamweb.gif" alt="pic" />
+                    <figcaption class="c4-layout-top-left">
+                        <div class="c4-reveal-up">
+                            <div>
+                                <h2 style="margin-bottom: 5px;">
+                                    Học lập trình C++
+                                </h2>
+                                <p>Một Khóa Học Free Dành Cho</p>
+                                <input style="outline: none;background: transparent;color:white;padding:10px;border:0.5px double gray" type="button" value="HỌC NGAY" />
+                            </div>
+                        </div>
+                    </figcaption>
+
+                </figure>
+            </div>
+            <div>
+                <figure class="c4-izmir c4-border-corners-1 c4-image-zoom-out c4-gradient-bottom" tabindex="0" style="--primary-color: #E0EAFC; --secondary-color: #CFDEF3; --text-color: #1f467b; --border-color: #1f467b; --image-opacity: .1;">
+
+                    <img src="img/lambt1.jpg" alt="pic" />
+                    <figcaption class="c4-layout-top-left">
+                        <div class="c4-reveal-down">
+                            <div>
+                                <h2 style="margin-bottom: 5px;">
+                                    Học lập trình C++
+                                </h2>
+                                <p>Một Khóa Học Free Dành Cho Tất Cả Mọi Người Với...</p>
+                                <input style="outline: none;background: transparent;color:rgb(207, 108, 51);padding:5px;" type="button" value="HỌC NGAY" />
+                            </div>
+                        </div>
+                    </figcaption>
+
+                </figure>
+            </div>
+            <div>
+                <figure class="c4-izmir c4-border-corners-1 c4-image-zoom-out c4-gradient-bottom" style="background:#7be6b171;">
+
+                    <img src="img/lambt2.jpg" alt="pic" />
+                    <figcaption class="c4-layout-top-left">
+                        <div class="c4-reveal-up">
+                            <div>
+                                <h2 style="margin-bottom: 5px;">
+                                    Học lập trình C++
+                                </h2>
+                                <p>Một Khóa Học Free Dành Cho Tất Cả...</p>
+                                <input style="outline: none;background: #1f467b;color:white;padding:5px;" type="button" value="HỌC NGAY" />
+                            </div>
+                        </div>
+                    </figcaption>
+
+                </figure>
+            </div>
+
+
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <br>
+
+    <br>
+
+    <section class="container subject">
+        <h1><span>DANH MỤC GAME</span></h1>
+
+        <div class="bos">
+            <div class="bo">
+                <div>
+                    <img src="img/muanick.gif" />
+                    <img class="giamgia" src="img/new.png" alt="new">
+
+                    <div class="chiTiet">
+                        <h4>Danh Mục Trúng Thưởng May Mắn</h4>
+                        <p>Số tài khoản: <span>2.380</span></p>
+                        <p>Đã bán: <span>560</span></p>
+                        <a href="tranggame1.html"><img class="muabtn" src="img/btnPlay.png" alt="mua"></a>
+                        <!-- <input type="button" value="MUA NGAY"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="bo">
+                <div>
+                    <img src="img/muanick1.gif" />
+                    <img class="giamgia" src="img/giamgia.png" alt="giamgia">
+                    <div class="chiTiet">
+                        <h4>Danh Mục Acc Thanh Toán</h4>
+
+                        <p>Số tài khoản: <span class="soLuong">-</span></p>
+                        <p>Đã bán: <span class="daBan">-</span></p>
+                        <a href="tranggame1.html"><img class="muabtn" src="img/muabtn.jpg" alt="mua"></a>
+                        <!-- <input type="button" value="MUA NGAY"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="bo">
+                <div>
+                    <img src="img/muanick1.gif" />
+                    <img class="giamgia" src="img/new.png" alt="new">
+                    <div class="chiTiet">
+                        <h4>Danh Mục Acc NRO</h4>
+
+                        <p>Số tài khoản: <span>2.380</span></p>
+                        <p>Đã bán: <span>560</span></p>
+                        <a href="tranggame1.html"><img class="muabtn" src="img/muabtn.jpg" alt="mua"></a>
+                        <!-- <input type="button" value="MUA NGAY"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="bo">
+                <div>
+                    <img src="img/napthe2.jpg" height="175px" />
+                    <img class="giamgia" src="img/new.png" alt="new">
+                    <div class="chiTiet">
+                        <h4>Danh Mục Nạp thẻ</h4>
+
+                        <p>Số tài khoản: <span>2.380</span></p>
+                        <p>Đã bán: <span>560</span></p>
+                        <a href="tranggame1.html"><img class="muabtn1" src="img/btnNap.png" width="150px" alt="mua"></a>
+                        <!-- <input type="button" value="MUA NGAY"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="top container">
+        <div class="thongKe ">
+            <div class="topNapThe">
+                <h2>TOP NẠP THẺ</h2>
+            </div>
+            <div class="stas">
+                <div class="sta">
+                    <div class="col8">
+                        <span class="stt" style="color: rgb(226, 24, 24)">&#10102;</span>
+                    </div>
+                    <div class="col65">
+                        <span class="tens">--</span>
+                    </div>
+                    <div class="col27">
+                        <span class="coinMax">--</span>
+                    </div>
+                </div>
+                <div class="sta">
+                    <div class="col8 ">
+                        <span class="stt " style="color: green">&#10103;</span>
+                    </div>
+                    <div class="col65">
+                        <span class="tens">--</span>
+                    </div>
+                    <div class="col27">
+                        <span class="coinMax">--</span>
+                    </div>
+                </div>
+                <div class="sta">
+                    <div class="col8">
+                        <span class="stt" style="color: goldenrod">&#10104;</span>
+                    </div>
+                    <div class="col65">
+                        <span class="tens">--</span>
+                    </div>
+                    <div class="col27">
+                        <span class="coinMax">--</span>
+                    </div>
+                </div>
+                <div class="sta">
+                    <div class="col8">
+                        <span class="stt">&#10105;</span>
+                    </div>
+                    <div class="col65">
+                        <span class="tens">--</span>
+                    </div>
+                    <div class="col27">
+                        <span class="coinMax">--</span>
+                    </div>
+                </div>
+                <div class="sta">
+                    <div class="col8">
+                        <span class="stt">&#10106;</span>
+                    </div>
+                    <div class="col65">
+                        <span class="tens">--</span>
+                    </div>
+                    <div class="col27">
+                        <span class="coinMax">--</span>
+                    </div>
+                </div>
+                <div class="sta">
+                    <div class="col8">
+                        <span class="stt">&#10107;</span>
+                    </div>
+                    <div class="col65">
+                        <span class="tens">--</span>
+                    </div>
+                    <div class="col27">
+                        <span class="coinMax">--</span>
+                    </div>
+                </div>
+                <div class="sta">
+                    <div class="col8">
+                        <span class="stt">&#10108;</span>
+                    </div>
+                    <div class="col65">
+                        <span class="tens">--</span>
+                    </div>
+                    <div class="col27">
+                        <span class="coinMax">--</span>
+                    </div>
+                </div>
+                <div class="sta">
+                    <div class="col8">
+                        <span class="stt">&#10109;</span>
+                    </div>
+                    <div class="col65">
+                        <span class="tens">--</span>
+                    </div>
+                    <div class="col27">
+                        <span class="coinMax">--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" thongKe2">
+            <div class="topNapThe">
+                <h2>PHẦN THƯỞNG</h2>
+            </div>
+            <div class="prize">
+                <h4>ĐUA TOP NẠP THẺ MỖI THÁNG ĐỂ NHẬN THƯỞNG</h4>
+                <ul>
+                    <li style="color: red">TOP 1. NICK BÔNG TAI CÓ ĐỆ TỬ </li>
+                    <li style="color: darkgreen">TOP 2. 100K CARD</li>
+                    <li style="color: goldenrod">TOP 3. 50K CARD </li>
+                    <li>TOP 4. 20K CARD </li>
+                    <li>TOP 5. 10K CARD </li>
+
+                </ul>
+                <p class="chuY">Lưu ý : tk phải nạp trên 1tr mới được nhận thưởng nhé </p>
+                <p class="chuY2">Phần thưởng sẽ trao vào 21h ngày cuối tháng </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="boxFoots">
+            <div class="boxFoot about-us">
+                <div>
+
+                    <h3>GIỚI THIỆU</h3>
+                    <p>Chúng tôi luôn nỗ lực hàng ngày để gắn kết mối chia sẻ giao lưu và học hỏi cùng các bạn. Chúc các bạn 1 ngày học hỏi thật tốt</p>
+
+                    <ul class="netWork">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boxFoot lienket">
+                <div>
+                    <h3>LIÊN KẾT</h3>
+                    <ul class="link">
+                        <li><a href="#" class="trangchu"><i class="far fa-hand-point-right"></i>  Trang chủ</a></li>
+                        <li><a href="#"><i class="far fa-hand-point-right"></i>  Lập trình</a></li>
+                        <li><a href="#"><i class="far fa-hand-point-right"></i>  Dịch Vụ Game</a></li>
+                        <li><a href="naptien.html"><i class="far fa-hand-point-right"></i>  Nạp thẻ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boxFoot">
+                <div>
+                    <h3>LIÊN HỆ</h3>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker"></i></span>
+                            <span><a href="#">Đường xa lộ Hà Nội, phường Bình Thắng, tp Dĩ An, tỉnh Bình Dương</a></span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                            <a href="#">+84 234 790 109</a>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <a href="#">vongngocthank@gmail.com</a></li>
+                        <li>
+                            <input type="text" placeholder="Liên hệ qua Email..." />
+                            <input type="button" value="subscriber" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
