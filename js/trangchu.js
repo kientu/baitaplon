@@ -398,3 +398,27 @@ function start(el, steps, max, type) {
 
     }, 800)
 }
+
+
+/*$(function(){
+    /*$(window).scroll(function(){
+        if(($this).scrollTop() >= 50){
+            $("header").css({
+                "position": "fixed",
+                "left": 0,
+                "right": 0,
+                "z-index": 999,
+                "opacity":0.1  
+                })
+        } else {
+            $("header").css({
+                "position": "relative",
+                "left": 0,
+                "right": 0,
+                "z-index": 999,
+                "opacity":1  
+                })
+                }
+    })
+})*/
+
