@@ -17,7 +17,7 @@
     }
     
     header {
-        display: flex;
+        display: flex !important;
         align-items: center;
         background: linear-gradient(rgba(255, 94, 0, 0.596), #e46f3acc, #c0720c);
         font-family: Arial, Helvetica, sans-serif;
@@ -83,13 +83,13 @@
     /*nav menu-x*/
     
     nav.menu {
-        display: flex;
+        display: flex !important;
         margin-left: auto;
     }
     
     nav.menu>ul {
         /*chung*/
-        display: flex;
+        display: flex !important;
         list-style-type: none;
         margin: 0;
         padding: 0;
