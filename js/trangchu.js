@@ -3,6 +3,98 @@ var acctimer = null
 var thanhvientimer = null
 var giaotrinhtimer = null
 
+function NapAcc() {
+    // var keys = JSON.parse(localStorage.getItem('keys')) || [] nếu lấy v nó sẽ lấy tiếp các phần tử dù đã có
+    var keys = [] // mỗi lần load trang nó push lên và đè phần tử cũ ko đi tiếp
+    var obj1 = {
+
+        tk: 'huytu1@.vlpl',
+        mk: '3267tudaica',
+        ms: 123456,
+        gt: 0,
+        buy: false, // chua ai mua
+    }
+    var obj2 = {
+
+        tk: 'trandaica1@O.cc',
+        mk: 'thansssok123',
+        ms: 134567,
+        gt: 0,
+        buy: false, // chua ai mua
+    }
+    var obj3 = {
+
+        tk: 'trungkin2@.vlpl',
+        mk: '3267tudaica',
+        ms: 299093,
+        gt: 0,
+        buy: false, // chua ai mua
+    }
+    var obj4 = {
+
+        tk: 'cattmeo@O.cc',
+        mk: 'thansssok123',
+        ms: 529033,
+        gt: 0,
+        buy: false, // chua ai mua
+    }
+    var obj5 = {
+
+        tk: 'kientrung@.vlpl',
+        mk: '3267tudaica',
+        ms: 229933,
+        gt: 0,
+        buy: false, // chua ai mua
+    }
+    var obj6 = {
+
+        tk: 'nguoica@O.cc',
+        mk: 'thansssok123',
+        ms: 222733,
+        gt: 0,
+        buy: false, // chua ai mua
+    }
+    var obj7 = {
+
+        tk: 'namtrung@.vlpl',
+        mk: '3adaica21@.com',
+        ms: 124453,
+        gt: 0,
+        buy: false, // chua ai mua
+    }
+    var obj8 = {
+
+        tk: 'trandaica@O.cc',
+        mk: 'thansssok123',
+        ms: 123450,
+        gt: 0,
+        buy: false, // chua ai mua
+    }
+    var obj9 = {
+
+        tk: 'trinhgi123@.vlpl',
+        mk: '3267tudaica',
+        ms: 123789,
+        gt: 0,
+        buy: false, // chua ai mua
+    }
+    var obj10 = {
+
+        tk: 'accvip12222@O.cc',
+        mk: 'thansssok123',
+        ms: 133322,
+        gt: 0,
+        buy: false, // chua ai mua
+    }
+
+    keys.push(obj1, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10)
+    if (keys != []) {
+        localStorage.setItem('keys', JSON.stringify(keys))
+        first = false
+    } else {
+        alert("bạn đã nạp dữ liệu rồi")
+    }
+}
 $(document).ready(function() {
 
     var phucvu = $('.phucvu')
@@ -43,6 +135,16 @@ $(document).ready(function() {
     $(".menuSign >li:last-child a").addClass("btnR");
 
     // animate footer
+    $('ul.link > li:nth-child(1) > a').attr('href', 'trangchu.html')
+
+    $('ul.link > li:nth-child(3) > a').attr('href', 'tranggame1.html')
+    $('ul.link > li:nth-child(4) > a').attr('href', 'naptien.html')
+
+    $('ul.netWork > li:nth-child(1) > a').attr('href', 'https://www.facebook.com/profile.php?id=100022998454631')
+
+    $('ul.netWork > li:nth-child(2) > a').attr('href', 'https://www.youtube.com/channel/UCHdPjoBVkgyOpipeZ4vgVKg')
+
+
     $(".boxFoot:first-child").addClass("wow animate__slideInLeft")
     $(".boxFoot:last-child").addClass("wow animate__slideInRight")
     $(".boxFoot:not(:last-child,:first-child)").addClass("wow animate__slideInUp")
@@ -145,30 +247,30 @@ $(document).ready(function() {
         $('textarea').val('')
     })
     $('.gui').click(function() {
-        if (exist == true) {
+            if (exist == true) {
 
-            var com = JSON.parse(localStorage.getItem("com")) || []
-            var txt = $('textarea').val() // lay textarea
-            var d1 = new Date()
+                var com = JSON.parse(localStorage.getItem("com")) || []
+                var txt = $('textarea').val() // lay textarea
+                var d1 = new Date()
 
-            var obj = {
+                var obj = {
 
-                tk: name,
-                txt: txt,
-                all: d1.getTime(),
-                y: d1.getFullYear(),
-                m: d1.getMonth(),
-                d: d1.getDate(),
-                h: d1.getHours(),
-                mi: d1.getMinutes(),
-                s: d1.getSeconds(),
-            }
-            com.push(obj)
-            localStorage.setItem("com", JSON.stringify(com))
-                // var com = JSON.parse(localStorage.getItem("com")) || []
+                    tk: name,
+                    txt: txt,
+                    all: d1.getTime(),
+                    y: d1.getFullYear(),
+                    m: d1.getMonth(),
+                    d: d1.getDate(),
+                    h: d1.getHours(),
+                    mi: d1.getMinutes(),
+                    s: d1.getSeconds(),
+                }
+                com.push(obj)
+                localStorage.setItem("com", JSON.stringify(com))
+                    // var com = JSON.parse(localStorage.getItem("com")) || []
 
 
-            $('.historys').prepend(`
+                $('.historys').prepend(`
             <div class="history">
                 <div>
 
@@ -194,17 +296,16 @@ $(document).ready(function() {
 
             </div>
             `)
-            $('textarea').val('')
+                $('textarea').val('')
 
-        } else {
-            if (confirm("Bạn phải đăng nhập để bình luận"))
-                location.assign('login.html')
-        }
+            } else {
+                if (confirm("Bạn phải đăng nhập để bình luận"))
+                    location.assign('login.html')
+            }
 
 
-    })
-
-    // số lượng đã bán và còn lại
+        })
+        // số lượng đã bán và còn lại
 
     var keys = JSON.parse(localStorage.getItem('keys')) || []
     $('.soLuong').text(`${keys.length}`)

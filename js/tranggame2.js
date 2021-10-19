@@ -221,6 +221,7 @@ $(document).ready(function() {
         })
     }
     if (keys[k].buy == true) {
+
         var j
         for (j = 0; j < users[i].acc.length; j++) {
             if (users[i].acc[j].ms == keys[k].ms) // hoặc là == $('.ms').attr('value')
