@@ -136,7 +136,6 @@
         display:none;
         background:rgb(79, 216, 221) !important;
         width:100%;
-
     }
     ul.subcontent  a{
         font-size: 20px;
@@ -878,6 +877,7 @@
    section.header {
        width: 77%;
        margin:0 auto;
+       /*z-index: -1 !important;*/
    }
    section.header img {
        width: 100%;
