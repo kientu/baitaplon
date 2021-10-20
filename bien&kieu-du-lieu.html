@@ -8,666 +8,784 @@
         <script src="js/noiDung.js"></script>
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 
+        <link href="css/trangchu.css" rel="stylesheet" />
+        <script src="js/trangchu.js"></script>
+        <link href="css/info.css" rel="stylesheet" />
+        <!--thư viện internet-->
+        <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
+
+        <!--bootrap font-awesome nằm dưới font-awesomw-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     <body>
+        <!--Phần header-->
+        <header class="animate__animated animate__fadeInDown">
+            <div class="logo">
+                <h1 class="animate__animated animate__bounce"><a href="#">WebHoc360</a></h1>
+                <div id="navBar">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+    
+            <div class="search">
+                <input type="text" placeholder="search..">
+                <input type="button" id="click" value="search">
+            </div>
+            <nav class="menu">
+                <ul class="menu-x">
+                    <li><a href="#" class="trangchu"><i class="fas fa-home">Trang chủ</i></a></li>
+                    <li class="sub">
+                        <a href="#"><i class="fas fa-graduation-cap">Lập Trình</i></a>
+                        <ul class="subcontent menu">
+                            <li><a href="gioi-thieu-lap-trinh.html">Lập trình và ngôn ngữ C++</a></li>
+                            <li><a href="bien&kieu-du-lieu.html">Biến và kiểu dữ liệu</a></li>
+                            <li><a href="cau-lenh-dieu-khien.html">Câu lệnh điều khiển</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub">
+                        <a href="#" class="games"><i class="fas fa-gamepad">Dịch Vụ Game</i></a>
+                    </li>
+                </ul>
+    
+                <ul class="menuSign">
+                    <li><a href="login.html" class="btnL"><i class="fas fa-sign-in-alt"></i>  Đăng Nhập</a></li>
+    
+    
+                    <li><a href="register.html" class="btnR"><i class="fas fa-user-plus"></i>  Đăng Ký</a></li>
+                </ul>
+    
+            </nav>
+        </header>
+
+        
+        <!--Phần nội dung-->    
+
         <div>
             <a id="gototop" href="javascript:;" ><i class="fas fa-home">GO TO TOP</i></a>
         </div>
-        <h1 class="tag"><span>biến & kiểu dữ liệu</span></h1>
-        <div class="der">
+        <section class="body">
+            <h1 class="tag"><span>biến & kiểu dữ liệu</span></h1>
+            <div class="der">
+                <ul>
+                    <li><a href="#1">Từ khóa</a></li>
+                    <li><a href="#2">Tên (name)</a></li>
+                    <li><a href="#3">Lưu ý khi đặt tên</a></li>
+                    <li><a href="#4">Quy ước đặt tên</a></li>
+                    <li><a href="#5">Kiểu dữ liệu</a>
+                    <li><a href="#6">Kiểu dữ liệu cơ bản</a></li>
+                    <li><a href="#7">Một số toán tử tương ứng với kiểu dữ liệu</a></li>
+                    <li><a href="#8">Biến</a></li>
+                    <li><a href="#9">Hằng</a></li>
+                    <li><a href="#10">Nhập dữ liệu</a> </a></li>
+                    <li><a href="#11">Câu lệnh nhập dữ liệu</a></li>
+                    <li><a href="#12">Nhập dữ liệu kiểu string</a></li>
+                    <li><a href="#13">Câu lệnh gán</a></li>
+                    <li><a href="#14">Toán tử phức hợp</a></li>
+                    <li><a href="#15">Câu lệnh xuất</a></li>
+                    <li><a href="#16">Định dạng xuất</a></li>
+                    <li><a href="#17">Biểu thức</a></li>
+                    <li><a href="#18">Độ ưu tiên của toán tử</a></li>
+                    <li><a href="#19">Lưu ý khi viết biểu thức</a></li>
+                    <li><a href="#20">Biểu thức số học</a></li>
+                    <li><a href="#21">Một số hàm toán học</a></li>
+                    <li><a href="#22">Toán tử tăng giảm</a></li>
+                    <li><a href="#23">Chuyển đổi kiểu dữ liệu</a></li>
+                    <li><a href="#24">Biểu thức luận lý</a></li>
+                    <li><a href="#25">Toán tử quan hệ</a></li>
+                    <li><a href="#26">Toán tử luận lý</a></li>
+
+
+    
+                </ul>
+            </div>
+
+            <h2 class="tags" id="1">Từ khóa(keyword)</h2>
             <ul>
-                <li><a href="#1">Từ khóa</a></li>
-                <li><a href="#2">Tên (name)</a></li>
-                <li><a href="#3">Lưu ý khi đặt tên</a></li>
-                <li><a href="#4">Quy ước đặt tên</a></li>
-                <li><a href="#5">Kiểu dữ liệu</a>
-                <li><a href="#6">Kiểu dữ liệu cơ bản</a></li>
-                <li><a href="#7">Một số toán tử tương ứng với kiểu dữ liệu</a></li>
-                <li><a href="#8">Biến</a></li>
-                <li><a href="#9">Hằng</a></li>
-                <li><a href="#10">Nhập dữ liệu</a> </a></li>
-                <li><a href="#11">Câu lệnh nhập dữ liệu</a></li>
-                <li><a href="#12">Nhập dữ liệu kiểu string</a></li>
-                <li><a href="#13">Câu lệnh gán</a></li>
-                <li><a href="#14">Toán tử phức hợp</a></li>
-                <li><a href="#15">Câu lệnh xuất</a></li>
-                <li><a href="#16">Định dạng xuất</a></li>
-                <li><a href="#17">Biểu thức</a></li>
-                <li><a href="#18">Độ ưu tiên của toán tử</a></li>
-                <li><a href="#19">Lưu ý khi viết biểu thức</a></li>
-                <li><a href="#20">Biểu thức số học</a></li>
-                <li><a href="#21">Một số hàm toán học</a></li>
-                <li><a href="#22">Toán tử tăng giảm</a></li>
-                <li><a href="#23">Chuyển đổi kiểu dữ liệu</a></li>
-                <li><a href="#24">Biểu thức luận lý</a></li>
-                <li><a href="#25">Toán tử quan hệ</a></li>
-                <li><a href="#26">Toán tử luận lý</a></li>
-
-
-   
-            </ul>
-        </div>
-
-        <h2 class="tags" id="1">Từ khóa(keyword)</h2>
-        <ul>
-            <li><span class="blue">Từ khóa</span> hay <span class="blue">từ dành riêng</span> (keywords/reserved words) là các
-                từ có ý nghĩa đặc biệt đối với chương trình dịch.
-            </li>
-            <li>
-                Ví dụ một số từ khóa trong C++: int double char const
-                void return ...
-            </li>
-            <li>
-                Các ký tự trong từ khóa C++ là chữ thường. Không được đặt
-                các tên trong chương trình trùng với từ khóa.
-            </li>
-        </ul>
-        <h2 class="tags" id="2">Tên (name)</h2>
-        <ul>
-            <li>
-                <span class="blue">Tên</span>
-                (name) hay danh hiệu, định danh (identifier) là tên biến,
-                tên hằng, tên hàm, tên kiểu dữ liệu do người lập trình định
-                nghĩa và được đặt theo luật.
-            </li>
-            <li>Luật đặt tên trong C++:
-                <ul>
-                        <li>Tên phải bắt đầu bằng ký tự.</li>
-                        <li> Tên chỉ gồm ký tự chữ, số và dấu gạch dưới. Không được phép
-                            có khoảng trắng và các ký tự khác (dấu chấm, dấu phẩy, $, %...)
-                        </li>
-                        <li>Tên không được trùng với từ khóa.</li>
-                        <li> Tên trong C++ phân biệt chữ thường và hoa (case sensitive).</li>
-                </ul>
-            </li>
-            <li>Ví dụ các tên hợp lệ:
-                <ul>
-                    <li>x grossPay number_of_studentes</li>
-                    <li>n2</li>
-                    <li>Polygon</li>
-                    <li>PI</li>
-                    <li>TAX_RATE</li>
-                </ul>
-            </li>
-            <li>Ví dụ các tên không hợp lệ:
-                <ul>
-                    <li>2x start$time</li>
-                    <li>Start menu</li>
-                    <li>RATE%</li>
-                    <li>2018Sales</li>
-                </ul>
-            </li>
-            <li>C++ phân biệt ký tự hoa và thường, x và X là hai tên khác nhau.</li>
-        </ul>
-        <h2 class="tags" id="3">Lưu ý khi đặt tên</h2>
-        <ul>
-            <li class="red"><i>
-                Nên chọn tên có ý nghĩa, giúp người đọc có thể hiểu chương
-                trình một cách dễ dàng.</i>
-            </li>
-            <li>
-                Không nên viết tắt vì sẽ gây khó hiểu:<br>
-                mtbf TLA myw nbv
-            </li>
-            <li> Các tên ngắn gọn đã được quy ước:
-                <ul>
-                    <li> x: biến cục bộ</li>
-                    <li> i: chỉ số của vòng lặp </li>
-                </ul>
-            </li>
-            <li>Không nên dùng tên quá dài:<br>
-                the_number_of_elements<br>
-                remaining_free_slots_in_the_symbol_table 
-            </li>
-            <li>
-                Nên đặt tên ngắn gọn, có nghĩa:<br>
-                partial_sum element_count staple_partition
-            </li>
-        </ul>
-        <h2 class="tags" id="4">Quy ước đặt tên</h2>
-        <ul>
-            <li>Tên biến: lowerCamelCase<br>
-                double centimeter;<br>
-                int totalInches;
-            </li>
-            <li>Tên hàm: lowerCamelCase, bắt đầu bằng động từ.<br>
-                double calculateAverage(); <br>
-                void run(); <br>
-                void print();<br>
-            </li>
-            <li>Tên kiểu dữ liệu do người dùng định nghĩa:
-                UpperCamelCase<br>
-                Graph<br>
-                Square<br>
-            </li>
-            <li>Tên hằng: ký tự in hoa, dùng dấu gạch dưới phân cách các từ.<br>
-                const int MAX_PARTICIPANTS = 10;
-            </li>
-        </ul>
-        <h1 class="tag" id="5"><span>Kiểu dữ liệu</span></h1>
-        <ul>
-            <li>Dữ liệu có thể là một ký tự, một số hoặc một đoạn văn bản...</li>
-            <li>Khi viết chương trình ta phải cho máy tính biết kiểu dữ liệu (data type) cần xử lý.</li>
-            <li>Các ngôn ngữ lập trình đều sử dụng hai kiểu dữ liệu cơ bản:
-                <ul>
-                    <li><span class="blue">Dữ liệu số</span> (numeric data type): số nguyên (integer) và số dấu
-                        chấm động (floating point).</li>
-                    <li><span>Dữ liệu chuỗi ký tự</span> (character string data type): ký tự (character)
-                </ul>
-            </li>
-            <li> Ngoài ra, các ngôn ngữ lập trình còn có kiểu dữ liệu luận lý
-                (boolean data type).</li>
-        </ul>
-        <h2 class="tags">Kiểu dữ liệu trong C++</h2>
-        <img src="img/CSLT/Noidung2/anh1.png" alt="bảng kiểu dử liệu trong C++">
-        <img src="img/CSLT/Noidung2/anh2.png" alt="bảng kiểu dử liệu trong C++">
-        <h2  class="tags" id="6">Kiểu dữ liệu cơ bản</h2>
-        <h3 class="blue">bool</h3>
-        <ul>
-            <li> Kích thước: 1 byte.</li>
-            <li>Lưu giá trị true (khác 0) hoặc false (0).</li>
-        </ul>
-        <h3 class="blue">char</h3>
-        <ul>
-            <li>Kích thước: 1 byte.</li>
-            <li> Lưu trữ các ký tự chữ, ký tự số và ký tự đặc biệt trong bảng mã ASCII (0-255). Ký tự đặt giữa hai dấu nháy đơn:
-                <br> 'A' 'a' '0' '*' '+' '&' ' ' (character literals)
-            </li>
-            <li>Một số ký tự đặc biệt:
-                <ul>
-                    <li>'\n': newline </li>
-                    <li>'\t': tab </li>
-                    <li>'\b': backspace</li>
-                    <li>'\\': backslash </li>
-                    <li>'\'': single quote</li>
-                    <li>'\"': double quote</li>
-                </ul>
-            </li>
-        </ul>
-        <h3 class="blue">int</h3>
-        <ul>
-            <li>Kích thước: 4 byte.</li>
-            <li>Lưu các giá trị từ -2,147,483,648 đến 2,147,483,647.</li>
-            <li>Giá trị cực đại: INT_MAX</li>
-            <li>Gía trị cực tiểu: INT_MIN</li>
-            <li>Lưu ý khi ghi các giá trị số nguyên (number literals):
-                <ul>
-                    <li>Số nguyên dương không cần dấu +.</li>
-                    <li>Không có dấu phẩy (,) trong số nguyên.</li>
-                    <li>Ví dụ: -6728 -67 0 78 35267 763</li>
-                </ul>
-            </li>
-        </ul>
-        <h3 class="blue">double</h3>
-        <ul>
-            <li>Kích thước: 8 byte</li>
-            <li>Lưu các giá trị từ 1.7 × 10−308 đến 1.7 × 10308 (15 chữ số).</li>
-            <li>C++ biểu diễn số thực dùng dấu chấm động.</li>
-            <li>Ví dụ: 1.23 .23 0.23 1.0 1.2e10 1.23e-15</li>
-        </ul>
-        <h3 class="blue">string</h3>
-       <ul>
-            <li>Kiểu string (class string) lưu trữ chuỗi ký tự. Đây là kiểu dữ
-                liệu có sẵn trong thư viện.</li>
-            <li>Chuỗi ký tự gồm 0 hoặc nhiều ký tự và được đặt giữa hai dấu
-                nháy kép.
-                "It is a beautiful day."<br>
-                "Mickey"<br>""
-            </li>  
-            <li>Độ dài chuỗi tùy ý.</li>
-            <li>Để sử dụng kiểu string ta phải thêm chỉ thị:
-                <br><span class="red">#include &lt;string&gt;</span>
-            </li> 
-        </ul>
-        <h2  class="tags" id="7">Một số toán tử tương ứng với kiểu dữ liệu</h2>
-        <img src="img/CSLT/Noidung2/anh3.png" alt="toán tử với kiểu dữ liệu">
-        <img src="img/CSLT/Noidung2/anh4.png" alt="toán tử với kiểu dữ liệu">
-        <h2  class="tags" id="8">Biến</h2>
-        <ul>
-            <li> <span >Biến</span> (variable) là một vùng nhớ dùng để lưu trữ một giá trị
-                dữ liệu. Mỗi biến có tên (name) và kiểu dữ liệu (type).</li>
-            <li>Dữ liệu được lưu trữ trong biến gọi là giá trị (value) của biến.  </li>
-            <li>Khi thực hiện, chương trình có thể đọc, ghi, hoặc thay thế
-                các giá trị của biến.</li>
-            <li>C++ yêu cầu phải khai báo biến trước khi sử dụng.</li>
-            <li>Để khai báo một biến, ta cần phải biết kiểu dữ liệu (data
-                type) mà chương trình sẽ sử dụng (số, chuỗi...).</li>
-            <li>Cú pháp khai báo biến:<br>
-                <span class="red">dataType variableName;</span> 
-                <ul>
-                    <li>dataType: kiểu dữ liệu (có trong C++, là kiểu cơ bản hoặc kiểu
-                        do người dùng tạo).</li>
-                    <li>variableName: tên biến (theo luật đặt tên của C++).</li>
-                </ul>
-            </li>
-            <li>Ví dụ<br>
-            <span class="blue">int</span> soluong; <br>
-            <span class="blue">double</span> tyle; <br>
-            <span class="blue">char</span> loaiSP; <br>
-            string tenSP;
-            </li>
-            <li>Có thể khai báo nhiều biến có cùng kiểu dữ liệu:<br>int a, b, c, d;</li>
-            <li>Cú pháp khai báo biến và khởi tạo giá trị:
-                <br><span class="red">dataType variableName = initialValue;</span> 
-            </li>
-            <li>Ví dụ<br>
-                <span class="blue">int</span> soluong = 5; <br>
-                <span class="blue">double</span> tyle = 0.05; <br>
-                <span class="blue">char</span> loaiSP = 'K'; <br>
-                <span class="blue">string</span> tenSP = "Kem danh rang";   
-            </li>
-        </ul>
-       <h2  class="tags">Một số lỗi thường gặp</h2>
-       <ul>
-           <li>Sử dụng biến chưa khai báo. <br>
-            <span class="blue">double</span> x = 12 * y; <span class="green">//loi vi bien y chua khai bao</span> <br>
-            <span class="blue">double</span> y = 0.0296;
-           </li>
-           <li>Sử dụng biến chưa được khởi tạo giá trị.<br>
-            <span class="blue">double</span> x; <br>
-            <span class="blue">double</span> y = x * 2;
-           </li>
-           <li>Gán giá trị khác kiểu cho biến. <br>
-            string hoten = 39; <span class="green">//loi</span> <br>
-            <span class="blue">int</span> n = "Hoai Thu"; <span class="green">//loi</span>
-           </li>
-       </ul>
-       <h2  class="tags" id="9">Hằng</h2>
-        <ul>
-            <li>Hằng (named constant) là một vùng nhớ dùng để lưu trữ
-                một giá trị dữ liệu không thay đổi trong suốt thời gian
-                chương trình thực thi.</li>
-            <li>Cú pháp định nghĩa hằng:<br>
-                <span class="red">constdataType constantName = value;</span>
-                <ul>
-                    <li>dataType: kiểu dữ liệu </li>
-                    <li>constantName: tên hằng (theo luật đặt tên của C++), thường dùng chữ in hoa.</li>
-                    <li>value: giá trị phù hợp với kiểu dữ liệu. </li>
-                </ul>
-            <li>ví dụ<br>
-                <span class="blue">const double</span> PI = 3.141593; <br>
-                const double CM_PER_INCH = 2.54;<br> 
-                const int SISO = 20; <br>
-                const char BLANK = ' ';<br>
-            </li>
-        </ul>
-        <h2  class="tags" id="10">Nhập dữ liệu</h2>
-        <ul>
-            <li>Dùng câu lệnh nhập (input statement): đọc dữ liệu từ bàn phím.
-                <br><span class="red">cin &gt;&gt; variableName</span>
-            </li>
-            <li>Ví dụ<br>
-                cin &gt;&gt; bankinh;
-            </li>
-            <li>Dùng câu lệnh gán (asignment statement). <br>
-                <span class="red">variableName = expression;</span>
-                <ul>
-                    <li>Giá trị của biểu thức phải phù hợp với kiểu dữ liệu của biến.</li>
-                    <li>Dấu = gọi là toán tử gán (assignment operator).</li>
-                </ul>
-                <li>Ví dụ:<br>
-                    dientich = 3.14 * bankinh * bankinh;
+                <li><span class="blue">Từ khóa</span> hay <span class="blue">từ dành riêng</span> (keywords/reserved words) là các
+                    từ có ý nghĩa đặc biệt đối với chương trình dịch.
                 </li>
-            </li>
-        </ul>
-        <h2  class="tags" id="11">Câu lệnh nhập dữ liệu</h2>
-        <img src="img/CSLT/Noidung2/anh5.png" alt="hình ảnh nhập xuất dữ liệu">
-        <ul>
-            <li>Đối tượng cin được sử dụng cùng với toán tử >>.</li>
-            <li>Toán tử >> sẽ lấy ra các ký tự từ đối tượng và chuyển vào bộ
-                nhớ, cho đến khi gặp <span class="blue">ký tự khoảng trắng</span> (tab, space, enter).
-            </li>
-        </ul>
-        <h2  class="tags" id="12">Nhập dữ liệu kiểu string</h2>
-        <span class="red">getline(cin, str);</span>
-        <ul>
-            <li>str là biến có kiểu string</li>
-            <li>đọc một chuỗi, kể cả khoảng trắng và lưu vào str</li>
-        </ul>
-        <p>Ví dụ</p>
-        <pre>
-            <span class="gray">#include </span> <span class="red">&lt;iostream&gt;</span>
-            <span class="gray">#include </span> <span class="red">&lt;string&gt;</span>
-            <span class="blue">using namespace </span> std;
-            <span class="blue">int</span> main()
-                {
-                 <span class="lBlue">string</span> hoten;
-                 cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap vao ho va ten: ";</span>
-                 <span class="pink">getline</span>(cin, hoten);
-                 cout <span class="green">&lt;&lt;</span> <span class="red">"Chao ban "</span> <span class="green">&lt;&lt;</span> hoten <span class="green">&lt;&lt;</span> endl;
-                }
-        </pre>
-        <h2  class="tags" id="13">Câu lệnh gán</h2>
-        <ul>
-            <li>Câu lệnh gán (assignment statement) dùng để gán giá trị cho 
-                biến trong khi chương trình đang thực hiện.<br>
-                <span class="blue">int</span> a = 3; <br>
-                a = 4; <br>
-                <span class="blue">int</span> b = a; <br>
-                b = a + 5; <br>
-                a = a + 7;
-            </li>
-            <li>Kiểu dữ liệu của biểu thức trong câu lệnh gán phải phù hợp 
-                với kiểu dữ liệu của biến.</li>
-            <li>Có thể dùng câu lệnh gán cho biến kiểu string:<br>
-                <span class="lBlue">string</span> s1 = "alpha"; <br>
-                s1 = "beta"; <br>
-                <span class="lBlue">string</span> s2 = s1; <br>
-                s2 = s1 + "gamma"; <br>
-                s1 = s1 + "delta";
-            </li>
-            <li>Câu lệnh khai báo và khởi tạo (initialization): tạo một biến 
-                mới và gán cho biến giá trị ban đầu.</li>
-            <li>Câu lệnh gán (assignment): gán cho biến đã có một giá trị 
-                mới.</li>
-        </ul>
-        <h2  class="tags" id="14">Toán tử gán phức hợp</h2>
-        <ul>
-            <li>Các toán tử gán phức hợp (composite assignment operators) 
-                dùng để rút ngắn câu lệnh gán:
-                <ul>
-                    <li>+= cộng gán</li>
-                    <li>-= trừ gán</li>
-                    <li>*= nhân gán</li>
-                    <li>/= chia gán</li>
-                    <li>%= modulo gán</li>
-                </ul>
-            </li>
-            <li>Ví dụ:
-                <ul>
-                    <li>a += 7;  <span class="green">//a = a + 7</span></li>
-                    <li>b -= 9;  <span class="green">//b = b - 9</span></li>
-                    <li>c *= 2;  <span class="green">//c = c * 2</span></li>
-                    <li>counter += 1;  <span class="green">//counter = counter + 1; tương đương ++counter;</span></li>
-                </ul>
-            </li>
-        </ul>
-        <h2  class="tags" id="15">Câu lệnh xuất</h2>
-        <ul>
-            <li>Câu lệnh xuất (output statement): in dữ liệu ra màn hình.
-                <br>cout <span class="green">&lt;&lt;</span> expression or manipulator <span class="green">&lt;&lt;</span> ...;
-                <ul>
-                    <li>expression: tính giá trị của biểu thức sau đó in giá trị.</li>
-                    <li>manipulator: định dạng dữ liệu xuất.</li>
-                </ul>
-            </li>
-            <li>Ví dụ:
-            <pre>
-                cout <span class="green">&lt;&lt;</span> 29 / 4 <span class="green">&lt;&lt;</span> endl; 
-                cout <span class="green">&lt;&lt;</span> 'A' <span class="green">&lt;&lt;</span> endl; 
-                cout <span class="green">&lt;&lt;</span> <span class="red">"Hello \nthere!"</span> <span class="green">&lt;&lt;</span> endl;
-                cout <span class="green">&lt;&lt;</span> <span class="red">"4 + 8 = "</span>  4 + 8 <span class="green">&lt;&lt;</span> endl;
-                cout <span class="green">&lt;&lt;</span> <span class="red">"...1\n....2\n.....3\n"</span>; 
-                hoặc 
-                cout <span class="green">&lt;&lt;</span> <span class="red">"...1"</span> <span class="green">&lt;&lt;</span> endl <span class="green">&lt;&lt;</span> <span class="red">"....2"</span> <span class="green">&lt;&lt;</span> endl
-                <span class="green">&lt;&lt;</span> <span class="red">".....3"</span> <span class="green">&lt;&lt;</span> endl;
-            </pre>
-            </li>
-        </ul>
-        <h2  class="tags" id="16">Định dạng xuất</h2>
-        <ul>
-            <li>Môi trường lập trình thường xuất 6 chữ số có nghĩa (mặc 
-                định):<br>
-                cout <span class="green">&lt;&lt;</span> 12.345678 <span class="green">&lt;&lt;</span> endl; <span class="green">//12.3457</span>
-            </li>
-            <li>Để định dạng dữ liệu xuất, ta phải thêm chỉ thị:<br>
-                 <span class="gray">#include </span> <span class="red">&lt;iomanip&gt;</span>
-            </li>
-            <li>Ví dụ hiển thị 2 chữ số lẻ:<br>
-            <pre>
-            cout <span class="green">&lt;&lt;</span> fixed <span class="green">&lt;&lt;</span> setprecision(2)
-                <span class="green">&lt;&lt;</span>12.345678 <span class="green">&lt;&lt;</span> <span class="green">//12.35</span>
-            </pre>
-             </li>
-        </ul>
-        <h2  class="tags" id="17">Biểu thức</h2>
-        <ul>
-            <li>Biểu thức (expression) dùng để tính toán các giá trị, được tạo
-                thành từ toán tử (operators) và toán hạng (operands).
-                <ul>
-                    <li>Toán tử: thực hiện tính toán với toán hạng và cho kết quả là giá
-                        trị có một kiểu.
-                    </li>
-                    <li>Toán hạng: dữ liệu được toán tử tính toán.</li>
-                </ul>
-            </li>
-            <li>Ví dụ:<br>
-                2 + 3 * 5 <br>
-                x - y / 7<br>
-                x * 10.5 + y - 16.2<br>
-                2 + 3.5<br>
-                6 / 4 + 3.9<br>
-                5.4 * 2 - 13.6 + 18 / 2
-            </li>
-        </ul>
-        <h2  class="tags" id="18">Độ ưu tiên của toán tử</h2>
-        <ul>
-            <li>Khi tính giá trị biểu thức: áp dụng luật ưu tiên của các toán tử.
-                <img src="img/CSLT/Noidung2/anh6.png" alt="Độ ưu tiên toán tử">
-            </li>
-            <li>Ví dụ:
-                <ul>
-                    <li><pre>(dai + rong) * 2       khác với        dai + rong * 2</pre></li>
-                    <li><pre>a * b + c / d          nghĩa là        (a * b) + (c / d)
-                            không phải      a * (b + c) / d
-                    </pre></li>
-                </ul>
-            </li>
-        </ul>
-        <h2  class="tags" id="19">Lưu ý khi viết biểu thức</h2>
-        <ul>
-            <li><span>Thêm khoảng trắng trước và sau các toán tử trong biểu thức.</span>
-            <br>x1 - (-b + sqrt(b * b - 4 * a * c)) / (2 * a);<br>
-                dễ đọc hơn:<br>
-                x1-(-b+sqrt(b*b-4*a*c))/(2*a);
-            </li>
-            <li><span>Không thêm khoảng trắng sau tên hàm.</span><br>
-                sqrt(x), <br>
-                không viết <br>
-                sqrt (x)
-            </li>
-        </ul>
-        <h2 class="tags" id="20">Biểu thức số học</h2>
-        <ul>
-            <li>Biểu thức số gồm toán tử số học và các toán hạng là số
-                nguyên hoặc số dấu chấm động.
-                <ul>
-                    <li>Toán tử số học: + - * / %</li>
-                    <li>Thứ tự ưu tiên: * / %  + -</li>
-                    <li>Lưu ý: toán tử % (modulo) chỉ dùng cho kiểu số nguyên.</li>
-                </ul>
-            </li>
-            <li>Biểu thức kiểu số nguyên nếu các toán hạng có kiểu số
-                nguyên.</li>
-            <li>Biểu thức kiểu số dấu chấm động nếu các toán hạng có kiểu
-                số số dấu chấm động.</li>
-            <li>Ví dụ biểu thức kiểu số nguyên:<br>
-                int dai = 4; <br>
-                int rong = 5;<br>
-                int dientich, chuvi;<br>
-                dientich = dai * rong; <br>
-                chuvi = (dai + rong) * 2
-            </li>
-            <li>Ví dụ biểu thức kiểu số dấu chấm động: <br>
-                <spanan class="blue">const</spanan> double PI = 3.1414296; <br>
-                <span class="blue">double</span> bankinh = 5.5; <br>
-                <span class="blue">double</span> dientich; <br>
-                <span class="blue">dientich</span> = PI * bankinh * bankinh;
-            </li>
-            <li>Ví dụ viết các biểu thức số học bằng C++:
-                <img src="img/CSLT/Noidung2/anh7.png" alt="ví dụ biểu thức số học">
-            </li>
-            <h2  class="tags">Lưu ý</h2>
-            <ul>
-                <li>Nếu chia hai số nguyên thì phần dư sẽ bị cắt bỏ.<br>
-                    <span class="blue">int</span> tongsogiay = 3790; 
-                    <span class="blue">int</span> sogio = tongsogiay / 3600; <spe class="green">// sogio == 1</spe>
+                <li>
+                    Ví dụ một số từ khóa trong C++: int double char const
+                    void return ...
                 </li>
-                <li>Phép chia lấy dư % dùng để lấy phần dư.<br>
-                    <span class="blue">int</span> sophut = tongsogiay % 3600 / 60;<spe class="green">//sophut==3</spe><br>
-                    <span class="blue">int</span> sogiay = tongsogiay % 3600 % 60;<spe class="green">//sogiay==10</spe><br>
-                </li>
-                <li>Tính lũy thừa và tính căn bậc 2: sử dụng hàm thư viện.<br>
-                    𝑥: sqrt(x)<br>
-                    x<sup>n</sup>: pow(x, n)
+                <li>
+                    Các ký tự trong từ khóa C++ là chữ thường. Không được đặt
+                    các tên trong chương trình trùng với từ khóa.
                 </li>
             </ul>
-            <h2  class="tags" id="21">Một số hàm toán học</h2>
-            <p>Để sử dụng hàm toán học, thêm header file cmath vào đầu chương trình:<br>
-                    <span class="gray">#include </span> <span class="red">&lt;iostream&gt;</span>
-            </p>
-            <img src="img/CSLT/Noidung2/anh8.png" alt="hàm toán học">
-            <h2  class="tags" id="22">Toán tử tăng và giảm</h2>
+            <h2 class="tags" id="2">Tên (name)</h2>
             <ul>
-                <li>Toán tử tăng 1:<br>
-                    <span class="red"></span>++variable <br>
-                    <span class="red"></span>variable++
+                <li>
+                    <span class="blue">Tên</span>
+                    (name) hay danh hiệu, định danh (identifier) là tên biến,
+                    tên hằng, tên hàm, tên kiểu dữ liệu do người lập trình định
+                    nghĩa và được đặt theo luật.
                 </li>
-                <li>Toán tử giảm 1:<br>
-                    <span class="red"></span>--variable <br>
-                    <span class="red"></span>variable--
-                </li>
-                <li>Ví dụ
+                <li>Luật đặt tên trong C++:
                     <ul>
-                        <li>++count; hoặc count++;</li>
-                        <li>--count; hoặc count--;</li>
+                            <li>Tên phải bắt đầu bằng ký tự.</li>
+                            <li> Tên chỉ gồm ký tự chữ, số và dấu gạch dưới. Không được phép
+                                có khoảng trắng và các ký tự khác (dấu chấm, dấu phẩy, $, %...)
+                            </li>
+                            <li>Tên không được trùng với từ khóa.</li>
+                            <li> Tên trong C++ phân biệt chữ thường và hoa (case sensitive).</li>
+                    </ul>
+                </li>
+                <li>Ví dụ các tên hợp lệ:
+                    <ul>
+                        <li>x grossPay number_of_studentes</li>
+                        <li>n2</li>
+                        <li>Polygon</li>
+                        <li>PI</li>
+                        <li>TAX_RATE</li>
+                    </ul>
+                </li>
+                <li>Ví dụ các tên không hợp lệ:
+                    <ul>
+                        <li>2x start$time</li>
+                        <li>Start menu</li>
+                        <li>RATE%</li>
+                        <li>2018Sales</li>
+                    </ul>
+                </li>
+                <li>C++ phân biệt ký tự hoa và thường, x và X là hai tên khác nhau.</li>
+            </ul>
+            <h2 class="tags" id="3">Lưu ý khi đặt tên</h2>
+            <ul>
+                <li class="red"><i>
+                    Nên chọn tên có ý nghĩa, giúp người đọc có thể hiểu chương
+                    trình một cách dễ dàng.</i>
+                </li>
+                <li>
+                    Không nên viết tắt vì sẽ gây khó hiểu:<br>
+                    mtbf TLA myw nbv
+                </li>
+                <li> Các tên ngắn gọn đã được quy ước:
+                    <ul>
+                        <li> x: biến cục bộ</li>
+                        <li> i: chỉ số của vòng lặp </li>
+                    </ul>
+                </li>
+                <li>Không nên dùng tên quá dài:<br>
+                    the_number_of_elements<br>
+                    remaining_free_slots_in_the_symbol_table 
+                </li>
+                <li>
+                    Nên đặt tên ngắn gọn, có nghĩa:<br>
+                    partial_sum element_count staple_partition
+                </li>
+            </ul>
+            <h2 class="tags" id="4">Quy ước đặt tên</h2>
+            <ul>
+                <li>Tên biến: lowerCamelCase<br>
+                    double centimeter;<br>
+                    int totalInches;
+                </li>
+                <li>Tên hàm: lowerCamelCase, bắt đầu bằng động từ.<br>
+                    double calculateAverage(); <br>
+                    void run(); <br>
+                    void print();<br>
+                </li>
+                <li>Tên kiểu dữ liệu do người dùng định nghĩa:
+                    UpperCamelCase<br>
+                    Graph<br>
+                    Square<br>
+                </li>
+                <li>Tên hằng: ký tự in hoa, dùng dấu gạch dưới phân cách các từ.<br>
+                    const int MAX_PARTICIPANTS = 10;
+                </li>
+            </ul>
+            <h1 class="tag" id="5"><span>Kiểu dữ liệu</span></h1>
+            <ul>
+                <li>Dữ liệu có thể là một ký tự, một số hoặc một đoạn văn bản...</li>
+                <li>Khi viết chương trình ta phải cho máy tính biết kiểu dữ liệu (data type) cần xử lý.</li>
+                <li>Các ngôn ngữ lập trình đều sử dụng hai kiểu dữ liệu cơ bản:
+                    <ul>
+                        <li><span class="blue">Dữ liệu số</span> (numeric data type): số nguyên (integer) và số dấu
+                            chấm động (floating point).</li>
+                        <li><span>Dữ liệu chuỗi ký tự</span> (character string data type): ký tự (character)
+                    </ul>
+                </li>
+                <li> Ngoài ra, các ngôn ngữ lập trình còn có kiểu dữ liệu luận lý
+                    (boolean data type).</li>
+            </ul>
+            <h2 class="tags">Kiểu dữ liệu trong C++</h2>
+            <img src="img/CSLT/Noidung2/anh1.png" alt="bảng kiểu dử liệu trong C++">
+            <img src="img/CSLT/Noidung2/anh2.png" alt="bảng kiểu dử liệu trong C++">
+            <h2  class="tags" id="6">Kiểu dữ liệu cơ bản</h2>
+            <h3 class="blue">bool</h3>
+            <ul>
+                <li> Kích thước: 1 byte.</li>
+                <li>Lưu giá trị true (khác 0) hoặc false (0).</li>
+            </ul>
+            <h3 class="blue">char</h3>
+            <ul>
+                <li>Kích thước: 1 byte.</li>
+                <li> Lưu trữ các ký tự chữ, ký tự số và ký tự đặc biệt trong bảng mã ASCII (0-255). Ký tự đặt giữa hai dấu nháy đơn:
+                    <br> 'A' 'a' '0' '*' '+' '&' ' ' (character literals)
+                </li>
+                <li>Một số ký tự đặc biệt:
+                    <ul>
+                        <li>'\n': newline </li>
+                        <li>'\t': tab </li>
+                        <li>'\b': backspace</li>
+                        <li>'\\': backslash </li>
+                        <li>'\'': single quote</li>
+                        <li>'\"': double quote</li>
                     </ul>
                 </li>
             </ul>
-           <h2  class="tags" id="23">Chuyển đổi kiểu</h2>
-           <ul>
-               <li>Biểu thức có thể gồm nhiều kiểu dữ liệu khác nhau.
-                 2.5/2:  <span class="blue">double</span> chia cho <spe class="blue">int</spe>, kết quả là <spe class="blue">double</spe>.
-               </li>
-               <li>Nếu toán hạng có kiểu double thì kết quả là double, nếu toán
-                hạng có kiểu int thì kết quả là int.
-                <ul>
-                    <li>5/2 kết quả là 2 (không phải 2.5).</li>
-                    <li>2.5/2 nghĩa là 2.5/<spe class="blue">double</spe>(2) kết quả là 1.25.</li>
-                    <li>'a'+1 nghĩa là <spe class="blue">int</spe>('a')+1</li>
-                </ul>
-                </li>
-                <li>Khi cần chương trình dịch sẽ chuyển đổi toán hạng kiểu <spe class="blue">int</spe>
-                    sang <span class="blue">double</span>, hoặc toán hạng kiểu char sang <spe class="blue">int</spe>. Sau đó
-                    chương trình dịch sẽ chuyển đổi kết quả lần nữa để sử dụng
-                    như là giá trị khởi tạo, hoặc giá trị bên vế phải phép gán.
-                </li>
-                <li>Ví dụ:<br>
-                    <span class="blue">double</span> d = 2.5;<br>
-                    <span class="blue">int</span> i = 2;<br>
-                    <span class="blue">double</span> d2 = d/i; <spe class="green">//d2 == 1.25</spe><br>
-                    <span class="blue">int</span> i2 = d/i; <spe class="green">//i2 == 1</spe><br>
-                    d2 = d/i; <span class="green">//d2 == 1.25</span><br>
-                    i2 = d/i; <span class="green">//i2 == 1</span>
-                </li>
-                <li>Ví dụ chuyển độ Celcius sang độ Fahrenheit: kết quả là số 
-                    nguyên.<br>
-                    <span class="blue">double</span> doC; <br>
-                    cin <span class="green">&gt;&gt;</span> doC; <br> 
-                    <span class="blue">double</span> doF = 9/5 * doC + 32; <span class="green">// 9/5==1, khong phai 1.5</span>
-                    <p>Giải pháp: chuyển 9 hoặc 5 hoặc cả hai sang double:</p>
-                    <span class="blue">double</span> doC; <br>
-                    cin <span class="green">&gt;&gt;</span> doC; <br> 
-                    <span class="blue">double</span> doF = 9/5 * doC + 32;
-                </li>
-           </ul>
-           <h2  class="tags">Chuyển đổi kiểu</h2>
-           <img src="img/CSLT/Noidung2/anh9.png" alt="hình ảnh chuyển kiểu dữ liệu">
-           <h2  class="tags">Chuyển đổi kiểu tường minh</h2>
-           <span class="red">static_cast<type>(expression)</span>
+            <h3 class="blue">int</h3>
             <ul>
-                <li>expression: biểu thức</li>
-                <li>type: kiểu dữ liệu </li>
-            </ul>
-            <pre>
-                static_cast&lt;int&gt;(7.9) 7 
-                    static_cast&lt;double&gt;(25) 25.0
-                    static_cast&lt;double&gt;(5+3) =static_cast&lt;double&gt;(8)
-                                                             =8.0
-                    static_cast&lt;double&gt;(15)/2 =15.0/2 = 15.0/2.0 
-                                                            = 7.5
-                    static_cast&lt;double&gt;(15/2) =static_cast&lt;double&gt;(7)
-                                                                  =7
-            </pre>
-            <h2  class="tags" id="24">Biểu thức luận lý</h2>
-            <ul>
-                <li>Biểu thức luận lý có giá trị là true hoặc false, được tạo bởi 
-                    toán tử luận lý và toán tử quan hệ.
+                <li>Kích thước: 4 byte.</li>
+                <li>Lưu các giá trị từ -2,147,483,648 đến 2,147,483,647.</li>
+                <li>Giá trị cực đại: INT_MAX</li>
+                <li>Gía trị cực tiểu: INT_MIN</li>
+                <li>Lưu ý khi ghi các giá trị số nguyên (number literals):
                     <ul>
-                        <li>Toán tử luận lý: ! && || </li>
-                        <li>Toán tử quan hệ: &lt; > &lt;= >= == !=</li>
-                        <li><pre>Thứ tự ưu tiên:    !
-                            &lt; &lt;= >= >
-                            == !=
-                            &&
-                            ||</pre></li>
+                        <li>Số nguyên dương không cần dấu +.</li>
+                        <li>Không có dấu phẩy (,) trong số nguyên.</li>
+                        <li>Ví dụ: -6728 -67 0 78 35267 763</li>
                     </ul>
                 </li>
-                <li>Biểu thức luận lý được sử dụng trong các câu lệnh rẻ nhánh 
-                    if, <span class="pink">if...else</span> và câu lệnh lặp for, while, <span class="pink">do...while</span></li>
             </ul>
-            <h2  class="tags" id="25">Toán tử quan hệ</h2>
+            <h3 class="blue">double</h3>
             <ul>
-                <li>Toán tử quan hệ dùng để so sánh các giá trị trong chương 
-                    trình, cho kết kết quả là true hoặc false.
-                    <img src="img/CSLT/Noidung2/anh10.png" alt=""toán tử quan hệ>
-                </li>
-                <li>Các giá trị so sánh phải có cùng kiểu dữ liệu.<br>
-                     8 &lt; '5': không thể so sánh.
-                </li>
-                <li>So sánh ký tự: dựa vào mã ASCII.<br>
-                    ' ' &lt; 'a' true<br>
-                    'R' &gt; 'T' false<br>
-                    '+' &gt; '*' false <br>
-                    'A' &gt;= 'a' true
-                </li>
-                <li>So sánh chuỗi: theo thứ tự từ điển. 
-                    <pre>
-                    <span class="pink">string</span> s1 = "Hello"; 
-                    <span class="pink">string</span> s2 = "Hi"; 
-                    <span class="pink">string</span> s3 = "Air"; 
-                    <span class="pink">string</span> s4 = "Bill";
-                    s1 &lt; s2         <span class="green">true</span>  
-                    s3 &lt; "An"       <span class="green">true </span>
-                    s1 == "hello"      <span class="green">false</span>
-                    s3 &lt;= s4        <span class="green">true</span>
-                    </pre>
+                <li>Kích thước: 8 byte</li>
+                <li>Lưu các giá trị từ 1.7 × 10−308 đến 1.7 × 10308 (15 chữ số).</li>
+                <li>C++ biểu diễn số thực dùng dấu chấm động.</li>
+                <li>Ví dụ: 1.23 .23 0.23 1.0 1.2e10 1.23e-15</li>
+            </ul>
+            <h3 class="blue">string</h3>
+        <ul>
+                <li>Kiểu string (class string) lưu trữ chuỗi ký tự. Đây là kiểu dữ
+                    liệu có sẵn trong thư viện.</li>
+                <li>Chuỗi ký tự gồm 0 hoặc nhiều ký tự và được đặt giữa hai dấu
+                    nháy kép.
+                    "It is a beautiful day."<br>
+                    "Mickey"<br>""
+                </li>  
+                <li>Độ dài chuỗi tùy ý.</li>
+                <li>Để sử dụng kiểu string ta phải thêm chỉ thị:
+                    <br><span class="red">#include &lt;string&gt;</span>
                 </li> 
             </ul>
-                <h2  class="tags" id="26">Toán tử luận lý</h2>
+            <h2  class="tags" id="7">Một số toán tử tương ứng với kiểu dữ liệu</h2>
+            <img src="img/CSLT/Noidung2/anh3.png" alt="toán tử với kiểu dữ liệu">
+            <img src="img/CSLT/Noidung2/anh4.png" alt="toán tử với kiểu dữ liệu">
+            <h2  class="tags" id="8">Biến</h2>
+            <ul>
+                <li> <span >Biến</span> (variable) là một vùng nhớ dùng để lưu trữ một giá trị
+                    dữ liệu. Mỗi biến có tên (name) và kiểu dữ liệu (type).</li>
+                <li>Dữ liệu được lưu trữ trong biến gọi là giá trị (value) của biến.  </li>
+                <li>Khi thực hiện, chương trình có thể đọc, ghi, hoặc thay thế
+                    các giá trị của biến.</li>
+                <li>C++ yêu cầu phải khai báo biến trước khi sử dụng.</li>
+                <li>Để khai báo một biến, ta cần phải biết kiểu dữ liệu (data
+                    type) mà chương trình sẽ sử dụng (số, chuỗi...).</li>
+                <li>Cú pháp khai báo biến:<br>
+                    <span class="red">dataType variableName;</span> 
+                    <ul>
+                        <li>dataType: kiểu dữ liệu (có trong C++, là kiểu cơ bản hoặc kiểu
+                            do người dùng tạo).</li>
+                        <li>variableName: tên biến (theo luật đặt tên của C++).</li>
+                    </ul>
+                </li>
+                <li>Ví dụ<br>
+                <span class="blue">int</span> soluong; <br>
+                <span class="blue">double</span> tyle; <br>
+                <span class="blue">char</span> loaiSP; <br>
+                string tenSP;
+                </li>
+                <li>Có thể khai báo nhiều biến có cùng kiểu dữ liệu:<br>int a, b, c, d;</li>
+                <li>Cú pháp khai báo biến và khởi tạo giá trị:
+                    <br><span class="red">dataType variableName = initialValue;</span> 
+                </li>
+                <li>Ví dụ<br>
+                    <span class="blue">int</span> soluong = 5; <br>
+                    <span class="blue">double</span> tyle = 0.05; <br>
+                    <span class="blue">char</span> loaiSP = 'K'; <br>
+                    <span class="blue">string</span> tenSP = "Kem danh rang";   
+                </li>
+            </ul>
+        <h2  class="tags">Một số lỗi thường gặp</h2>
+        <ul>
+            <li>Sử dụng biến chưa khai báo. <br>
+                <span class="blue">double</span> x = 12 * y; <span class="green">//loi vi bien y chua khai bao</span> <br>
+                <span class="blue">double</span> y = 0.0296;
+            </li>
+            <li>Sử dụng biến chưa được khởi tạo giá trị.<br>
+                <span class="blue">double</span> x; <br>
+                <span class="blue">double</span> y = x * 2;
+            </li>
+            <li>Gán giá trị khác kiểu cho biến. <br>
+                string hoten = 39; <span class="green">//loi</span> <br>
+                <span class="blue">int</span> n = "Hoai Thu"; <span class="green">//loi</span>
+            </li>
+        </ul>
+        <h2  class="tags" id="9">Hằng</h2>
+            <ul>
+                <li>Hằng (named constant) là một vùng nhớ dùng để lưu trữ
+                    một giá trị dữ liệu không thay đổi trong suốt thời gian
+                    chương trình thực thi.</li>
+                <li>Cú pháp định nghĩa hằng:<br>
+                    <span class="red">constdataType constantName = value;</span>
+                    <ul>
+                        <li>dataType: kiểu dữ liệu </li>
+                        <li>constantName: tên hằng (theo luật đặt tên của C++), thường dùng chữ in hoa.</li>
+                        <li>value: giá trị phù hợp với kiểu dữ liệu. </li>
+                    </ul>
+                <li>ví dụ<br>
+                    <span class="blue">const double</span> PI = 3.141593; <br>
+                    const double CM_PER_INCH = 2.54;<br> 
+                    const int SISO = 20; <br>
+                    const char BLANK = ' ';<br>
+                </li>
+            </ul>
+            <h2  class="tags" id="10">Nhập dữ liệu</h2>
+            <ul>
+                <li>Dùng câu lệnh nhập (input statement): đọc dữ liệu từ bàn phím.
+                    <br><span class="red">cin &gt;&gt; variableName</span>
+                </li>
+                <li>Ví dụ<br>
+                    cin &gt;&gt; bankinh;
+                </li>
+                <li>Dùng câu lệnh gán (asignment statement). <br>
+                    <span class="red">variableName = expression;</span>
+                    <ul>
+                        <li>Giá trị của biểu thức phải phù hợp với kiểu dữ liệu của biến.</li>
+                        <li>Dấu = gọi là toán tử gán (assignment operator).</li>
+                    </ul>
+                    <li>Ví dụ:<br>
+                        dientich = 3.14 * bankinh * bankinh;
+                    </li>
+                </li>
+            </ul>
+            <h2  class="tags" id="11">Câu lệnh nhập dữ liệu</h2>
+            <img src="img/CSLT/Noidung2/anh5.png" alt="hình ảnh nhập xuất dữ liệu">
+            <ul>
+                <li>Đối tượng cin được sử dụng cùng với toán tử >>.</li>
+                <li>Toán tử >> sẽ lấy ra các ký tự từ đối tượng và chuyển vào bộ
+                    nhớ, cho đến khi gặp <span class="blue">ký tự khoảng trắng</span> (tab, space, enter).
+                </li>
+            </ul>
+            <h2  class="tags" id="12">Nhập dữ liệu kiểu string</h2>
+            <span class="red">getline(cin, str);</span>
+            <ul>
+                <li>str là biến có kiểu string</li>
+                <li>đọc một chuỗi, kể cả khoảng trắng và lưu vào str</li>
+            </ul>
+            <p>Ví dụ</p>
+            <pre>
+                <span class="gray">#include </span> <span class="red">&lt;iostream&gt;</span>
+                <span class="gray">#include </span> <span class="red">&lt;string&gt;</span>
+                <span class="blue">using namespace </span> std;
+                <span class="blue">int</span> main()
+                    {
+                    <span class="lBlue">string</span> hoten;
+                    cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap vao ho va ten: ";</span>
+                    <span class="pink">getline</span>(cin, hoten);
+                    cout <span class="green">&lt;&lt;</span> <span class="red">"Chao ban "</span> <span class="green">&lt;&lt;</span> hoten <span class="green">&lt;&lt;</span> endl;
+                    }
+            </pre>
+            <h2  class="tags" id="13">Câu lệnh gán</h2>
+            <ul>
+                <li>Câu lệnh gán (assignment statement) dùng để gán giá trị cho 
+                    biến trong khi chương trình đang thực hiện.<br>
+                    <span class="blue">int</span> a = 3; <br>
+                    a = 4; <br>
+                    <span class="blue">int</span> b = a; <br>
+                    b = a + 5; <br>
+                    a = a + 7;
+                </li>
+                <li>Kiểu dữ liệu của biểu thức trong câu lệnh gán phải phù hợp 
+                    với kiểu dữ liệu của biến.</li>
+                <li>Có thể dùng câu lệnh gán cho biến kiểu string:<br>
+                    <span class="lBlue">string</span> s1 = "alpha"; <br>
+                    s1 = "beta"; <br>
+                    <span class="lBlue">string</span> s2 = s1; <br>
+                    s2 = s1 + "gamma"; <br>
+                    s1 = s1 + "delta";
+                </li>
+                <li>Câu lệnh khai báo và khởi tạo (initialization): tạo một biến 
+                    mới và gán cho biến giá trị ban đầu.</li>
+                <li>Câu lệnh gán (assignment): gán cho biến đã có một giá trị 
+                    mới.</li>
+            </ul>
+            <h2  class="tags" id="14">Toán tử gán phức hợp</h2>
+            <ul>
+                <li>Các toán tử gán phức hợp (composite assignment operators) 
+                    dùng để rút ngắn câu lệnh gán:
+                    <ul>
+                        <li>+= cộng gán</li>
+                        <li>-= trừ gán</li>
+                        <li>*= nhân gán</li>
+                        <li>/= chia gán</li>
+                        <li>%= modulo gán</li>
+                    </ul>
+                </li>
+                <li>Ví dụ:
+                    <ul>
+                        <li>a += 7;  <span class="green">//a = a + 7</span></li>
+                        <li>b -= 9;  <span class="green">//b = b - 9</span></li>
+                        <li>c *= 2;  <span class="green">//c = c * 2</span></li>
+                        <li>counter += 1;  <span class="green">//counter = counter + 1; tương đương ++counter;</span></li>
+                    </ul>
+                </li>
+            </ul>
+            <h2  class="tags" id="15">Câu lệnh xuất</h2>
+            <ul>
+                <li>Câu lệnh xuất (output statement): in dữ liệu ra màn hình.
+                    <br>cout <span class="green">&lt;&lt;</span> expression or manipulator <span class="green">&lt;&lt;</span> ...;
+                    <ul>
+                        <li>expression: tính giá trị của biểu thức sau đó in giá trị.</li>
+                        <li>manipulator: định dạng dữ liệu xuất.</li>
+                    </ul>
+                </li>
+                <li>Ví dụ:
+                <pre>
+                    cout <span class="green">&lt;&lt;</span> 29 / 4 <span class="green">&lt;&lt;</span> endl; 
+                    cout <span class="green">&lt;&lt;</span> 'A' <span class="green">&lt;&lt;</span> endl; 
+                    cout <span class="green">&lt;&lt;</span> <span class="red">"Hello \nthere!"</span> <span class="green">&lt;&lt;</span> endl;
+                    cout <span class="green">&lt;&lt;</span> <span class="red">"4 + 8 = "</span>  4 + 8 <span class="green">&lt;&lt;</span> endl;
+                    cout <span class="green">&lt;&lt;</span> <span class="red">"...1\n....2\n.....3\n"</span>; 
+                    hoặc 
+                    cout <span class="green">&lt;&lt;</span> <span class="red">"...1"</span> <span class="green">&lt;&lt;</span> endl <span class="green">&lt;&lt;</span> <span class="red">"....2"</span> <span class="green">&lt;&lt;</span> endl
+                    <span class="green">&lt;&lt;</span> <span class="red">".....3"</span> <span class="green">&lt;&lt;</span> endl;
+                </pre>
+                </li>
+            </ul>
+            <h2  class="tags" id="16">Định dạng xuất</h2>
+            <ul>
+                <li>Môi trường lập trình thường xuất 6 chữ số có nghĩa (mặc 
+                    định):<br>
+                    cout <span class="green">&lt;&lt;</span> 12.345678 <span class="green">&lt;&lt;</span> endl; <span class="green">//12.3457</span>
+                </li>
+                <li>Để định dạng dữ liệu xuất, ta phải thêm chỉ thị:<br>
+                    <span class="gray">#include </span> <span class="red">&lt;iomanip&gt;</span>
+                </li>
+                <li>Ví dụ hiển thị 2 chữ số lẻ:<br>
+                <pre>
+                cout <span class="green">&lt;&lt;</span> fixed <span class="green">&lt;&lt;</span> setprecision(2)
+                    <span class="green">&lt;&lt;</span>12.345678 <span class="green">&lt;&lt;</span> <span class="green">//12.35</span>
+                </pre>
+                </li>
+            </ul>
+            <h2  class="tags" id="17">Biểu thức</h2>
+            <ul>
+                <li>Biểu thức (expression) dùng để tính toán các giá trị, được tạo
+                    thành từ toán tử (operators) và toán hạng (operands).
+                    <ul>
+                        <li>Toán tử: thực hiện tính toán với toán hạng và cho kết quả là giá
+                            trị có một kiểu.
+                        </li>
+                        <li>Toán hạng: dữ liệu được toán tử tính toán.</li>
+                    </ul>
+                </li>
+                <li>Ví dụ:<br>
+                    2 + 3 * 5 <br>
+                    x - y / 7<br>
+                    x * 10.5 + y - 16.2<br>
+                    2 + 3.5<br>
+                    6 / 4 + 3.9<br>
+                    5.4 * 2 - 13.6 + 18 / 2
+                </li>
+            </ul>
+            <h2  class="tags" id="18">Độ ưu tiên của toán tử</h2>
+            <ul>
+                <li>Khi tính giá trị biểu thức: áp dụng luật ưu tiên của các toán tử.
+                    <img src="img/CSLT/Noidung2/anh6.png" alt="Độ ưu tiên toán tử">
+                </li>
+                <li>Ví dụ:
+                    <ul>
+                        <li><pre>(dai + rong) * 2       khác với        dai + rong * 2</pre></li>
+                        <li><pre>a * b + c / d          nghĩa là        (a * b) + (c / d)
+                                không phải      a * (b + c) / d
+                        </pre></li>
+                    </ul>
+                </li>
+            </ul>
+            <h2  class="tags" id="19">Lưu ý khi viết biểu thức</h2>
+            <ul>
+                <li><span>Thêm khoảng trắng trước và sau các toán tử trong biểu thức.</span>
+                <br>x1 - (-b + sqrt(b * b - 4 * a * c)) / (2 * a);<br>
+                    dễ đọc hơn:<br>
+                    x1-(-b+sqrt(b*b-4*a*c))/(2*a);
+                </li>
+                <li><span>Không thêm khoảng trắng sau tên hàm.</span><br>
+                    sqrt(x), <br>
+                    không viết <br>
+                    sqrt (x)
+                </li>
+            </ul>
+            <h2 class="tags" id="20">Biểu thức số học</h2>
+            <ul>
+                <li>Biểu thức số gồm toán tử số học và các toán hạng là số
+                    nguyên hoặc số dấu chấm động.
+                    <ul>
+                        <li>Toán tử số học: + - * / %</li>
+                        <li>Thứ tự ưu tiên: * / %  + -</li>
+                        <li>Lưu ý: toán tử % (modulo) chỉ dùng cho kiểu số nguyên.</li>
+                    </ul>
+                </li>
+                <li>Biểu thức kiểu số nguyên nếu các toán hạng có kiểu số
+                    nguyên.</li>
+                <li>Biểu thức kiểu số dấu chấm động nếu các toán hạng có kiểu
+                    số số dấu chấm động.</li>
+                <li>Ví dụ biểu thức kiểu số nguyên:<br>
+                    int dai = 4; <br>
+                    int rong = 5;<br>
+                    int dientich, chuvi;<br>
+                    dientich = dai * rong; <br>
+                    chuvi = (dai + rong) * 2
+                </li>
+                <li>Ví dụ biểu thức kiểu số dấu chấm động: <br>
+                    <spanan class="blue">const</spanan> double PI = 3.1414296; <br>
+                    <span class="blue">double</span> bankinh = 5.5; <br>
+                    <span class="blue">double</span> dientich; <br>
+                    <span class="blue">dientich</span> = PI * bankinh * bankinh;
+                </li>
+                <li>Ví dụ viết các biểu thức số học bằng C++:
+                    <img src="img/CSLT/Noidung2/anh7.png" alt="ví dụ biểu thức số học">
+                </li>
+                <h2  class="tags">Lưu ý</h2>
                 <ul>
-                    <li>Toán tử luận lý dùng để kết hợp các biểu thức luận lý.
-                        <img src="img/CSLT/Noidung2/anh12.png" alt="toán tử luận lý">
+                    <li>Nếu chia hai số nguyên thì phần dư sẽ bị cắt bỏ.<br>
+                        <span class="blue">int</span> tongsogiay = 3790; 
+                        <span class="blue">int</span> sogio = tongsogiay / 3600; <spe class="green">// sogio == 1</spe>
                     </li>
-                    <li>Ví dụ:
-                        <pre>
-                            (gioitinh == NU) && (tuoi >= 60)
-                            (diemGK >= 9 ) || (diemCK >= 9)
-                            !(xeploai == ’D’)
-                        </pre>
+                    <li>Phép chia lấy dư % dùng để lấy phần dư.<br>
+                        <span class="blue">int</span> sophut = tongsogiay % 3600 / 60;<spe class="green">//sophut==3</spe><br>
+                        <span class="blue">int</span> sogiay = tongsogiay % 3600 % 60;<spe class="green">//sogiay==10</spe><br>
                     </li>
-                    <li>Bảng chân trị:
-                        <img src="img/CSLT/Noidung2/anh11.png" alt="Bảng chân trị">
-                    </li>
-                    <li>Ví dụ:
-                    <pre>
-                        <span class="blue">bool</span> found = true; 
-                        <span class="green">int</span> age = 20; 
-                        <span class="green">double</span> hours = 45.30; 
-                        <span class="green">double</span> overTime = 15.0; 
-                        <span class="green">int</span> count = 20; 
-                        <span class="green">char</span> c = 'B';
-                        !found false
-                        hours > 40.00 true 
-                        age == 20 true 
-                        found && (age >= 18) <span class="green">false</span>
-                        hours + overTime &lt;= 75 <span class="green">true</span>
-                        (count >= 0) && (count &lt;= 100) <span class="green">true</span>
-                        ('A' &lt;= c) && (c &lt;= 'Z') <span class="green">true</span>
-                    </pre>
+                    <li>Tính lũy thừa và tính căn bậc 2: sử dụng hàm thư viện.<br>
+                        𝑥: sqrt(x)<br>
+                        x<sup>n</sup>: pow(x, n)
                     </li>
                 </ul>
-                
+                <h2  class="tags" id="21">Một số hàm toán học</h2>
+                <p>Để sử dụng hàm toán học, thêm header file cmath vào đầu chương trình:<br>
+                        <span class="gray">#include </span> <span class="red">&lt;iostream&gt;</span>
+                </p>
+                <img src="img/CSLT/Noidung2/anh8.png" alt="hàm toán học">
+                <h2  class="tags" id="22">Toán tử tăng và giảm</h2>
+                <ul>
+                    <li>Toán tử tăng 1:<br>
+                        <span class="red"></span>++variable <br>
+                        <span class="red"></span>variable++
+                    </li>
+                    <li>Toán tử giảm 1:<br>
+                        <span class="red"></span>--variable <br>
+                        <span class="red"></span>variable--
+                    </li>
+                    <li>Ví dụ
+                        <ul>
+                            <li>++count; hoặc count++;</li>
+                            <li>--count; hoặc count--;</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h2  class="tags" id="23">Chuyển đổi kiểu</h2>
+            <ul>
+                <li>Biểu thức có thể gồm nhiều kiểu dữ liệu khác nhau.
+                    2.5/2:  <span class="blue">double</span> chia cho <spe class="blue">int</spe>, kết quả là <spe class="blue">double</spe>.
+                </li>
+                <li>Nếu toán hạng có kiểu double thì kết quả là double, nếu toán
+                    hạng có kiểu int thì kết quả là int.
+                    <ul>
+                        <li>5/2 kết quả là 2 (không phải 2.5).</li>
+                        <li>2.5/2 nghĩa là 2.5/<spe class="blue">double</spe>(2) kết quả là 1.25.</li>
+                        <li>'a'+1 nghĩa là <spe class="blue">int</spe>('a')+1</li>
+                    </ul>
+                    </li>
+                    <li>Khi cần chương trình dịch sẽ chuyển đổi toán hạng kiểu <spe class="blue">int</spe>
+                        sang <span class="blue">double</span>, hoặc toán hạng kiểu char sang <spe class="blue">int</spe>. Sau đó
+                        chương trình dịch sẽ chuyển đổi kết quả lần nữa để sử dụng
+                        như là giá trị khởi tạo, hoặc giá trị bên vế phải phép gán.
+                    </li>
+                    <li>Ví dụ:<br>
+                        <span class="blue">double</span> d = 2.5;<br>
+                        <span class="blue">int</span> i = 2;<br>
+                        <span class="blue">double</span> d2 = d/i; <spe class="green">//d2 == 1.25</spe><br>
+                        <span class="blue">int</span> i2 = d/i; <spe class="green">//i2 == 1</spe><br>
+                        d2 = d/i; <span class="green">//d2 == 1.25</span><br>
+                        i2 = d/i; <span class="green">//i2 == 1</span>
+                    </li>
+                    <li>Ví dụ chuyển độ Celcius sang độ Fahrenheit: kết quả là số 
+                        nguyên.<br>
+                        <span class="blue">double</span> doC; <br>
+                        cin <span class="green">&gt;&gt;</span> doC; <br> 
+                        <span class="blue">double</span> doF = 9/5 * doC + 32; <span class="green">// 9/5==1, khong phai 1.5</span>
+                        <p>Giải pháp: chuyển 9 hoặc 5 hoặc cả hai sang double:</p>
+                        <span class="blue">double</span> doC; <br>
+                        cin <span class="green">&gt;&gt;</span> doC; <br> 
+                        <span class="blue">double</span> doF = 9/5 * doC + 32;
+                    </li>
+            </ul>
+            <h2  class="tags">Chuyển đổi kiểu</h2>
+            <img src="img/CSLT/Noidung2/anh9.png" alt="hình ảnh chuyển kiểu dữ liệu">
+            <h2  class="tags">Chuyển đổi kiểu tường minh</h2>
+            <span class="red">static_cast<type>(expression)</span>
+                <ul>
+                    <li>expression: biểu thức</li>
+                    <li>type: kiểu dữ liệu </li>
+                </ul>
+                <pre>
+                    static_cast&lt;int&gt;(7.9) 7 
+                        static_cast&lt;double&gt;(25) 25.0
+                        static_cast&lt;double&gt;(5+3) =static_cast&lt;double&gt;(8)
+                                                                =8.0
+                        static_cast&lt;double&gt;(15)/2 =15.0/2 = 15.0/2.0 
+                                                                = 7.5
+                        static_cast&lt;double&gt;(15/2) =static_cast&lt;double&gt;(7)
+                                                                    =7
+                </pre>
+                <h2  class="tags" id="24">Biểu thức luận lý</h2>
+                <ul>
+                    <li>Biểu thức luận lý có giá trị là true hoặc false, được tạo bởi 
+                        toán tử luận lý và toán tử quan hệ.
+                        <ul>
+                            <li>Toán tử luận lý: ! && || </li>
+                            <li>Toán tử quan hệ: &lt; > &lt;= >= == !=</li>
+                            <li><pre>Thứ tự ưu tiên:    !
+                                &lt; &lt;= >= >
+                                == !=
+                                &&
+                                ||</pre></li>
+                        </ul>
+                    </li>
+                    <li>Biểu thức luận lý được sử dụng trong các câu lệnh rẻ nhánh 
+                        if, <span class="pink">if...else</span> và câu lệnh lặp for, while, <span class="pink">do...while</span></li>
+                </ul>
+                <h2  class="tags" id="25">Toán tử quan hệ</h2>
+                <ul>
+                    <li>Toán tử quan hệ dùng để so sánh các giá trị trong chương 
+                        trình, cho kết kết quả là true hoặc false.
+                        <img src="img/CSLT/Noidung2/anh10.png" alt=""toán tử quan hệ>
+                    </li>
+                    <li>Các giá trị so sánh phải có cùng kiểu dữ liệu.<br>
+                        8 &lt; '5': không thể so sánh.
+                    </li>
+                    <li>So sánh ký tự: dựa vào mã ASCII.<br>
+                        ' ' &lt; 'a' true<br>
+                        'R' &gt; 'T' false<br>
+                        '+' &gt; '*' false <br>
+                        'A' &gt;= 'a' true
+                    </li>
+                    <li>So sánh chuỗi: theo thứ tự từ điển. 
+                        <pre>
+                        <span class="pink">string</span> s1 = "Hello"; 
+                        <span class="pink">string</span> s2 = "Hi"; 
+                        <span class="pink">string</span> s3 = "Air"; 
+                        <span class="pink">string</span> s4 = "Bill";
+                        s1 &lt; s2         <span class="green">true</span>  
+                        s3 &lt; "An"       <span class="green">true </span>
+                        s1 == "hello"      <span class="green">false</span>
+                        s3 &lt;= s4        <span class="green">true</span>
+                        </pre>
+                    </li> 
+                </ul>
+                    <h2  class="tags" id="26">Toán tử luận lý</h2>
+                    <ul>
+                        <li>Toán tử luận lý dùng để kết hợp các biểu thức luận lý.
+                            <img src="img/CSLT/Noidung2/anh12.png" alt="toán tử luận lý">
+                        </li>
+                        <li>Ví dụ:
+                            <pre>
+                                (gioitinh == NU) && (tuoi >= 60)
+                                (diemGK >= 9 ) || (diemCK >= 9)
+                                !(xeploai == ’D’)
+                            </pre>
+                        </li>
+                        <li>Bảng chân trị:
+                            <img src="img/CSLT/Noidung2/anh11.png" alt="Bảng chân trị">
+                        </li>
+                        <li>Ví dụ:
+                        <pre>
+                            <span class="blue">bool</span> found = true; 
+                            <span class="green">int</span> age = 20; 
+                            <span class="green">double</span> hours = 45.30; 
+                            <span class="green">double</span> overTime = 15.0; 
+                            <span class="green">int</span> count = 20; 
+                            <span class="green">char</span> c = 'B';
+                            !found false
+                            hours > 40.00 true 
+                            age == 20 true 
+                            found && (age >= 18) <span class="green">false</span>
+                            hours + overTime &lt;= 75 <span class="green">true</span>
+                            (count >= 0) && (count &lt;= 100) <span class="green">true</span>
+                            ('A' &lt;= c) && (c &lt;= 'Z') <span class="green">true</span>
+                        </pre>
+                        </li>
+                    </ul>
+                </section>
+
+                <!--Phần footer-->
+        <footer>
+            <div class=" boxFoots ">
+                <div class="boxFoot about-us ">
+                    <div>
+    
+                        <h3>GIỚI THIỆU</h3>
+                        <p>Chúng tôi luôn nỗ lực hàng ngày để gắn kết mối chia sẻ giao lưu và học hỏi cùng các bạn. Chúc các bạn 1 ngày học hỏi thật tốt</p>
+    
+                        <ul class="netWork ">
+                            <li><a href="# "><i class="fa fa-facebook "></i></a></li>
+                            <li>
+                                <a href="# "><i class="fa fa-youtube "></i></a>
+                            </li>
+                            <li>
+                                <a href="# "><i class="fa fa-instagram "></i></a>
+                            </li>
+                            <li>
+                                <a href="# "><i class="fa fa-twitter "></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="boxFoot lienket ">
+                    <div>
+                        <h3>LIÊN KẾT</h3>
+                        <ul class="link ">
+                            <li><a href="# " class="trangchu "><i class="far fa-hand-point-right "></i>  Trang chủ</a></li>
+                            <li><a href="# "><i class="far fa-hand-point-right "></i>  Lập trình</a></li>
+                            <li><a href="# " class="serviceGame"><i class="far fa-hand-point-right "></i>  Dịch Vụ Game</a></li>
+                            <li><a href="naptien.html "><i class="far fa-hand-point-right "></i>  Nạp thẻ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="boxFoot ">
+                    <div>
+                        <h3>LIÊN HỆ</h3>
+                        <ul class="info ">
+                            <li>
+                                <span><i class="fa fa-map-marker "></i></span>
+                                <span><a href="https://goo.gl/maps/utvMFuRAP4oDHTwQ6">Đường xa lộ Hà Nội, phường Bình Thắng, tp Dĩ An, tỉnh Bình Dương</a></span>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-phone "></i></span>
+                                <a href="#">+84 234 790 109</a>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-envelope "></i></span>
+                                <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">vongngocthank@gmail.com</a></li>
+                            <li>
+                                <input type="text" placeholder="Liên hệ qua Email... " />
+                                <input type="button" value="subscriber " />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
            
         </body>
 </html>

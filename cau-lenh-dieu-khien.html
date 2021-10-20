@@ -7,438 +7,530 @@
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/noiDung.js"></script>
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+        <link href="css/trangchu.css" rel="stylesheet" />
+        <script src="js/trangchu.js"></script>
+        <link href="css/info.css" rel="stylesheet" />
+        <!--thư viện internet-->
+        <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
+
+        <!--bootrap font-awesome nằm dưới font-awesomw-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+
+        <!--Phần header-->
+        <header class="animate__animated animate__fadeInDown">
+            <div class="logo">
+                <h1 class="animate__animated animate__bounce"><a href="#">WebHoc360</a></h1>
+                <div id="navBar">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+    
+            <div class="search">
+                <input type="text" placeholder="search..">
+                <input type="button" id="click" value="search">
+            </div>
+            <nav class="menu">
+                <ul class="menu-x">
+                    <li><a href="#" class="trangchu"><i class="fas fa-home">Trang chủ</i></a></li>
+                    <li class="sub">
+                        <a href="#"><i class="fas fa-graduation-cap">Lập Trình</i></a>
+                        <ul class="subcontent menu">
+                            <li><a href="gioi-thieu-lap-trinh.html">Lập trình và ngôn ngữ C++</a></li>
+                            <li><a href="bien&kieu-du-lieu.html">Biến và kiểu dữ liệu</a></li>
+                            <li><a href="cau-lenh-dieu-khien.html">Câu lệnh điều khiển</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub">
+                        <a href="#" class="games"><i class="fas fa-gamepad">Dịch Vụ Game</i></a>
+                    </li>
+                </ul>
+    
+                <ul class="menuSign">
+                    <li><a href="login.html" class="btnL"><i class="fas fa-sign-in-alt"></i>  Đăng Nhập</a></li>
+    
+    
+                    <li><a href="register.html" class="btnR"><i class="fas fa-user-plus"></i>  Đăng Ký</a></li>
+                </ul>
+    
+            </nav>
+        </header>
+
+      
+
+        <!--Phần nội dung-->
         <div>
             <a id="gototop" href="javascript:;" ><i class="fas fa-home">GO TO TOP</i></a>
         </div>  
-        <h1 class="tag"><span>Câu lệnh điều khiển</span></h1>
+        <section class="body">
+            <h1 class="tag"><span>Câu lệnh điều khiển</span></h1>
 
-        <div class="der">
+            <div class="der">
+                <ul>
+                    <li><a href="#1">Câu lệnh if-else</a></li>
+                    <li><a href="#2">Một số lỗi thường gặp trong if-else</a></li>
+                    <li><a href="#3">Cú pháp if-else đa chiều</a></li>
+                    <li><a href="#4">Câu lệnh rẽ nhánh</a></li>
+                    <li><a href="#5">Toán tử điều kiện</a>
+                    <li><a href="#6">Câu lệnh lựa chọn switch</a></li>
+                    <li><a href="#7">Cấu trúc lặp while</a></li>
+                    <li><a href="#8">Cấu trúc lặp while</a></li>
+                    <li><a href="#9">Cấu trúc lặp for</a></li>
+                    <li><a href="#10">Một số lưu ý trong cấu trúc lặp</a></li>
+                    <li><a href="#11">Lệnh break và continue</a> </a></li>
+                </ul>
+            </div>
+
+        
+            <h2 class="tags" id="1">if-else</h2>
+            <h3 class="tagss">Cú pháp</h3>
+            <div class="post">
+                <div class="col40">
+                    <pre class="red">
+                if (condition)
+                    statement_1;
+                [else
+                    statement_2;]
+                    </pre>
+                </div>
+                <div class="col50">
+                    <img src="img/CSLT/Noidung3/photo1.png" alt="sơ đồ khối câu lệnh if-else">
+                </div>
+            </div> 
+        <h3 class="tagss">Trong đó:</h3>
             <ul>
-                <li><a href="#1">Câu lệnh if-else</a></li>
-                <li><a href="#2">Một số lỗi thường gặp trong if-else</a></li>
-                <li><a href="#3">Cú pháp if-else đa chiều</a></li>
-                <li><a href="#4">Câu lệnh rẽ nhánh</a></li>
-                <li><a href="#5">Toán tử điều kiện</a>
-                <li><a href="#6">Câu lệnh lựa chọn switch</a></li>
-                <li><a href="#7">Cấu trúc lặp while</a></li>
-                <li><a href="#8">Cấu trúc lặp while</a></li>
-                <li><a href="#9">Cấu trúc lặp for</a></li>
-                <li><a href="#10">Một số lưu ý trong cấu trúc lặp</a></li>
-                <li><a href="#11">Lệnh break và continue</a> </a></li>
+                <li><span class="red">condition</span> (điều kiện): là một biểu thức luận lý, trả về giá
+                    trị đúng (true) hoặc sai (false).
+                </li>
+                <li><span class="red">statement_1</span> và <span class="red">statement_2</span> (câu lệnh 1 và câu lệnh 2):
+                    có thể là lệnh rỗng, lệnh đơn hoặc khối lệnh</li>
+                <li>Dấu <span class="red">[</span> và <span class="red">]</span> cho biết nội dung bên trong có thể khuyết.</li>
             </ul>
-        </div>
-
-      
-        <h2 class="tags" id="1">if-else</h2>
-        <h3 class="tagss">Cú pháp</h3>
-        <div class="post">
-            <div class="col40">
-                <pre class="red">
-            if (condition)
-                statement_1;
-            [else
-                statement_2;]
-                </pre>
-            </div>
-            <div class="col50">
-                <img src="img/CSLT/Noidung3/photo1.png" alt="sơ đồ khối câu lệnh if-else">
-            </div>
-        </div> 
-       <h3 class="tagss">Trong đó:</h3>
-        <ul>
-            <li><span class="red">condition</span> (điều kiện): là một biểu thức luận lý, trả về giá
-                 trị đúng (true) hoặc sai (false).
-            </li>
-            <li><span class="red">statement_1</span> và <span class="red">statement_2</span> (câu lệnh 1 và câu lệnh 2):
-                có thể là lệnh rỗng, lệnh đơn hoặc khối lệnh</li>
-            <li>Dấu <span class="red">[</span> và <span class="red">]</span> cho biết nội dung bên trong có thể khuyết.</li>
-        </ul>
-        <h3 class="tagss">Ví dụ 1:</h3>
-        <p>Viết chương trình nhận vào điểm trung bình 1 môn học của
-            một sinh viên. Xuất ra màn hình thông báo cho biết sinh
-            viên này đậu hay rớt? Biết rằng nếu điểm trung bình từ 5
-            trở lên là đậu, ngược lại là rớt.
-        </p>
-        <h3 class="tagss">Phân tích (analysis):</h3>
-        <ul>
-            <li>Input: <span class="red">diem</span> (điểm trung bình)</li>
-            <li>Output: xuất thông báo <span class="red">Dau / Rot</span></li>
-        </ul>
-        <h3 class="tagss">Ví dụ 1:</h3>
-        <div class="post">
-            <div class="col40">
-               <ul>Thiết kế (design)
-                    <li>Nhập <span class="red">diem</span></li>
-                    <li>Nếu diem >= 5 đúng thì xuất <span class="red">Dau</span></li>
-                    <li>Ngược lại thì xuất <span class="red">Rot</span></li>
-               </ul>
-            </div>
-            <div class="col50">
-                <img src="img/CSLT/Noidung3/photo2.png" alt="sơ đồ khối">
-            </div>
-        </div> 
-        <h3 class="tagss">Ví dụ 1</h3>
-        <div class="post"> 
-            <div class="col40">
-                <h3>Thiết kế</h3>
-                <img src="img/CSLT/Noidung3/photo3.png" alt="sơ đồ khối">
-            </div>
-            <div class="col50">
-               <h4>Lập trình (programming)</h4>
-               <pre>
-                <span class="gray">#include</span> <span class="red">&lt;iostream&gt;</span>
-                <span class="blue">using namespace</span> std;
-                <span class="blue">int</span> main()
-                {
-                    <span class="blue">double</span> diem;
-                    cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap diem: "</span>;
-                    cin <span class="green">&gt;&gt;</span> diem;
-                    <span class="pink">if</span> (diem >= 5)
-                    cout <span class="green">&lt;&lt;</span> <span class="red">"Dau\n"</span>;
-                    <span class="pink">else</span>
-                    cout <span class="green">&lt;&lt;</span> <span class="red">"Rot\n"</span>;
-                    <span class="blue">return</span> 0;
-                    }
-               </pre>
-            </div>
-        </div> 
-        <h3 class="tagss">Ví dụ 1:</h3>
-        <div class="post"> 
-            <div class="col40">
-                <h3>Kiểm thử (testing)</h3>
-                <table border="2">
-                    <tr>
-                        <th>diem </th>
-                        <th>Kết quả</th>
-                    </tr>
-                    <tr>
-                        <td>7.2</td>
-                        <td>Dau</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Dau</td>
-                    </tr>
-                    <tr>
-                        <td>4.9</td>
-                        <td>Rot</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col50">
-               <h4>Lập trình (programming)</h4>
-               <pre>
-                <span class="gray">#include</span> <span class="red">&lt;iostream&gt;</span>
-                <span class="blue">using namespace</span> std;
-                <span class="blue">int</span> main()
-                {
-                    <span class="blue">double</span> diem;
-                    cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap diem: "</span>;
-                    cin <span class="green">&gt;&gt;</span> diem;
-                    <span class="pink">if</span> (diem >= 5)
-                    cout <span class="green">&lt;&lt;</span> <span class="red">"Dau\n"</span>;
-                    <span class="pink">else</span>
-                    cout <span class="green">&lt;&lt;</span> <span class="red">"Rot\n"</span>;
-                    <span class="blue">return</span> 0;
-                    }
-               </pre>
-            </div>
-        </div>
-         <h3 class="tagss" id="2">Một số lỗi thường gặp</h3>
-         <ul>
-             <li>Trong biểu thức luận lý thường nhầm lẫn phép so sánh 
-                (dấu ==) với phép gán ( dấu = )<br>
+            <h3 class="tagss">Ví dụ 1:</h3>
+            <p>Viết chương trình nhận vào điểm trung bình 1 môn học của
+                một sinh viên. Xuất ra màn hình thông báo cho biết sinh
+                viên này đậu hay rớt? Biết rằng nếu điểm trung bình từ 5
+                trở lên là đậu, ngược lại là rớt.
+            </p>
+            <h3 class="tagss">Phân tích (analysis):</h3>
+            <ul>
+                <li>Input: <span class="red">diem</span> (điểm trung bình)</li>
+                <li>Output: xuất thông báo <span class="red">Dau / Rot</span></li>
+            </ul>
+            <h3 class="tagss">Ví dụ 1:</h3>
+            <div class="post">
+                <div class="col40">
+                <ul>Thiết kế (design)
+                        <li>Nhập <span class="red">diem</span></li>
+                        <li>Nếu diem >= 5 đúng thì xuất <span class="red">Dau</span></li>
+                        <li>Ngược lại thì xuất <span class="red">Rot</span></li>
+                </ul>
+                </div>
+                <div class="col50">
+                    <img src="img/CSLT/Noidung3/photo2.png" alt="sơ đồ khối">
+                </div>
+            </div> 
+            <h3 class="tagss">Ví dụ 1</h3>
+            <div class="post"> 
+                <div class="col40">
+                    <h3>Thiết kế</h3>
+                    <img src="img/CSLT/Noidung3/photo3.png" alt="sơ đồ khối">
+                </div>
+                <div class="col50">
+                <h4>Lập trình (programming)</h4>
                 <pre>
-                    <span class="pink">if</span> (x = y) 
-                    cout  <span class="green">&lt;&lt;</span>  <span class="red">“x va y bang nhau”</span> <span class="green">&lt;&lt;</span> endl;
+                    <span class="gray">#include</span> <span class="red">&lt;iostream&gt;</span>
+                    <span class="blue">using namespace</span> std;
+                    <span class="blue">int</span> main()
+                    {
+                        <span class="blue">double</span> diem;
+                        cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap diem: "</span>;
+                        cin <span class="green">&gt;&gt;</span> diem;
+                        <span class="pink">if</span> (diem >= 5)
+                        cout <span class="green">&lt;&lt;</span> <span class="red">"Dau\n"</span>;
+                        <span class="pink">else</span>
+                        cout <span class="green">&lt;&lt;</span> <span class="red">"Rot\n"</span>;
+                        <span class="blue">return</span> 0;
+                        }
                 </pre>
-                <p>Khi biên dịch không báo lỗi (error) hay cảnh báo
-                    (warning), luôn luôn mặc định giá trị của biểu thức luận lý
-                    là đúng (true)
-                </p>
-            </li>
-            <li>Gõ dấu ; ngay sau biểu thức luận lý vì như vậy lệnh ngay sau 
-                đó sẽ luôn thực hiện dù biểu thức luận lý có giá trị là sai 
-                (false)
+                </div>
+            </div> 
+            <h3 class="tagss">Ví dụ 1:</h3>
+            <div class="post"> 
+                <div class="col40">
+                    <h3>Kiểm thử (testing)</h3>
+                    <table border="2">
+                        <tr>
+                            <th>diem </th>
+                            <th>Kết quả</th>
+                        </tr>
+                        <tr>
+                            <td>7.2</td>
+                            <td>Dau</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Dau</td>
+                        </tr>
+                        <tr>
+                            <td>4.9</td>
+                            <td>Rot</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col50">
+                <h4>Lập trình (programming)</h4>
                 <pre>
-                    <span class="pink">if</span> (x = y) ;
-                    cout  <span class="green">&lt;&lt;</span>  <span class="red">“x va y bang nhau”</span> <span class="green">&lt;&lt;</span> endl;
+                    <span class="gray">#include</span> <span class="red">&lt;iostream&gt;</span>
+                    <span class="blue">using namespace</span> std;
+                    <span class="blue">int</span> main()
+                    {
+                        <span class="blue">double</span> diem;
+                        cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap diem: "</span>;
+                        cin <span class="green">&gt;&gt;</span> diem;
+                        <span class="pink">if</span> (diem >= 5)
+                        cout <span class="green">&lt;&lt;</span> <span class="red">"Dau\n"</span>;
+                        <span class="pink">else</span>
+                        cout <span class="green">&lt;&lt;</span> <span class="red">"Rot\n"</span>;
+                        <span class="blue">return</span> 0;
+                        }
                 </pre>
-                <p>Màn hình khi biên dịch hiển thị lỗi cảnh báo:</p>
-                <pre class="red">warning C4390: ';' : empty controlled statement found; is this the intent?</pre>
-                <p>Giả sử x = 3 và y = 4 thì câu x và y bằng nhau vẫn được xuất
-                    ra màn hình</p>
-            </li>
-            <li> Gõ biểu thức luận lý sau mệnh đề else.</li>
-            <pre>
-                <span class="pink">if</span> (x == y) 
-                cout  <span class="green">&lt;&lt;</span>  <span class="red">“x va y bang nhau”</span> <span class="green">&lt;&lt;</span> endl;
-                <span class="pink">else</span> <del>(x != y) </del>
-                cout  <span class="green">&lt;&lt;</span>  <span class="red">“x va y khong bang nhau”</span> <span class="green">&lt;&lt;</span> endl;
-            </pre>
-            <p>Khi biên dịch màn hình thông báo lỗi cú pháp </p>
-         </ul>
-         <h2 class="tags" id="3">Cú pháp if-else đa chiều</h2>
-         <pre class="red">
-            if (condition)
-                statement;
-            else
+                </div>
+            </div>
+            <h3 class="tagss" id="2">Một số lỗi thường gặp</h3>
+            <ul>
+                <li>Trong biểu thức luận lý thường nhầm lẫn phép so sánh 
+                    (dấu ==) với phép gán ( dấu = )<br>
+                    <pre>
+                        <span class="pink">if</span> (x = y) 
+                        cout  <span class="green">&lt;&lt;</span>  <span class="red">“x va y bang nhau”</span> <span class="green">&lt;&lt;</span> endl;
+                    </pre>
+                    <p>Khi biên dịch không báo lỗi (error) hay cảnh báo
+                        (warning), luôn luôn mặc định giá trị của biểu thức luận lý
+                        là đúng (true)
+                    </p>
+                </li>
+                <li>Gõ dấu ; ngay sau biểu thức luận lý vì như vậy lệnh ngay sau 
+                    đó sẽ luôn thực hiện dù biểu thức luận lý có giá trị là sai 
+                    (false)
+                    <pre>
+                        <span class="pink">if</span> (x = y) ;
+                        cout  <span class="green">&lt;&lt;</span>  <span class="red">“x va y bang nhau”</span> <span class="green">&lt;&lt;</span> endl;
+                    </pre>
+                    <p>Màn hình khi biên dịch hiển thị lỗi cảnh báo:</p>
+                    <pre class="red">warning C4390: ';' : empty controlled statement found; is this the intent?</pre>
+                    <p>Giả sử x = 3 và y = 4 thì câu x và y bằng nhau vẫn được xuất
+                        ra màn hình</p>
+                </li>
+                <li> Gõ biểu thức luận lý sau mệnh đề else.</li>
+                <pre>
+                    <span class="pink">if</span> (x == y) 
+                    cout  <span class="green">&lt;&lt;</span>  <span class="red">“x va y bang nhau”</span> <span class="green">&lt;&lt;</span> endl;
+                    <span class="pink">else</span> <del>(x != y) </del>
+                    cout  <span class="green">&lt;&lt;</span>  <span class="red">“x va y khong bang nhau”</span> <span class="green">&lt;&lt;</span> endl;
+                </pre>
+                <p>Khi biên dịch màn hình thông báo lỗi cú pháp </p>
+            </ul>
+            <h2 class="tags" id="3">Cú pháp if-else đa chiều</h2>
+            <pre class="red">
                 if (condition)
                     statement;
                 else
                     if (condition)
                         statement;
-                         …
-                     else
-                        statement;
-         </pre>
-         <h3 class="tagss">Ví dụ</h3>
-         <p>Viết chương trình nhận vào 2 số nguyên. Xuất ra màn hình 
-            kết quả so sánh giữa hai số (số thứ nhất lớn hơn, nhỏ hơn 
-            hay hai số bằng nhau)
-        </p>
-        <table border="2" width=100% >
-            <tr>
-                <th>Input </th>
-                <th>Processing</th>
-                <th>Output</th>
-            </tr>
-            <tr>
-                <td>2 số nguyên a, b
-                </td>
-                <td>
+                    else
+                        if (condition)
+                            statement;
+                            …
+                        else
+                            statement;
+            </pre>
+            <h3 class="tagss">Ví dụ</h3>
+            <p>Viết chương trình nhận vào 2 số nguyên. Xuất ra màn hình 
+                kết quả so sánh giữa hai số (số thứ nhất lớn hơn, nhỏ hơn 
+                hay hai số bằng nhau)
+            </p>
+            <table border="2" width=100% >
+                <tr>
+                    <th>Input </th>
+                    <th>Processing</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>2 số nguyên a, b
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Nhập a, b</li>
+                            <li>Nếu a > b đúng thì xuất <span class="red">“so thu
+                                nhat lon hon so thu hai”</span>
+                            </li>
+                            <li>Ngược lại (ngầm hiểu a > b là sai)
+                                thì so sánh nếu a &lt; b đúng thì xuất
+                                <span class="red">“so thu nhat nho hon so thu hai”</span>
+                            </li>
+                            <li>Ngược lại (ngầm hiểu a > b sai và a
+                                &lt; b cũng sai) thì xuất <span class="red">“hai so bang
+                                nhau”</span>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>Xuất kết quả so sánh</td>
+                </tr>
+            </table>
+            <h3 class="tagss">Sơ đồ khối</h3>
+            <img src="img/CSLT/Noidung3/photo4.png" alt="sơ đồ khối">
+            <h3 class="tagss">Phần code</h3>
+            <pre>
+                    <span class="gray">#include</span> <span class="red">&lt;iostream&gt;</span>
+                    <span class="blue">using namespace</span> std;
+                    <span class="blue">int</span> main()
+                    {
+                        <span class="blue">int</span> a,b;
+                        cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap so nguyen thu nhat: "; </span>
+                        cin <span class="green">&gt;&gt;</span> a;
+                        cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap so nguyen thu hai: "; </span>
+                        cin <span class="green">&gt;&gt;</span> b;
+                        <span class="pink">if</span> (a > b)
+                            cout <span class="green">&lt;&lt;</span> <span class="red">"So thu nhat lon hon so thu hai\n";</span>
+                        <span class="pink">else</span>
+                        <span class="pink">if</span> (a &lt; b)
+                            cout <span class="green">&lt;&lt;</span> <span class="red">"So thu nhat nho hon so thu hai\n";</span>
+                        <span class="pink">else</span>
+                            cout <span class="green">&lt;&lt;</span> <span class="red">"Hai so bang nhau\n";</span>
+                        <span class="blue">return</span> 0;
+                    }
+            </pre>
+            <h2 class="tags" id="4">Câu lệnh rẽ nhánh</h2>
+            <h3 class="tagss">Lưu ý</h3>
+            <ul>
+                <li>Lệnh điều khiển rẽ nhánh có thể dùng để kiểm tra dữ liệu
+                    nhập vào có hợp lệ hay không.
+                    <pre>
+                        <span class="blue">double</span> diem;
+                        cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap diem: "; </span>
+                        cin <span class="green">&gt;&gt;</span> diem;
+                        <span class="pink">if</span> (diem >= 0 && diem &lt;= 10)
+                        {
+                            <span class="green">//diem hop le</span>
+                            <span class="green">//thuc hien cac viec tinh toan khi diem hop le va xuat ket qua</span>
+                        }
+                        <span class="pink">else</span>
+                            cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap diem khong hop le!"; </span>
+                    </pre>
+                </li>
+                <li>Nếu cùng 1 yêu cầu tính toán, lệnh if-else sẽ giải quyết
+                    nhanh hơn liên tục nhiều lệnh if khuyết else.
+                    <div class="post">
+                        <div class="col40">
+                            <pre>
+        <span class="pink">if</span> (a % 2 == 0)
+                cout <span class="green">&lt;&lt;</span> <span class="red">"a la so chan<span class="green">\n</span>"; </span>
+        <span class="pink">else</span>
+                cout <span class="green">&lt;&lt;</span> <span class="red">"a la so le<span class="green">\n</span>"; </span>
+                            </pre>
+                        </div>
+                        <div class="col50">
+                            <img src="img/CSLT/Noidung3/photo11.png" alt="sơ đồ khối">
+                        </div>
+                    </div> 
+                </li>
+                <li>
+                    Nếu cùng 1 yêu cầu tính toán, lệnh if-else sẽ giải quyết
+                    nhanh hơn liên tục nhiều lệnh if khuyết else.
+                    <div class="post">
+                        <div class="col40">
+                            <pre>
+        <span class="pink">if</span> (a % 2 == 0)
+                cout <span class="green">&lt;&lt;</span> <span class="red">"a la so chan<span class="green">\n</span>"; </span>
+        <span class="pink">if</span> (a & 2 != 0)
+                cout <span class="green">&lt;&lt;</span> <span class="red">"a la so le<span class="green">\n</span>"; </span>
+                            </pre>
+                        </div>
+                        <div class="col50">
+                            <img src="img/CSLT/Noidung3/photo5.png" alt="sơ đồ khối">
+                        </div>
+                    </div> 
+                </li>
+                <li>
+                    Khi sử dụng if..else lồng nhau, nếu không có khối lệnh
+                    ngăn cách bởi cặp dấu { và } thì trình biên dịch luôn hiểu
+                    else sẽ là trường hợp ngược lại của if gần nhất.
+                    <pre>
+                        <span class="pink">if</span> (x == 2)
+                            <span class="pink">if</span> (y == 4)
+                                cout <span class="green">&lt;&lt;</span> <span class="red">“x bang 2 va y bang 4”</span>“x bang 2 va y bang 4” <span class="green">&lt;&lt;</span> endl;
+                            <span class="pink">else</span>
+                                cout <span class="green">&lt;&lt;</span> <span class="red">“x khac 2”</span> <span class="green">&lt;&lt;</span> endl;
+                    </pre>
+                    <p>Nếu nhập x = 2, y = 5 thì sẽ xuất câu x khac 2<br>
+                    Nếu nhập x = 3, y = 4 thì không xuất gì cả</p>
+                </li>
+                <li>
+                    Khi sử dụng if..else lồng nhau, nếu không có khối lệnh
+                    ngăn cách bởi cặp dấu { và } thì trình biên dịch luôn hiểu
+                    else sẽ là trường hợp ngược lại của if gần nhất
+                    <pre>
+                        <span class="pink">if</span> (x == 2)
+                        {
+                            <span class="pink">if</span>if(y == 4)
+                                cout <span class="green">&lt;&lt;</span> <span class="red">“x bang 2 va y bang 4”</span> <span class="green">&lt;&lt;</span> endl;
+                        }
+                        <span class="pink">else</span> 
+
+                                cout <span class="green">&lt;&lt;</span> <span class="red">“x khac 2”</span> <span class="green">&lt;&lt;</span> endl;
+                    </pre>
+                    <p>
+                        Nếu nhập x = 2, y = 5 thì sẽ không xuất gì cả<br>Nếu nhập x = 3, y = 4 thì xuất x khac 2
+                    </p>
+                </li>
+            </ul>
+            <h2 class="tags" id="5">Toán tử điều kiện</h2>
+            <ul>
+                <li>Toán tử điều kiện: mang ý nghĩa tương đương với if-else.
+                    <span class="red">condition ? expression_1 : expression_2;</span>
+                </li>
+                <li>Trong đó
                     <ul>
-                        <li>Nhập a, b</li>
-                        <li>Nếu a > b đúng thì xuất <span class="red">“so thu
-                            nhat lon hon so thu hai”</span>
-                        </li>
-                        <li>Ngược lại (ngầm hiểu a > b là sai)
-                            thì so sánh nếu a &lt; b đúng thì xuất
-                            <span class="red">“so thu nhat nho hon so thu hai”</span>
-                        </li>
-                        <li>Ngược lại (ngầm hiểu a > b sai và a
-                            &lt; b cũng sai) thì xuất <span class="red">“hai so bang
-                            nhau”</span>
-                        </li>
+                        <li><span class="red">condition</span>: điều kiện, là một biểu thức luận lý (true/false)</li>
+                        <li>Nếu <span class="red">condition</span> có giá trị <span class="red">true</span> thì sẽ thực hiện tính toán và 
+                            trả về kết quả <span class="red">expression_1</span> (biểu thức 1).</li>
+                        <li>Nếu <span class="red">condition</span> có giá trị <span class="red">false</span> thì sẽ thực hiện tính toán và 
+                            trả về kết quả <span class="red">expression_2</span> (biểu thức 2).</li>
                     </ul>
-                </td>
-                <td>Xuất kết quả so sánh</td>
-            </tr>
-        </table>
-        <h3 class="tagss">Sơ đồ khối</h3>
-        <img src="img/CSLT/Noidung3/photo4.png" alt="sơ đồ khối">
-        <h3 class="tagss">Phần code</h3>
-        <pre>
-                <span class="gray">#include</span> <span class="red">&lt;iostream&gt;</span>
+                </li>
+            </ul>
+            <p>Ví dụ: chương trình tìm số lớn nhất của 2 số nguyên a và b.</p>
+            <pre>
+                <span class="gray">#include</span> <span class="red">iostream</span>
+                <span class="blue">using namespace</span> std;
+                <span class="blue">int</span> main() 
+                {
+                    <span class="blue">int</span> a, b;
+                    <span class="blue">int</span> max;
+                    cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap so thu nhat: "</span>; 
+                    cin <span class="green">&gt;&gt;</span> a;
+                    cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap so thu hai: "</span>; 
+                    cin <span class="green">&gt;&gt;</span> b;
+                    max = a >= b ? a : b;
+                    cout <span class="green">&lt;&lt;</span> <span class="red">"So lon nhat la: "</span> <span class="green">&lt;&lt;</span> max <span class="green">&lt;&lt;</span> endl;
+                }
+            </pre>
+            <p>
+                Nếu nhập a = 3, b = 5 thì kết quả max là 5
+                Nếu nhập a = 7, b = 2 thì kết quả max là 7
+            </p>
+            <h2 class="tags" id="5">Câu lệnh lựa chọn switch</h2>
+            <h3 class="tagss">Cú pháp</h3>
+            <div class="post">
+                <div class="col40">
+                <ul>
+                        <li>Giá trị của <span class="red">expression</span>có kiểu: bool, char hoặc int.</li>
+                        <li>Mỗi nhãn <span class="red">case </span> có một giá trị <span class="red">(value).</span></li>
+                        <li><span class="red">value</span> là hằng và có cùng kiểu dữ liệu với <span class="red">expression</span></li>
+                        <li>Câu lệnh <span class="red">break</span> dùng thoát cấu trúc switch</li>
+                        <li>Nhãn <span class="red">default</span> có thể khuyết</li>
+                </ul>
+                </div>
+                <div class="col50">
+                    <pre class="red">
+                        switch(expression) 
+                        { 
+                        case value_1:
+                        statements;
+                        break;
+                        case value_2:
+                        statements;
+                        break;
+                        ...
+                        case value_n:
+                        statements;
+                        break;
+                        [default:
+                        statements;]
+                        }
+                    </pre>
+                </div>
+            </div> 
+            <h3 class="tagss">Sơ đồ khối</h3>
+            <img src="img/CSLT/Noidung3/photo6.png" alt="sơ đồ khối">
+            <h3>Ví dụ</h3>
+            <p>Viết chương trình nhận vào một số từ 0 đến 9. Xuất ra màn
+                hình đọc số đó dưới dạng chữ, nếu ngoài phạm vi từ 0 đến 9
+                thì xuất thông báo ngoài khả năng đọc.
+            </p>
+            <table border="2" >
+                <tr>
+                    <th>Input</th>
+                    <th>Processing</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>Số nguyên từ 0 đến 9</td>
+                    <td>
+                        <ul>
+                            <li>Nhập số nguyên n</li>
+                            <li>Nếu n == 0 đúng thì xuất <span class="red">"Khong"</span> và kết thúc. Nếu sai thì đi tiếp.</li>
+                            <li>Nếu n == 1 đúng thì xuất <span class="red">"Mot"</span> và kết thúc.  Nếu sai đi tiếp.</li>
+                            <li>...</li>
+                            <li>Nếu n == 9 đúng thì xuất <span class="red">"Chin"</span> và kết thúc. </li>
+                            <li>Nếu n == 9 sai thì xuất <span class="red">"Ngoai kha nang doc"</span> và kết thúc.</li>
+                        </ul>
+                    </td>
+                    <td>Xuất kết quả đọc chữ</td>
+                </tr>
+            </table>
+            <img src="img/CSLT/Noidung3/photo7.png" alt="sơ đồ khối">
+            <h3 class="tagss">Lập trình</h3>
+            <pre>
+                <span class="gray">#include</span> <span class="red">iostream</span>
                 <span class="blue">using namespace</span> std;
                 <span class="blue">int</span> main()
                 {
-                    <span class="blue">int</span> a,b;
-                    cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap so nguyen thu nhat: "; </span>
-                    cin <span class="green">&gt;&gt;</span> a;
-                    cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap so nguyen thu hai: "; </span>
-                    cin <span class="green">&gt;&gt;</span> b;
-                    <span class="pink">if</span> (a > b)
-                        cout <span class="green">&lt;&lt;</span> <span class="red">"So thu nhat lon hon so thu hai\n";</span>
-                    <span class="pink">else</span>
-                    <span class="pink">if</span> (a &lt; b)
-                        cout <span class="green">&lt;&lt;</span> <span class="red">"So thu nhat nho hon so thu hai\n";</span>
-                    <span class="pink">else</span>
-                        cout <span class="green">&lt;&lt;</span> <span class="red">"Hai so bang nhau\n";</span>
+                    <span class="blue">int</span> so;
+                    cout <span class="green">&lt;&lt;</span> "Nhap 1 so nguyen tu 0 den 9: "; 
+                    cin <span class="green">&gt;&gt;</span> so;
+                    <span class="pink">switch(</span>so <span class="pink">)</span>
+                    {
+                        <span class="pink">case</span> 0: 
+                            cout <span class="green">&lt;&lt;</span> <span class="red">"Khong<span class="green">\n</span>"</span>; 
+                            <span class="blue">break</span>;
+                        <span class="pink">case</span> 1: 
+                            cout <span class="green">&lt;&lt;</span> <span class="red">"Mot<span class="green">\n</span>"</span>; 
+                            <span class="blue">break</span>;
+                        <span class="pink">case</span> 2: 
+                            cout <span class="green">&lt;&lt;</span> <span class="red">"Hai<span class="green">\n</span>"</span>; 
+                            <span class="blue">break</span>;
+                        …
+                        <span class="pink">case</span> 9: 
+                            cout <span class="green">&lt;&lt;</span> <span class="red">"Chin<span class="green">\n</span>"</span>; 
+                            <span class="blue">break</span>;
+                        <span class="pink">default:</span>
+                            cout <span class="green">&lt;&lt;</span> <span class="red">"Ngoai kha nang doc<span class="green">\n</span>"</span>;
+                    }
                     <span class="blue">return</span> 0;
                 }
-        </pre>
-        <h2 class="tags" id="4">Câu lệnh rẽ nhánh</h2>
-        <h3 class="tagss">Lưu ý</h3>
-        <ul>
-            <li>Lệnh điều khiển rẽ nhánh có thể dùng để kiểm tra dữ liệu
-                nhập vào có hợp lệ hay không.
-                <pre>
-                    <span class="blue">double</span> diem;
-                    cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap diem: "; </span>
-                    cin <span class="green">&gt;&gt;</span> diem;
-                    <span class="pink">if</span> (diem >= 0 && diem &lt;= 10)
-                    {
-                        <span class="green">//diem hop le</span>
-                        <span class="green">//thuc hien cac viec tinh toan khi diem hop le va xuat ket qua</span>
-                    }
-                    <span class="pink">else</span>
-                        cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap diem khong hop le!"; </span>
-                </pre>
-            </li>
-            <li>Nếu cùng 1 yêu cầu tính toán, lệnh if-else sẽ giải quyết
-                nhanh hơn liên tục nhiều lệnh if khuyết else.
-                <div class="post">
-                    <div class="col40">
-                        <pre>
-    <span class="pink">if</span> (a % 2 == 0)
-            cout <span class="green">&lt;&lt;</span> <span class="red">"a la so chan<span class="green">\n</span>"; </span>
-    <span class="pink">else</span>
-            cout <span class="green">&lt;&lt;</span> <span class="red">"a la so le<span class="green">\n</span>"; </span>
-                        </pre>
-                    </div>
-                    <div class="col50">
-                        <img src="img/CSLT/Noidung3/photo11.png" alt="sơ đồ khối">
-                    </div>
-                </div> 
-            </li>
-            <li>
-                Nếu cùng 1 yêu cầu tính toán, lệnh if-else sẽ giải quyết
-                nhanh hơn liên tục nhiều lệnh if khuyết else.
-                <div class="post">
-                    <div class="col40">
-                        <pre>
-    <span class="pink">if</span> (a % 2 == 0)
-            cout <span class="green">&lt;&lt;</span> <span class="red">"a la so chan<span class="green">\n</span>"; </span>
-    <span class="pink">if</span> (a & 2 != 0)
-            cout <span class="green">&lt;&lt;</span> <span class="red">"a la so le<span class="green">\n</span>"; </span>
-                        </pre>
-                    </div>
-                    <div class="col50">
-                        <img src="img/CSLT/Noidung3/photo5.png" alt="sơ đồ khối">
-                    </div>
-                </div> 
-            </li>
-            <li>
-                Khi sử dụng if..else lồng nhau, nếu không có khối lệnh
-                ngăn cách bởi cặp dấu { và } thì trình biên dịch luôn hiểu
-                else sẽ là trường hợp ngược lại của if gần nhất.
-                <pre>
-                    <span class="pink">if</span> (x == 2)
-                        <span class="pink">if</span> (y == 4)
-                            cout <span class="green">&lt;&lt;</span> <span class="red">“x bang 2 va y bang 4”</span>“x bang 2 va y bang 4” <span class="green">&lt;&lt;</span> endl;
-                        <span class="pink">else</span>
-                            cout <span class="green">&lt;&lt;</span> <span class="red">“x khac 2”</span> <span class="green">&lt;&lt;</span> endl;
-                </pre>
-                <p>Nếu nhập x = 2, y = 5 thì sẽ xuất câu x khac 2<br>
-                Nếu nhập x = 3, y = 4 thì không xuất gì cả</p>
-            </li>
-            <li>
-                Khi sử dụng if..else lồng nhau, nếu không có khối lệnh
-                ngăn cách bởi cặp dấu { và } thì trình biên dịch luôn hiểu
-                else sẽ là trường hợp ngược lại của if gần nhất
-                <pre>
-                    <span class="pink">if</span> (x == 2)
-                    {
-                        <span class="pink">if</span>if(y == 4)
-                            cout <span class="green">&lt;&lt;</span> <span class="red">“x bang 2 va y bang 4”</span> <span class="green">&lt;&lt;</span> endl;
-                    }
-                    <span class="pink">else</span> 
-
-                            cout <span class="green">&lt;&lt;</span> <span class="red">“x khac 2”</span> <span class="green">&lt;&lt;</span> endl;
-                </pre>
-                <p>
-                    Nếu nhập x = 2, y = 5 thì sẽ không xuất gì cả<br>Nếu nhập x = 3, y = 4 thì xuất x khac 2
-                </p>
-            </li>
-        </ul>
-        <h2 class="tags" id="5">Toán tử điều kiện</h2>
-        <ul>
-            <li>Toán tử điều kiện: mang ý nghĩa tương đương với if-else.
-                <span class="red">condition ? expression_1 : expression_2;</span>
-            </li>
-            <li>Trong đó
-                <ul>
-                    <li><span class="red">condition</span>: điều kiện, là một biểu thức luận lý (true/false)</li>
-                    <li>Nếu <span class="red">condition</span> có giá trị <span class="red">true</span> thì sẽ thực hiện tính toán và 
-                        trả về kết quả <span class="red">expression_1</span> (biểu thức 1).</li>
-                    <li>Nếu <span class="red">condition</span> có giá trị <span class="red">false</span> thì sẽ thực hiện tính toán và 
-                        trả về kết quả <span class="red">expression_2</span> (biểu thức 2).</li>
-                </ul>
-            </li>
-        </ul>
-        <p>Ví dụ: chương trình tìm số lớn nhất của 2 số nguyên a và b.</p>
-        <pre>
-            <span class="gray">#include</span> <span class="red">iostream</span>
-            <span class="blue">using namespace</span> std;
-            <span class="blue">int</span> main() 
-            {
-                <span class="blue">int</span> a, b;
-                <span class="blue">int</span> max;
-                cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap so thu nhat: "</span>; 
-                cin <span class="green">&gt;&gt;</span> a;
-                cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap so thu hai: "</span>; 
-                cin <span class="green">&gt;&gt;</span> b;
-                max = a >= b ? a : b;
-                cout <span class="green">&lt;&lt;</span> <span class="red">"So lon nhat la: "</span> <span class="green">&lt;&lt;</span> max <span class="green">&lt;&lt;</span> endl;
-            }
-        </pre>
-        <p>
-            Nếu nhập a = 3, b = 5 thì kết quả max là 5
-            Nếu nhập a = 7, b = 2 thì kết quả max là 7
-        </p>
-        <h2 class="tags" id="5">Câu lệnh lựa chọn switch</h2>
-        <h3 class="tagss">Cú pháp</h3>
-        <div class="post">
-            <div class="col40">
-               <ul>
-                    <li>Giá trị của <span class="red">expression</span>có kiểu: bool, char hoặc int.</li>
-                    <li>Mỗi nhãn <span class="red">case </span> có một giá trị <span class="red">(value).</span></li>
-                    <li><span class="red">value</span> là hằng và có cùng kiểu dữ liệu với <span class="red">expression</span></li>
-                    <li>Câu lệnh <span class="red">break</span> dùng thoát cấu trúc switch</li>
-                    <li>Nhãn <span class="red">default</span> có thể khuyết</li>
-               </ul>
-            </div>
-            <div class="col50">
-                <pre class="red">
-                    switch(expression) 
-                    { 
-                    case value_1:
-                    statements;
-                    break;
-                    case value_2:
-                    statements;
-                    break;
-                    ...
-                    case value_n:
-                    statements;
-                    break;
-                    [default:
-                    statements;]
-                    }
-                </pre>
-            </div>
-        </div> 
-        <h3 class="tagss">Sơ đồ khối</h3>
-        <img src="img/CSLT/Noidung3/photo6.png" alt="sơ đồ khối">
-        <h3>Ví dụ</h3>
-        <p>Viết chương trình nhận vào một số từ 0 đến 9. Xuất ra màn
-            hình đọc số đó dưới dạng chữ, nếu ngoài phạm vi từ 0 đến 9
-            thì xuất thông báo ngoài khả năng đọc.
-        </p>
-        <table border="2" >
-            <tr>
-                <th>Input</th>
-                <th>Processing</th>
-                <th>Output</th>
-            </tr>
-            <tr>
-                <td>Số nguyên từ 0 đến 9</td>
-                <td>
-                    <ul>
-                        <li>Nhập số nguyên n</li>
-                        <li>Nếu n == 0 đúng thì xuất <span class="red">"Khong"</span> và kết thúc. Nếu sai thì đi tiếp.</li>
-                        <li>Nếu n == 1 đúng thì xuất <span class="red">"Mot"</span> và kết thúc.  Nếu sai đi tiếp.</li>
-                        <li>...</li>
-                        <li>Nếu n == 9 đúng thì xuất <span class="red">"Chin"</span> và kết thúc. </li>
-                        <li>Nếu n == 9 sai thì xuất <span class="red">"Ngoai kha nang doc"</span> và kết thúc.</li>
-                    </ul>
-                </td>
-                <td>Xuất kết quả đọc chữ</td>
-            </tr>
-        </table>
-        <img src="img/CSLT/Noidung3/photo7.png" alt="sơ đồ khối">
-        <h3 class="tagss">Lập trình</h3>
-        <pre>
-            <span class="gray">#include</span> <span class="red">iostream</span>
-            <span class="blue">using namespace</span> std;
-            <span class="blue">int</span> main()
-            {
-                <span class="blue">int</span> so;
-                cout <span class="green">&lt;&lt;</span> "Nhap 1 so nguyen tu 0 den 9: "; 
-                cin <span class="green">&gt;&gt;</span> so;
+                    
+            </pre>
+            <h3 class="tagss">Một số lưu ý</h3>
+            <ul>
+                <li><span class="red">switch</span> không làm việc với kiểu <span class="red">string</span></li>
+                <li>Các <span class="red">case </span>không được trùng giá trị (<span class="red">value</span>)</li>
+                <li>Lệnh <span class="red">break</span>; đặt sau mỗi trường hợp để kết thúc đoạn
+                    lệnh <span class="red">switch</span> đó mà không thực hiện các trường hợp
+                    còn lại.
+                </li>
+            </ul>
+            <h3>Một số lưu ý</h3>
+            <pre>
                 <span class="pink">switch(</span>so <span class="pink">)</span>
                 {
                     <span class="pink">case</span> 0: 
@@ -446,7 +538,7 @@
                         <span class="blue">break</span>;
                     <span class="pink">case</span> 1: 
                         cout <span class="green">&lt;&lt;</span> <span class="red">"Mot<span class="green">\n</span>"</span>; 
-                        <span class="blue">break</span>;
+                        <del><span class="blue">break</span>;</del>
                     <span class="pink">case</span> 2: 
                         cout <span class="green">&lt;&lt;</span> <span class="red">"Hai<span class="green">\n</span>"</span>; 
                         <span class="blue">break</span>;
@@ -455,210 +547,237 @@
                         cout <span class="green">&lt;&lt;</span> <span class="red">"Chin<span class="green">\n</span>"</span>; 
                         <span class="blue">break</span>;
                     <span class="pink">default:</span>
-                        cout <span class="green">&lt;&lt;</span> <span class="red">"Ngoai kha nang doc<span class="green">\n</span>"</span>;
+                        cout <span class="green">&lt;&lt;</span> <span class="red">"Ngoai kha nang doc<span class="green">\n</span></span>;
                 }
-                <span class="blue">return</span> 0;
-            }
-                
-        </pre>
-        <h3 class="tagss">Một số lưu ý</h3>
-        <ul>
-            <li><span class="red">switch</span> không làm việc với kiểu <span class="red">string</span></li>
-            <li>Các <span class="red">case </span>không được trùng giá trị (<span class="red">value</span>)</li>
-            <li>Lệnh <span class="red">break</span>; đặt sau mỗi trường hợp để kết thúc đoạn
-                lệnh <span class="red">switch</span> đó mà không thực hiện các trường hợp
-                còn lại.
-            </li>
-        </ul>
-        <h3>Một số lưu ý</h3>
-        <pre>
-            <span class="pink">switch(</span>so <span class="pink">)</span>
-            {
-                <span class="pink">case</span> 0: 
-                    cout <span class="green">&lt;&lt;</span> <span class="red">"Khong<span class="green">\n</span>"</span>; 
+                <span class="blue">return</span> 0; 
+            </pre>
+            <span class="green">nếu so là 1 thì xuất MotHai</span><br>
+            <p class="gray">Có thể tận dụng việc bỏ qua lệnh <span class="blue">break</span>; ở cuối để tiếp
+                tục thực hiện lệnh ở trường hợp kế tiếp.</p>
+            <pre>
+                char kt;
+                cout <span class="green">&lt;&lt;</span> <span class="red">"nhap ky tu: "</span>;
+                cin <span class="green">&gt;&gt;</span> kt;
+                <span class="pink">switch(</span>kt <span class="pink">)</span>
+                {
+                    <span class="pink">case</span> 'a': <span class="pink">case</span> 'o': <span class="pink">case</span> 'i': <span class="pink">case</span> 'u': <span class="pink">case</span> 'e':
+                    cout <span class="green">&lt;&lt;</span> <span class="red">"la ky tu nguyen am<span class="green">\n</span>"</span>;
                     <span class="blue">break</span>;
-                <span class="pink">case</span> 1: 
-                    cout <span class="green">&lt;&lt;</span> <span class="red">"Mot<span class="green">\n</span>"</span>; 
-                    <del><span class="blue">break</span>;</del>
-                <span class="pink">case</span> 2: 
-                    cout <span class="green">&lt;&lt;</span> <span class="red">"Hai<span class="green">\n</span>"</span>; 
-                    <span class="blue">break</span>;
-                …
-                <span class="pink">case</span> 9: 
-                    cout <span class="green">&lt;&lt;</span> <span class="red">"Chin<span class="green">\n</span>"</span>; 
-                    <span class="blue">break</span>;
-                <span class="pink">default:</span>
-                    cout <span class="green">&lt;&lt;</span> <span class="red">"Ngoai kha nang doc<span class="green">\n</span></span>;
-            }
-            <span class="blue">return</span> 0; 
-        </pre>
-        <span class="green">nếu so là 1 thì xuất MotHai</span><br>
-        <p class="gray">Có thể tận dụng việc bỏ qua lệnh <span class="blue">break</span>; ở cuối để tiếp
-            tục thực hiện lệnh ở trường hợp kế tiếp.</p>
-        <pre>
-            char kt;
-            cout <span class="green">&lt;&lt;</span> <span class="red">"nhap ky tu: "</span>;
-            cin <span class="green">&gt;&gt;</span> kt;
-            <span class="pink">switch(</span>kt <span class="pink">)</span>
-            {
-                <span class="pink">case</span> 'a': <span class="pink">case</span> 'o': <span class="pink">case</span> 'i': <span class="pink">case</span> 'u': <span class="pink">case</span> 'e':
-                cout <span class="green">&lt;&lt;</span> <span class="red">"la ky tu nguyen am<span class="green">\n</span>"</span>;
-                <span class="blue">break</span>;
-                <span class="pink">default:</span>
-                cout <span class="green">&lt;&lt;</span> <span class="red">"khong la ky tu nguyen am<span class="green">\n</span>"</span>;
-            } 
-        </pre>
-        <h1 class="tag"><span>Cấu trúc lặp</span></h1>
-        <h2 class="tags" id="7">while</h2>
-        <div class="post">
-            <div class="col40">
-                <pre class="red">
-                while (condition)
-                    statement;
-                </pre>
-            </div>
-            <div class="col50">
-                <img src="img/CSLT/Noidung3/photo8.png" alt="sơ đồ khối câu lệnh while">
-            </div>
-        </div> 
-        <ul>Trong đó:
-            <li><span class="red">condition</span> (điều kiện): là biểu thức luận lý, có giá trị
-                true/false.
-            </li>
-            <li><span class="red">statement</span> (câu lệnh): có thể là lệnh rỗng, lệnh đơn hay
-                khối lệnh.
-            </li>
-        </ul>
-        <ul>
-            <li><span class="red">condition</span> (điều kiện) với <span class="red">while</span> gọi là điều kiện lặp <span class="red">(loop condition)</span>
-                <ul>
-                    <li>Nếu điều kiện lặp là <span class="red">true</span> thì sẽ thực hiện hết các lệnh <span class="red">(statement)</span>.</li>
-                    <li>Nếu điều kiện lặp là <span class="red">false</span> thì sẽ ngưng và kết thúc lệnhlặp.</li>
-                </ul>
-            </li>
-            <li>Điều kiện lặp trong tất cả các câu lệnh lặp được tạo bằng cách:
-                <ul>
-                    <li>Dùng biến đếm <span class="red">(counter)</span></li>
-                    <li>Dùng giá trị cầm canh <span class="red">(sentinel value)</span></li>
-                    <li>Dùng biến cờ <span class="red">(flag)</span></li>
-                    <li>Kiểm tra trạng thái <span class="red">(state)</span></li>
-                </ul>
-            </li>
-        </ul>
-        <h2 class="tags" id="8">do-while</h2>
-        <div class="post">
-            <div class="col40">
-                <pre class="red">
-                    do{
+                    <span class="pink">default:</span>
+                    cout <span class="green">&lt;&lt;</span> <span class="red">"khong la ky tu nguyen am<span class="green">\n</span>"</span>;
+                } 
+            </pre>
+            <h1 class="tag"><span>Cấu trúc lặp</span></h1>
+            <h2 class="tags" id="7">while</h2>
+            <div class="post">
+                <div class="col40">
+                    <pre class="red">
+                    while (condition)
                         statement;
-                    } while (condition);
-                </pre>
-            </div>
-            <div class="col50">
-                <img src="img/CSLT/Noidung3/photo9.png" alt="sơ đồ khối câu lệnh while">
-            </div>
-        </div> 
-        <ul>
-            <li><span class="red">condition</span> (điều kiện): là biểu thức luận lý, có giá trị<span class="red">true/false</span></li>
-            <li><span class="red">statement</span> (câu lệnh): có thể là lệnh rỗng, lệnh đơn hay khối lệnh.</li>
-            <li><span class="red">do-while</span> sẽ thực hiện câu lệnh trước, sau đó kiểm tra điều kiện. Thực hiện cho đến khi điều kiện sai thì dừng.</li>
-        </ul>
-        <p class="red">Lưu ý khối lệnh trong while và do-while</p>
-        <ul>
-            <li>Các lệnh (<span class="red">statement</span>) trong <span class="red">while</span> và <span class="red">do-while</span> thường là
-                <span class="red">khối lệnh</span> (từ 2 lệnh trở lên).</li>
-            <li>Khối lệnh của <span class="red">while</span>, <span class="red">do-while</span> phải chứa câu lệnh <span class="red">cập nhật</span>
-                giá trị biến đếm/ biến cầm canh/ giá trị xét điều kiện.</li>
-        </ul>
-        <h2 class="tags" id="9">for</h2>
-        <span class="blue">Cú pháp</span>
-        <pre class="red">
-            for (initialization; condition; update)
-                statement;
-        </pre>
-        <ul>Trong đó: 
-            <li><span class="red">initialization</span>:khởi tạo cho biến đếm.</li>
-            <li><span class="red">condition</span> (điều kiện lặp): là biểu thức luận lý, có giá trị
-                <span class="red">true/false</span>.</li>
-            <li><span class="red">update</span>: biểu thức cập nhật giá trị của biến đếm.
-            </li>
-            <li><span class="red">statement</span> (câu lệnh): có thể là lệnh rỗng, lệnh đơn hay
-                khối lệnh. Câu lệnh sẽ được thực hiện nếu <span class="red">condition</span> có
-                giá trị <span class="red">true</span>.</li>
-        </ul>
-        <span class="blue">Sơ đồ khối</span>
-        <img src="img/CSLT/Noidung3/photo10.png" alt="sơ đồ khối của for">
-        <h2 class="tags" id="10">Một số lưu ý - cấu trúc lặp</h2>
-        <ul> 
-            <li><span class="red">while</span> và <span class="red">do-while</span> thường sử dụng khi không biết
-                trước số lần lặp; <span class="red">for</span> thường sử dụng khi biết trước số
-                lần lặp.
-            </li>
-            <li>Tất cả lệnh lặp đều có khả năng lặp vô tận. <span class="red">for, while</span> có
-                thể không xảy ra lần lặp nào; <span class="red">do…while</span> ít nhất 1 lần lặp.
-            </li>
-            <li>Không nên thay đổi giá trị biến đếm bên trong câu lệnh ở
-                thân vòng lặp <span class="red">for</span> (vì đã có biểu thức cập nhật biến đếm).
-            </li>
-            <li>Lệnh <span class="red">do-while</span> thường dùng để kiểm tra dữ liệu hợp lệ,
-                cho phép nhập lại nếu sai.
-            </li>
-        </ul>
-        <p class="gray">Ví dụ: yêu cầu người dùng nhập điểm có giá trị là số nguyên
-            từ 0 đến 10.</p>
-        <pre>
-            <span class="green">int</span> diem; 
-            <span class="blue">do</span>
-            { 
-            cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap diem tu 0 den 10: "</span>;
-            cin >> diem; 
-            if ( diem &lt; 0 || diem > 10 )
-            cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap diem sai. Nhap lai<span class="green">\n</span>"</span>;
-            } <span class="blue">white</span> (diem &lt; 0 || diem > 10);
-        </pre>
-        <h2 class="tags" id="11">Lệnh break và continue</h2>
-        <h3 class="tagss">break</h3>
-        <ul> 
-            <li>Câu lệnh <span class="red">break</span>; dùng để bỏ qua phần còn lại trong câu
-                lệnh switch.</li>
-            <li>Câu lệnh <span class="red">break</span>; khi được thực hiện bên trong vòng lặp
-                <span class="red">for</span>, <span class="red">while</span>, <span class="red">do-while</span> thì sẽ dừng vòng lặp ngay lập
-                tức.</li>
-            <li>Ví dụ:
-                <pre> 
-                    <span class="blue">int</span> tong = 0;
-                    <span class="blue">for</span> (<span class="blue">int</span> i = 1; i &lt;= 5; i++)
-                    {
-                        <span class="pink">if</span> (i == 3)
-                            <span class="blue">break;</span>
-                    }
-                        tong += i;
-                        tong += i;
-                        cout <span class="green">&lt;&lt;</span> <span class="red">"Tong la: "</span> <span class="green">&lt;&lt;</span> tong <span class="green">&lt;&lt;</span> endl;
-                </pre>
-                <span class="gray">tong la 3</span>
-            </li>
-        </ul>
-        <h3 class="tagss">continue</h3>
-        <ul> <span class="red"></span>
-            <li>Câu lệnh <span class="red">continue</span>; trong vòng lặp <span class="red">for, while,
-                do-while</span> dùng để bỏ qua phần còn lại trong lần lặp đó
-                và bắt đầu lần lặp kế tiếp.
+                    </pre>
+                </div>
+                <div class="col50">
+                    <img src="img/CSLT/Noidung3/photo8.png" alt="sơ đồ khối câu lệnh while">
+                </div>
+            </div> 
+            <ul>Trong đó:
+                <li><span class="red">condition</span> (điều kiện): là biểu thức luận lý, có giá trị
+                    true/false.
                 </li>
-            <li>Ví dụ:
-                <pre> 
-                    <span class="blue">int</span> tong = 0;
-                    <span class="blue">for</span> (<span class="blue">int</span> i = 1; i &lt;= 5; i++)
-                    {
-                        <span class="pink">if</span> (i == 3)
-                            <span class="blue">continue;</span>
-                    }
-                        tong += i;
-                        tong += i;
-                        cout <span class="green">&lt;&lt;</span> <span class="red">"Tong la: "</span> <span class="green">&lt;&lt;</span> tong <span class="green">&lt;&lt;</span> endl;
-                </pre>
-                <span class="gray">tong la 12</span>
-            </li>
-        </ul>
+                <li><span class="red">statement</span> (câu lệnh): có thể là lệnh rỗng, lệnh đơn hay
+                    khối lệnh.
+                </li>
+            </ul>
+            <ul>
+                <li><span class="red">condition</span> (điều kiện) với <span class="red">while</span> gọi là điều kiện lặp <span class="red">(loop condition)</span>
+                    <ul>
+                        <li>Nếu điều kiện lặp là <span class="red">true</span> thì sẽ thực hiện hết các lệnh <span class="red">(statement)</span>.</li>
+                        <li>Nếu điều kiện lặp là <span class="red">false</span> thì sẽ ngưng và kết thúc lệnhlặp.</li>
+                    </ul>
+                </li>
+                <li>Điều kiện lặp trong tất cả các câu lệnh lặp được tạo bằng cách:
+                    <ul>
+                        <li>Dùng biến đếm <span class="red">(counter)</span></li>
+                        <li>Dùng giá trị cầm canh <span class="red">(sentinel value)</span></li>
+                        <li>Dùng biến cờ <span class="red">(flag)</span></li>
+                        <li>Kiểm tra trạng thái <span class="red">(state)</span></li>
+                    </ul>
+                </li>
+            </ul>
+            <h2 class="tags" id="8">do-while</h2>
+            <div class="post">
+                <div class="col40">
+                    <pre class="red">
+                        do{
+                            statement;
+                        } while (condition);
+                    </pre>
+                </div>
+                <div class="col50">
+                    <img src="img/CSLT/Noidung3/photo9.png" alt="sơ đồ khối câu lệnh while">
+                </div>
+            </div> 
+            <ul>
+                <li><span class="red">condition</span> (điều kiện): là biểu thức luận lý, có giá trị<span class="red">true/false</span></li>
+                <li><span class="red">statement</span> (câu lệnh): có thể là lệnh rỗng, lệnh đơn hay khối lệnh.</li>
+                <li><span class="red">do-while</span> sẽ thực hiện câu lệnh trước, sau đó kiểm tra điều kiện. Thực hiện cho đến khi điều kiện sai thì dừng.</li>
+            </ul>
+            <p class="red">Lưu ý khối lệnh trong while và do-while</p>
+            <ul>
+                <li>Các lệnh (<span class="red">statement</span>) trong <span class="red">while</span> và <span class="red">do-while</span> thường là
+                    <span class="red">khối lệnh</span> (từ 2 lệnh trở lên).</li>
+                <li>Khối lệnh của <span class="red">while</span>, <span class="red">do-while</span> phải chứa câu lệnh <span class="red">cập nhật</span>
+                    giá trị biến đếm/ biến cầm canh/ giá trị xét điều kiện.</li>
+            </ul>
+            <h2 class="tags" id="9">for</h2>
+            <span class="blue">Cú pháp</span>
+            <pre class="red">
+                for (initialization; condition; update)
+                    statement;
+            </pre>
+            <ul>Trong đó: 
+                <li><span class="red">initialization</span>:khởi tạo cho biến đếm.</li>
+                <li><span class="red">condition</span> (điều kiện lặp): là biểu thức luận lý, có giá trị
+                    <span class="red">true/false</span>.</li>
+                <li><span class="red">update</span>: biểu thức cập nhật giá trị của biến đếm.
+                </li>
+                <li><span class="red">statement</span> (câu lệnh): có thể là lệnh rỗng, lệnh đơn hay
+                    khối lệnh. Câu lệnh sẽ được thực hiện nếu <span class="red">condition</span> có
+                    giá trị <span class="red">true</span>.</li>
+            </ul>
+            <span class="blue">Sơ đồ khối</span>
+            <img src="img/CSLT/Noidung3/photo10.png" alt="sơ đồ khối của for">
+            <h2 class="tags" id="10">Một số lưu ý - cấu trúc lặp</h2>
+            <ul> 
+                <li><span class="red">while</span> và <span class="red">do-while</span> thường sử dụng khi không biết
+                    trước số lần lặp; <span class="red">for</span> thường sử dụng khi biết trước số
+                    lần lặp.
+                </li>
+                <li>Tất cả lệnh lặp đều có khả năng lặp vô tận. <span class="red">for, while</span> có
+                    thể không xảy ra lần lặp nào; <span class="red">do…while</span> ít nhất 1 lần lặp.
+                </li>
+                <li>Không nên thay đổi giá trị biến đếm bên trong câu lệnh ở
+                    thân vòng lặp <span class="red">for</span> (vì đã có biểu thức cập nhật biến đếm).
+                </li>
+                <li>Lệnh <span class="red">do-while</span> thường dùng để kiểm tra dữ liệu hợp lệ,
+                    cho phép nhập lại nếu sai.
+                </li>
+            </ul>
+            <p class="gray">Ví dụ: yêu cầu người dùng nhập điểm có giá trị là số nguyên
+                từ 0 đến 10.</p>
+            <pre>
+                <span class="green">int</span> diem; 
+                <span class="blue">do</span>
+                { 
+                cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap diem tu 0 den 10: "</span>;
+                cin >> diem; 
+                if ( diem &lt; 0 || diem > 10 )
+                cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap diem sai. Nhap lai<span class="green">\n</span>"</span>;
+                } <span class="blue">white</span> (diem &lt; 0 || diem > 10);
+            </pre>
+            <h2 class="tags" id="11">Lệnh break và continue</h2>
+            <h3 class="tagss">break</h3>
+            <ul> 
+                <li>Câu lệnh <span class="red">break</span>; dùng để bỏ qua phần còn lại trong câu
+                    lệnh switch.</li>
+                <li>Câu lệnh <span class="red">break</span>; khi được thực hiện bên trong vòng lặp
+                    <span class="red">for</span>, <span class="red">while</span>, <span class="red">do-while</span> thì sẽ dừng vòng lặp ngay lập
+                    tức.</li>
+                <li>Ví dụ:
+                    <pre> 
+                        <span class="blue">int</span> tong = 0;
+                        <span class="blue">for</span> (<span class="blue">int</span> i = 1; i &lt;= 5; i++)
+                        {
+                            <span class="pink">if</span> (i == 3)
+                                <span class="blue">break;</span>
+                        }
+                            tong += i;
+                            tong += i;
+                            cout <span class="green">&lt;&lt;</span> <span class="red">"Tong la: "</span> <span class="green">&lt;&lt;</span> tong <span class="green">&lt;&lt;</span> endl;
+                    </pre>
+                    <span class="gray">tong la 3</span>
+                </li>
+            </ul>
+            <h3 class="tagss">continue</h3>
+            <ul> <span class="red"></span>
+                <li>Câu lệnh <span class="red">continue</span>; trong vòng lặp <span class="red">for, while,
+                    do-while</span> dùng để bỏ qua phần còn lại trong lần lặp đó
+                    và bắt đầu lần lặp kế tiếp.
+                    </li>
+                <li>Ví dụ:
+                    <pre> 
+                        <span class="blue">int</span> tong = 0;
+                        <span class="blue">for</span> (<span class="blue">int</span> i = 1; i &lt;= 5; i++)
+                        {
+                            <span class="pink">if</span> (i == 3)
+                                <span class="blue">continue;</span>
+                        }
+                            tong += i;
+                            tong += i;
+                            cout <span class="green">&lt;&lt;</span> <span class="red">"Tong la: "</span> <span class="green">&lt;&lt;</span> tong <span class="green">&lt;&lt;</span> endl;
+                    </pre>
+                    <span class="gray">tong la 12</span>
+                </li>
+            </ul>
+        </section>
+
+          <!--Phần footer-->
+          <footer>
+            <div class=" boxFoots ">
+                <div class="boxFoot about-us ">
+                    <div>
+    
+                        <h3>GIỚI THIỆU</h3>
+                        <p>Chúng tôi luôn nỗ lực hàng ngày để gắn kết mối chia sẻ giao lưu và học hỏi cùng các bạn. Chúc các bạn 1 ngày học hỏi thật tốt</p>
+    
+                        <ul class="netWork ">
+                            <li><a href="# "><i class="fa fa-facebook "></i></a></li>
+                            <li>
+                                <a href="# "><i class="fa fa-youtube "></i></a>
+                            </li>
+                            <li>
+                                <a href="# "><i class="fa fa-instagram "></i></a>
+                            </li>
+                            <li>
+                                <a href="# "><i class="fa fa-twitter "></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="boxFoot lienket ">
+                    <div>
+                        <h3>LIÊN KẾT</h3>
+                        <ul class="link ">
+                            <li><a href="# " class="trangchu "><i class="far fa-hand-point-right "></i>  Trang chủ</a></li>
+                            <li><a href="# "><i class="far fa-hand-point-right "></i>  Lập trình</a></li>
+                            <li><a href="# " class="serviceGame"><i class="far fa-hand-point-right "></i>  Dịch Vụ Game</a></li>
+                            <li><a href="naptien.html "><i class="far fa-hand-point-right "></i>  Nạp thẻ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="boxFoot ">
+                    <div>
+                        <h3>LIÊN HỆ</h3>
+                        <ul class="info ">
+                            <li>
+                                <span><i class="fa fa-map-marker "></i></span>
+                                <span><a href="https://goo.gl/maps/utvMFuRAP4oDHTwQ6">Đường xa lộ Hà Nội, phường Bình Thắng, tp Dĩ An, tỉnh Bình Dương</a></span>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-phone "></i></span>
+                                <a href="#">+84 234 790 109</a>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-envelope "></i></span>
+                                <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">vongngocthank@gmail.com</a></li>
+                            <li>
+                                <input type="text" placeholder="Liên hệ qua Email... " />
+                                <input type="button" value="subscriber " />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
