@@ -12,8 +12,25 @@
         <div>
             <a id="gototop" href="javascript:;" ><i class="fas fa-home">GO TO TOP</i></a>
         </div>
+
+        <div class="der">
+            <ul>
+                <li><a href="#1">Câu lệnh if-else</a></li>
+                <li><a href="#2">Một số lỗi thường gặp trong if-else</a></li>
+                <li><a href="#3">Cú pháp if-else đa chiều</a></li>
+                <li><a href="#4">Câu lệnh rẽ nhánh</a></li>
+                <li><a href="#5">Toán tử điều kiện</a>
+                <li><a href="#6">Câu lệnh lựa chọn switch</a></li>
+                <li><a href="#7">Cấu trúc lặp while</a></li>
+                <li><a href="#8">Cấu trúc lặp while</a></li>
+                <li><a href="#9">Cấu trúc lặp for</a></li>
+                <li><a href="#10">Một số lưu ý trong cấu trúc lặp</a></li>
+                <li><a href="#11">Lệnh break và continue</a> </a></li>
+            </ul>
+        </div>
+
         <h1 class="tag"><span>Câu lệnh điều khiển</span></h1>
-        <h2 class="tags">if-else</h2>
+        <h2 class="tags" id="1">if-else</h2>
         <h3 class="tagss">Cú pháp</h3>
         <div class="post">
             <div class="col40">
@@ -128,7 +145,7 @@
                </pre>
             </div>
         </div>
-         <h3 class="tagss">Một số lỗi thường gặp</h3>
+         <h3 class="tagss" id="2">Một số lỗi thường gặp</h3>
          <ul>
              <li>Trong biểu thức luận lý thường nhầm lẫn phép so sánh 
                 (dấu ==) với phép gán ( dấu = )<br>
@@ -162,7 +179,7 @@
             </pre>
             <p>Khi biên dịch màn hình thông báo lỗi cú pháp </p>
          </ul>
-         <h2 class="tags">Cú pháp if-else đa chiều</h2>
+         <h2 class="tags" id="3">Cú pháp if-else đa chiều</h2>
          <pre class="red">
             if (condition)
                 statement;
@@ -232,7 +249,7 @@
                     <span class="blue">return</span> 0;
                 }
         </pre>
-        <h2 class="tags">Câu lệnh rẽ nhánh</h2>
+        <h2 class="tags" id="4">Câu lệnh rẽ nhánh</h2>
         <h3 class="tagss">Lưu ý</h3>
         <ul>
             <li>Lệnh điều khiển rẽ nhánh có thể dùng để kiểm tra dữ liệu
@@ -316,7 +333,7 @@
                 </p>
             </li>
         </ul>
-        <h2 class="tags">Toán tử điều kiện</h2>
+        <h2 class="tags" id="5">Toán tử điều kiện</h2>
         <ul>
             <li>Toán tử điều kiện: mang ý nghĩa tương đương với if-else.
                 <span class="red">condition ? expression_1 : expression_2;</span>
@@ -351,7 +368,7 @@
             Nếu nhập a = 3, b = 5 thì kết quả max là 5
             Nếu nhập a = 7, b = 2 thì kết quả max là 7
         </p>
-        <h2 class="tags">Câu lệnh lựa chọn switch</h2>
+        <h2 class="tags" id="5">Câu lệnh lựa chọn switch</h2>
         <h3 class="tagss">Cú pháp</h3>
         <div class="post">
             <div class="col40">
@@ -491,7 +508,7 @@
             } 
         </pre>
         <h1 class="tag"><span>Cấu trúc lặp</span></h1>
-        <h2 class="tags">while</h2>
+        <h2 class="tags" id="7">while</h2>
         <div class="post">
             <div class="col40">
                 <pre class="red">
@@ -527,7 +544,7 @@
                 </ul>
             </li>
         </ul>
-        <h3>do-while</h3>
+        <h2 class="tags" id="8">do-while</h2>
         <div class="post">
             <div class="col40">
                 <pre class="red">
@@ -552,7 +569,7 @@
             <li>Khối lệnh của <span class="red">while</span>, <span class="red">do-while</span> phải chứa câu lệnh <span class="red">cập nhật</span>
                 giá trị biến đếm/ biến cầm canh/ giá trị xét điều kiện.</li>
         </ul>
-        <h2 class="tags">for</h2>
+        <h2 class="tags" id="9">for</h2>
         <span class="blue">Cú pháp</span>
         <pre class="red">
             for (initialization; condition; update)
@@ -570,7 +587,7 @@
         </ul>
         <span class="blue">Sơ đồ khối</span>
         <img src="img/CSLT/Noidung3/photo10.png" alt="sơ đồ khối của for">
-        <h2 class="tags">Một số lưu ý - cấu trúc lặp</h2>
+        <h2 class="tags" id="10">Một số lưu ý - cấu trúc lặp</h2>
         <ul> 
             <li><span class="red">while</span> và <span class="red">do-while</span> thường sử dụng khi không biết
                 trước số lần lặp; <span class="red">for</span> thường sử dụng khi biết trước số
@@ -598,7 +615,7 @@
             cout <span class="green">&lt;&lt;</span> <span class="red">"Nhap diem sai. Nhap lai<span class="green">\n</span>"</span>;
             } <span class="blue">white</span> (diem &lt; 0 || diem > 10);
         </pre>
-        <h2 class="tags">Lệnh break và continue</h2>
+        <h2 class="tags" id="11">Lệnh break và continue</h2>
         <h3 class="tagss">break</h3>
         <ul> 
             <li>Câu lệnh <span class="red">break</span>; dùng để bỏ qua phần còn lại trong câu
