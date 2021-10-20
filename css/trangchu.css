@@ -108,6 +108,10 @@
         padding: 10px 20px;
         display: block;
     }
+    ul.menu-x a {
+        font-size: 15px;
+        color: #007bff;
+    }
     
     ul.menu-x li:hover a {
         color: blue;
@@ -128,10 +132,10 @@
     ul.menuSign li:hover a {
         color: lightblue;
     }
-
+    /*hover lap trinh*/
     .subcontent {
         display:none;
-        background:rgb(212, 32, 212) !important;
+        background:rgb(79, 216, 221) !important;
         width:100%;
         z-index: 999;
     }
@@ -146,7 +150,7 @@
         content:" ";
         position:absolute;
         border:15px solid;
-        border-color: transparent transparent rgb(212, 32, 212) transparent;
+        border-color: transparent transparent rgb(79, 216, 221) transparent;
         bottom: 100%;
         left: 8%;
     
