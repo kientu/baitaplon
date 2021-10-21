@@ -88,6 +88,10 @@
     footer input[type=button] {
         background: linear-gradient(rgb(214, 132, 118), rgb(114, 194, 114), rgb(221, 101, 101));
     }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 217fb36d79713b6ba048c62a48af8688ba35d35b
     /*nav menu-x*/
     
     nav.menu {
@@ -107,6 +111,10 @@
         text-decoration: none;
         padding: 10px 20px;
         display: block;
+    }
+    ul.menu-x a {
+        font-size: 15px;
+        color: #007bff;
     }
     
     ul.menu-x li:hover a {
@@ -128,12 +136,20 @@
     ul.menuSign li:hover a {
         color: lightblue;
     }
+<<<<<<< HEAD
     
     .subcontent {
         display: none;
         background: rgb(212, 32, 212) !important;
         width: 100%;
         z-index: 999;
+=======
+    /*hover lap trinh*/
+    .subcontent {
+        display:none;
+        background:rgb(79, 216, 221) !important;
+        width:100%;
+>>>>>>> 217fb36d79713b6ba048c62a48af8688ba35d35b
     }
     
     ul.subcontent a {
@@ -146,10 +162,17 @@
     }
     
     .subcontent:after {
+<<<<<<< HEAD
         content: " ";
         position: absolute;
         border: 15px solid;
         border-color: transparent transparent rgb(212, 32, 212) transparent;
+=======
+        content:" ";
+        position:absolute;
+        border:15px solid;
+        border-color: transparent transparent rgb(79, 216, 221) transparent;
+>>>>>>> 217fb36d79713b6ba048c62a48af8688ba35d35b
         bottom: 100%;
         left: 8%;
     }
@@ -874,6 +897,7 @@
         }
     }
     /*carousel*/
+<<<<<<< HEAD
     
     section.header {
         width: 77%;
@@ -887,6 +911,19 @@
     /*phần icon facebook, youtube,..*/
     
     ul.netWork a {
+=======
+   section.header {
+       width: 77%;
+       margin:0 auto;
+       /*z-index: -1 !important;*/
+   }
+   section.header img {
+       width: 100%;
+       height: 300px;
+   }
+   /*phần icon facebook, youtube,..*/
+   ul.netWork a {
+>>>>>>> 217fb36d79713b6ba048c62a48af8688ba35d35b
         transition: transform 0.5s;
     }
     
