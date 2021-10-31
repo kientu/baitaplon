@@ -4,6 +4,11 @@
     font-family: regular;
 }
 
+body {
+    /* background-image: url('https://phunugioi.com/wp-content/uploads/2020/02/background-con-buom-820x597.jpg'); */
+    background-image: url('https://c.wallhere.com/photos/30/37/nature_landscape_mist_city_valley_mountains_sky_clouds-78166.jpg!d');
+}
+
 .container85 {
     width: 85%;
     margin: 0 auto;
@@ -191,6 +196,9 @@ span.mssv {
 }
 
 @media screen and (max-width: 970px) {
+    .kid {
+        display: none;
+    }
     .classify>div {
         width: 50%;
         text-align: left;

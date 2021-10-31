@@ -11,9 +11,43 @@
     
     body {
         /* background: linear-gradient(#e4de88ec, rgb(240, 221, 221), lightblue, #f3e7cc, #5f186d63, blue); */
-        background-image: url("../img/demToi.jpg");
+        background: linear-gradient(black, gray, purple);
+        background-image: url('https://c.wallhere.com/photos/30/37/nature_landscape_mist_city_valley_mountains_sky_clouds-78166.jpg!d');
         background-attachment: fixed;
         /* background-position: fixed; */
+    }
+    
+    .action {
+        animation: chimBay 30s 5s infinite;
+        position: fixed;
+        z-index: 99;
+    }
+    
+    @keyframes chimBay {
+        0% {
+            bottom: 0;
+            left: 100px;
+        }
+        25% {
+            bottom: 200px;
+            left: 800px;
+        }
+        50% {
+            bottom: 220px;
+            left: 400px;
+        }
+        75% {
+            bottom: 400px;
+            left: 200px;
+        }
+        100% {
+            bottom: 65%;
+            left: 90%;
+        }
+        125% {
+            bottom: 65%;
+            left: 90%;
+        }
     }
     
     header {
@@ -103,6 +137,11 @@
         padding: 0;
     }
     
+    ul.menu-x a {
+        font-size: 15px;
+        color: #007bff;
+    }
+    
     ul.menu-x li a {
         text-decoration: none;
         padding: 10px 20px;
@@ -163,6 +202,7 @@
     .container {
         width: 80%;
         margin: 0 auto;
+        background-image: url('https://i.pinimg.com/originals/6e/7b/52/6e7b524cbe4ec38ece70226945cae813.gif');
     }
     /*banner*/
     
@@ -217,7 +257,8 @@
     }
     
     .subject {
-        background-image: url('../img/nen5.jpg');
+        background-image: url('https://i.pinimg.com/originals/73/28/90/7328900947083053f15de7c047690997.gif');
+        background: linear-gradient(90deg, purple, blue, purple)
         /* background: linear-gradient(rgba(187, 129, 21, 0.541), rgba(173, 216, 230, 0.699), rgba(211, 131, 10, 0.575)); */
     }
     
@@ -329,8 +370,10 @@
         /*chặn tràn fooetr*/
         margin: 0;
         padding: 0;
-        background: linear-gradient(rgba(255, 94, 0, 0.596), #e46f3acc, #c0720c);
+        /* background: linear-gradient(rgba(255, 94, 0, 0.596), #e46f3acc, #c0720c); */
+        background: linear-gradient(black, rgb(45, 3, 70), rgb(85, 7, 131), rgb(160, 16, 160), rgb(240, 92, 215));
         padding-top: 10px;
+        color: #fafafa;
     }
     
     footer h3::after {
@@ -358,6 +401,7 @@
     .boxFoot {
         width: 33.33%;
         padding: 10px;
+        color: #fafafa;
     }
     
     ul.netWork {
@@ -373,6 +417,7 @@
     
     li a {
         text-decoration: none;
+        color: #fafafa;
     }
     
     ul.netWork li {
@@ -402,7 +447,8 @@
     /*Thông kê top nạp*/
     
     div.topNapThe {
-        background: #dd4b39;
+        /* background: #dd4b39; */
+        background: linear-gradient(30deg, purple, blue, purple);
         border-radius: 10px 10px 0 0;
         text-align: center;
         padding: 20px;
@@ -473,7 +519,8 @@
     
     span.coinMax {
         border-radius: 10px;
-        background: #dd4b39;
+        /* background: #dd4b39; */
+        background: linear-gradient(90deg, purple, blue, purple);
         padding: 7px 15px;
         color: #ffffff;
         cursor: pointer;
@@ -521,7 +568,7 @@
     /*thongSo*/
     
     .thongSoss {
-        background: url('../img/nen5.jpg');
+        background: url('https://baoquocte.vn/stores/news_dataimages/nguyennga/092019/06/09/in_article/0855_Screen_Shot_20190906_at_65100_AM.jpg');
         text-align: center;
         margin-top: 30px;
     }
@@ -536,13 +583,13 @@
     }
     
     .thongSo span {
-        color: #1dbd72;
+        color: #00ff15;
         font-weight: bolder;
         font-size: 24px;
     }
     
     .thongSo p {
-        color: #146e44;
+        color: #00ff15;
         font-size: 18px;
     }
     
@@ -558,7 +605,7 @@
     
     .thongSoss h2 {
         padding: 20px;
-        color: #0dce6d;
+        color: #00ff15;
     }
     
     .thongSoss h2::after {
@@ -576,7 +623,7 @@
     
     .runText {
         overflow: hidden;
-        background: #ec9005;
+        background: linear-gradient(black, rgb(45, 3, 70), rgb(85, 7, 131), rgb(160, 16, 160), rgb(240, 92, 215));
     }
     
     @keyframes run {
@@ -737,9 +784,46 @@
         height: 80px;
         width: 100%;
     }
+    /*fanpage- youtobe*/
+    
+    ul.tab {
+        display: flex;
+        margin: 0;
+    }
+    
+    ul.tab li {
+        border: 1px solid #0bfd47;
+        border-radius: 20px 20px 0 0;
+        width: 100px;
+        text-align: center;
+        background-color: #007bff;
+    }
+    
+    ul.tab a {
+        text-decoration: none;
+        color: #fafafa;
+        padding: 10px;
+        display: block;
+    }
+    
+    div.tab-content {
+        /* background-color: #6082e7; */
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .act {
+        padding: 20px;
+        background: url('https://img1.kienthucvui.vn/uploads/2019/10/09/anh-bau-troi-dem-rat-dep_042051478.jpg');
+        border-radius: 20px 20px 0 0;
+    }
     /*respondsive*/
     
     @media screen and (max-width: 1000px) {
+        .devil {
+            width: 130px;
+        }
         section.top {
             display: flex;
             flex-direction: column;

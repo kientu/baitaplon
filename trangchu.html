@@ -8,16 +8,17 @@
     <!--jquery luôn ở trên cùng để load thư viện cho file js-->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-
+    <!--fanpage-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0" nonce="0KYQ1xX3"></script>
     <!--my web-->
 
-    <link href="css/trangchu.css" rel="stylesheet" />
+
     <script src="js/trangchu.js"></script>
-    <link href="css/info.css" rel="stylesheet" />
+
+
     <!--thư viện internet-->
     <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
@@ -32,7 +33,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <link href="css/trangchu.css" rel="stylesheet" />
 </head>
 
 <body onload="NapAcc()">
@@ -73,9 +74,9 @@
 
         </nav>
     </header>
-    <br/>
-    <br/>
 
+    <br/>
+    <br/>
     <!--Xử lý carousel-->
     <section class="header">
         <div id="demo" class="carousel slide" data-ride="carousel">
@@ -116,10 +117,51 @@
         </div>
     </section>
 
+    <!-- <audio controls autoplay>
+        <source src="https://www.youtube.com/embed/dOL29F7O3uU">
+    </audio> -->
 
+    <div class="mangXh container">
+        <ul class="tab">
+            <li><a href="#tab1" class="act">YouTube</a></li>
+            <li><a href="#tab2" class="act">FanPage</a></li>
+            <li><a href="#tab3" class="act">Map</a></li>
 
+        </ul>
+        <div class="tab-content act">
+            <div id="tab1">
+                <iframe width="400" height="205" src="https://www.youtube.com/embed/YsIHv8J2bUg?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <section class="container subject">
+            </div>
+            <div id="tab2">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNam11c6%2F&tabs=timeline&width=400&height=250&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="220"
+                    style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+            <div id="tab3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1002447.9747184222!2d106.60386324216755!3d11.052687539157898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d952b84aea25%3A0xe04ae6f14b6e1655!2zxJDhu5NuZyBOYWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1635602616841!5m2!1svi!2s"
+                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $('.act > div:not(:first-child)').hide()
+                $('ul.tab').on('click', 'li > a', function() {
+                    $("ul.tab li").css('border-bottom', '1px solid #0bfd47')
+                    $(this).parent().css('border-bottom', '1px solid black')
+                    event.preventDefault()
+                    $("ul.tab a").removeClass("act") // xóa cái ông click trước đó
+                    $(this).addClass("act")
+
+                    //xu lí content
+                    var t = $(this).attr("href")
+                    $("div.tab-content > div").hide() // ẩn nội dung tất cả
+                    $(t).show(); // hiện ra cái đang đc click
+
+                })
+            })
+        </script>
+    </div>
+    <section class="container subject" style="box-shadow: 2px 2px 5px black;width: 77%;">
         <h1><span>HỌC LẬP TRÌNH C++</span></h1>
         <div class="figures">
             <div>
@@ -183,6 +225,13 @@
     <br>
 
     <br>
+    <img width="100px" src="img/sunny.gif" style="z-index:-2;position: fixed; top: 70px; right: 0px;" alt="">
+    <img width="200px" class="devil" style="position: fixed;bottom: 0px; left: 0px;" src="img/devil1.gif" alt="">
+    <img width="450px" src="img/bamboo.png" style="position: fixed;bottom: 0px; left: -330px;" alt="">
+    <img width="450px" src="img/bamboo.png" style="position: fixed;bottom: 0px; right: -350px;" alt="">
+
+    <img width="200px" class="devil" style="position: fixed;bottom: 0px; right: 0px;" src="img/devil2.gif" alt="">
+    <img class="action" src="img/chim.gif" alt="chim">
 
     <section class="container subject">
         <h1><span>DANH MỤC GAME</span></h1>
@@ -190,14 +239,14 @@
         <div class="bos">
             <div class="bo">
                 <div>
-                    <img src="img/muanick.gif" />
-                    <img class="giamgia" src="img/new.png" alt="new">
-
+                    <img src="img/muanick1.gif" />
+                    <img class="giamgia" src="img/giamgia.png" alt="giamgia">
                     <div class="chiTiet">
-                        <h4>Danh Mục Trúng Thưởng May Mắn</h4>
-                        <p>Số tài khoản: <span>2.380</span></p>
-                        <p>Đã bán: <span>560</span></p>
-                        <a href="tranggame1.html"><img class="muabtn" src="img/btnPlay.png" height="35px" alt="mua"></a>
+                        <h4>Danh Mục Acc NRO</h4>
+
+                        <p>Số tài khoản: <span class="soLuong">-</span></p>
+                        <p>Đã bán: <span class="daBan">-</span></p>
+                        <a href="tranggame1.html"><img class="muabtn" src="img/muabtn.jpg" alt="mua"></a>
                         <!-- <input type="button" value="MUA NGAY"> -->
                     </div>
                 </div>
@@ -207,7 +256,7 @@
                     <img src="img/muanick1.gif" />
                     <img class="giamgia" src="img/giamgia.png" alt="giamgia">
                     <div class="chiTiet">
-                        <h4>Danh Mục Acc Thanh Toán</h4>
+                        <h4>Danh Mục Acc NRO</h4>
 
                         <p>Số tài khoản: <span class="soLuong">-</span></p>
                         <p>Đã bán: <span class="daBan">-</span></p>
@@ -404,6 +453,10 @@
         <div class="historys">
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+
     <footer>
         <div class=" boxFoots ">
             <div class="boxFoot about-us ">

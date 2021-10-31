@@ -4,96 +4,103 @@ var thanhvientimer = null
 var giaotrinhtimer = null
 
 function NapAcc() {
+    $("ul.tab > li:first-child > a").click()
+
     // var keys = JSON.parse(localStorage.getItem('keys')) || [] nếu lấy v nó sẽ lấy tiếp các phần tử dù đã có
     var keys = [] // mỗi lần load trang nó push lên và đè phần tử cũ ko đi tiếp
-    var obj1 = {
+    var keys1 = JSON.parse(localStorage.getItem('keys')) || [] // lấy mảng trên local ra xem length == 0 mới đc push keys lên
 
-        tk: 'huytu1@.vlpl',
-        mk: '3267tudaica',
-        ms: 123456,
-        gt: 0,
-        buy: false, // chua ai mua
-    }
-    var obj2 = {
 
-        tk: 'trandaica1@O.cc',
-        mk: 'thansssok123',
-        ms: 134567,
-        gt: 0,
-        buy: false, // chua ai mua
-    }
-    var obj3 = {
+    if (keys1.length == 0) {
+        alert('hello')
 
-        tk: 'trungkin2@.vlpl',
-        mk: '3267tudaica',
-        ms: 299093,
-        gt: 0,
-        buy: false, // chua ai mua
-    }
-    var obj4 = {
+        var obj1 = {
 
-        tk: 'cattmeo@O.cc',
-        mk: 'thansssok123',
-        ms: 529033,
-        gt: 0,
-        buy: false, // chua ai mua
-    }
-    var obj5 = {
+            tk: 'huytu1@.vlpl',
+            mk: '3267tudaica',
+            ms: 123456,
+            gt: 0,
+            buy: false, // chua ai mua
+        }
+        var obj2 = {
 
-        tk: 'kientrung@.vlpl',
-        mk: '3267tudaica',
-        ms: 229933,
-        gt: 0,
-        buy: false, // chua ai mua
-    }
-    var obj6 = {
+            tk: 'trandaica1@O.cc',
+            mk: 'thansssok123',
+            ms: 134567,
+            gt: 0,
+            buy: false, // chua ai mua
+        }
+        var obj3 = {
 
-        tk: 'nguoica@O.cc',
-        mk: 'thansssok123',
-        ms: 222733,
-        gt: 0,
-        buy: false, // chua ai mua
-    }
-    var obj7 = {
+            tk: 'trungkin2@.vlpl',
+            mk: '3267tudaica',
+            ms: 299093,
+            gt: 0,
+            buy: false, // chua ai mua
+        }
+        var obj4 = {
 
-        tk: 'namtrung@.vlpl',
-        mk: '3adaica21@.com',
-        ms: 124453,
-        gt: 0,
-        buy: false, // chua ai mua
-    }
-    var obj8 = {
+            tk: 'cattmeo@O.cc',
+            mk: 'thansssok123',
+            ms: 529033,
+            gt: 0,
+            buy: false, // chua ai mua
+        }
+        var obj5 = {
 
-        tk: 'trandaica@O.cc',
-        mk: 'thansssok123',
-        ms: 123450,
-        gt: 0,
-        buy: false, // chua ai mua
-    }
-    var obj9 = {
+            tk: 'kientrung@.vlpl',
+            mk: '3267tudaica',
+            ms: 229933,
+            gt: 0,
+            buy: false, // chua ai mua
+        }
+        var obj6 = {
 
-        tk: 'trinhgi123@.vlpl',
-        mk: '3267tudaica',
-        ms: 123789,
-        gt: 0,
-        buy: false, // chua ai mua
-    }
-    var obj10 = {
+            tk: 'nguoica@O.cc',
+            mk: 'thansssok123',
+            ms: 222733,
+            gt: 0,
+            buy: false, // chua ai mua
+        }
+        var obj7 = {
 
-        tk: 'accvip12222@O.cc',
-        mk: 'thansssok123',
-        ms: 133322,
-        gt: 0,
-        buy: false, // chua ai mua
-    }
+            tk: 'namtrung@.vlpl',
+            mk: '3adaica21@.com',
+            ms: 124453,
+            gt: 0,
+            buy: false, // chua ai mua
+        }
+        var obj8 = {
 
-    keys.push(obj1, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10)
-    if (keys != []) {
+            tk: 'trandaica@O.cc',
+            mk: 'thansssok123',
+            ms: 123450,
+            gt: 0,
+            buy: false, // chua ai mua
+        }
+        var obj9 = {
+
+            tk: 'trinhgi123@.vlpl',
+            mk: '3267tudaica',
+            ms: 123789,
+            gt: 0,
+            buy: false, // chua ai mua
+        }
+        var obj10 = {
+
+            tk: 'accvip12222@O.cc',
+            mk: 'thansssok123',
+            ms: 133322,
+            gt: 0,
+            buy: false, // chua ai mua
+        }
+
+        keys.push(obj1, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10)
+
         localStorage.setItem('keys', JSON.stringify(keys))
-        first = false
-    } else {
-        alert("bạn đã nạp dữ liệu rồi")
+
     }
+
 }
 $(document).ready(function() {
 
@@ -103,27 +110,36 @@ $(document).ready(function() {
     var giaotrinh = $('.giaotrinh')
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() >= 600) {
-            if (acctimer === null)
-                acctimer = start(acc, 120, 1000, 'acc')
-            if (phucvutimer === null) // kiểm tra để nó không bắt setinterval khi mấy ông này đã khác null tức là đã gọi 1 lần r
-                phucvutimer = start(phucvu, 3, 24, 'phucvu')
-            if (thanhvientimer === null)
-                thanhvientimer = start(thanhvien, 1200, 10000, 'thanhvien')
-            if (giaotrinhtimer === null)
-                giaotrinhtimer = start(giaotrinh, 12, 100, 'giaotrinh')
-        }
+            if ($(this).scrollTop() >= 600) {
+                if (acctimer === null)
+                    acctimer = start(acc, 120, 1000, 'acc')
+                if (phucvutimer === null) // kiểm tra để nó không bắt setinterval khi mấy ông này đã khác null tức là đã gọi 1 lần r
+                    phucvutimer = start(phucvu, 3, 24, 'phucvu')
+                if (thanhvientimer === null)
+                    thanhvientimer = start(thanhvien, 1200, 10000, 'thanhvien')
+                if (giaotrinhtimer === null)
+                    giaotrinhtimer = start(giaotrinh, 12, 100, 'giaotrinh')
+            }
 
-    })
+        })
+        // music
 
 
 
 
     // menu respondsive
     $('#navBar').click(function() {
-            $('nav.menu').slideToggle()
-        })
-        // gắn menu header
+        $('nav.menu').slideToggle()
+    })
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 2586) {
+            $('.devil').css('position', 'absolute')
+        } else
+            $('.devil').css('position', 'fixed')
+
+    })
+
+    // gắn menu header
     $("a.games").attr("href", "tranggame1.html")
     $("a.trangchu").attr("href", "trangchu.html")
         // gắn menu footer
@@ -371,6 +387,7 @@ $(document).ready(function() {
 
     // localStorage.clear
     // thongSo
+    //devil dừng khi kéo xuống footer
 
 
 })
@@ -421,4 +438,3 @@ function start(el, steps, max, type) {
                 }
     })
 })*/
-

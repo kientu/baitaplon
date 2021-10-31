@@ -4,10 +4,14 @@
     font-family: regular;
 }
 
+body {
+    background-image: url('https://c.wallhere.com/photos/30/37/nature_landscape_mist_city_valley_mountains_sky_clouds-78166.jpg!d');
+}
+
 .menu-doc {
     position: fixed;
     z-index: 1001;
-    background: linear-gradient(#cca144, gold, lightblue);
+    background: linear-gradient(#3a0da3, rgb(68, 79, 245), rgb(30, 137, 187));
 }
 
 .menu-doc h3 {
