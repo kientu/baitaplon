@@ -117,9 +117,7 @@
         </div>
     </section>
 
-    <!-- <audio controls autoplay>
-        <source src="https://www.youtube.com/embed/dOL29F7O3uU">
-    </audio> -->
+
 
     <div class="mangXh container">
         <ul class="tab">
@@ -128,7 +126,7 @@
             <li><a href="#tab3" class="act">Map</a></li>
 
         </ul>
-        <div class="tab-content act">
+        <div class="tab-content act" style="background-image: url('img/dem.jpg');">
             <div id="tab1">
                 <iframe width="400" height="205" src="https://www.youtube.com/embed/YsIHv8J2bUg?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -142,24 +140,7 @@
                     width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
-        <script>
-            $(document).ready(function() {
-                $('.act > div:not(:first-child)').hide()
-                $('ul.tab').on('click', 'li > a', function() {
-                    $("ul.tab li").css('border-bottom', '1px solid #0bfd47')
-                    $(this).parent().css('border-bottom', '1px solid black')
-                    event.preventDefault()
-                    $("ul.tab a").removeClass("act") // xóa cái ông click trước đó
-                    $(this).addClass("act")
 
-                    //xu lí content
-                    var t = $(this).attr("href")
-                    $("div.tab-content > div").hide() // ẩn nội dung tất cả
-                    $(t).show(); // hiện ra cái đang đc click
-
-                })
-            })
-        </script>
     </div>
     <section class="container subject" style="box-shadow: 2px 2px 5px black;width: 77%;">
         <h1><span>HỌC LẬP TRÌNH C++</span></h1>
@@ -288,7 +269,7 @@
 
                         <p>Số tài khoản: <span>2.380</span></p>
                         <p>Đã bán: <span>560</span></p>
-                        <a href="tranggame1.html"><img class="muabtn1" src="img/btnNap.png" height="40px" width="150px" alt="mua"></a>
+                        <a href="naptien.html"><img class="muabtn1" src="img/btnNap.png" height="40px" width="150px" alt="mua"></a>
                         <!-- <input type="button" value="MUA NGAY"> -->
                     </div>
                 </div>

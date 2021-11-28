@@ -89,6 +89,7 @@ body {
 }
 
 .luuY {
+    background: #dd4b39;
     z-index: 1 !important;
     border: 1px solid #c20d0d;
     margin-top: 30px;
@@ -97,9 +98,13 @@ body {
     padding-right: 20px;
 }
 
+.luuY>span {
+    color: rgb(238, 216, 216);
+}
+
 .luuY ul {
     list-style-type: circle;
-    color: red;
+    color: rgb(238, 216, 216);
 }
 
 .barVo {

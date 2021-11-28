@@ -103,7 +103,20 @@ function NapAcc() {
 
 }
 $(document).ready(function() {
+    $('.act > div:not(:first-child)').hide()
+    $('ul.tab').on('click', 'li > a', function() {
+        $("ul.tab li").css('border-bottom', '1px solid #0bfd47')
+        $(this).parent().css('border-bottom', '1px solid black')
+        event.preventDefault()
+        $("ul.tab a").removeClass("act") // xóa cái ông click trước đó
+        $(this).addClass("act")
 
+        //xu lí content
+        var t = $(this).attr("href")
+        $("div.tab-content > div").hide() // ẩn nội dung tất cả
+        $(t).show(); // hiện ra cái đang đc click
+
+    })
     var phucvu = $('.phucvu')
     var acc = $('.acc')
     var thanhvien = $('.thanhvien')
@@ -388,6 +401,9 @@ $(document).ready(function() {
     // localStorage.clear
     // thongSo
     //devil dừng khi kéo xuống footer
+
+
+
 
 
 })
