@@ -168,7 +168,7 @@
         color: lightblue;
     }
     
-    .subcontent {
+    /*.subcontent {
         display: none;
         background: rgb(212, 32, 212) !important;
         width: 100%;
@@ -191,7 +191,7 @@
         border-color: transparent transparent rgb(212, 32, 212) transparent;
         bottom: 100%;
         left: 8%;
-    }
+    }*/
     
     #navBar {
         display: none;
@@ -268,13 +268,13 @@
     
     .figures {
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+       /* flex-wrap: wrap;
+        align-items: center;*/
     }
     
-    .figures>div {
-        width: 25%;
-        padding: 20px !important;
+    .figures > div {
+        width: 33.33%;
+        /*padding: 20px !important;*/
     }
     
     figure {
@@ -289,9 +289,11 @@
     }
     
     figure img {
-        max-height: 180px !important;
+       /* max-height: 180px !important;*/
         max-width: 100% !important;
     }
+   
+    
     /*dịch vụ game*/
     
     .bos {
