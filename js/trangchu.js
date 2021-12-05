@@ -103,6 +103,7 @@ function NapAcc() {
 
 }
 $(document).ready(function() {
+
     $('.act > div:not(:first-child)').hide()
     $('ul.tab').on('click', 'li > a', function() {
         $("ul.tab li").css('border-bottom', '1px solid #0bfd47')
@@ -142,7 +143,7 @@ $(document).ready(function() {
 
     // menu respondsive
     $('#navBar').click(function() {
-        $('nav.menu').slideToggle()
+        $('nav.menu').slideToggle('slow');
     })
     $(window).scroll(function() {
         if ($(window).scrollTop() > 2586) {
@@ -313,7 +314,7 @@ $(document).ready(function() {
                         </div>
                         <div class="text">
 
-                            <p class="mesTxt"> ${txt}</p>
+                            <p class="mesTxt">${txt}</p>
                         </div>
                         <input class="rep" type="button" value="Trả lời"/>
 
@@ -325,7 +326,7 @@ $(document).ready(function() {
 
             </div>
             `)
-                $('textarea').val('')
+                    // $('textarea').val('')
 
             } else {
                 if (confirm("Bạn phải đăng nhập để bình luận"))

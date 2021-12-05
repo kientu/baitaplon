@@ -35,7 +35,7 @@ $(document).ready(function() {
     $("h2.tieuDeTrangGame2").addClass("wow animate__flip")
     $("section.infomation > div:nth-child(odd)").addClass("animate__animated animate__slideInRight")
     $("section.infomation > div:nth-child(even)").addClass("animate__animated animate__slideInLeft")
-    $("body").css("background-image", "url('https://phunugioi.com/wp-content/uploads/2020/02/background-con-buom-820x597.jpg')")
+    $("body").css("background-image", "url('img/buom.jpg')")
     $('.thanhCong').addClass("animate__animated animate__zoomInDown")
         // wow = new WOW({
         //     boxClass: 'wow', // default

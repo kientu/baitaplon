@@ -1,12 +1,6 @@
     * {
         box-sizing: border-box;
         margin: 0;
-        font-family: regular;
-    }
-    
-    @font-face {
-        font-family: myFont1;
-        src: url('../font/Vbutlong.ttf');
     }
     
     body {
@@ -63,6 +57,11 @@
     .logo {
         display: flex;
         padding-left: 60px;
+    }
+    
+    @font-face {
+        font-family: myFont1;
+        src: url('../font/Vbutlong.ttf');
     }
     
     .logo a {
@@ -125,7 +124,8 @@
     /*nav menu-x*/
     
     nav.menu {
-        display: flex !important;
+        font-family: regular;
+        display: flex;
         margin-left: auto;
     }
     
@@ -167,7 +167,6 @@
     ul.menuSign li:hover a {
         color: lightblue;
     }
-    
     /*.subcontent {
         display: none;
         background: rgb(212, 32, 212) !important;
@@ -268,11 +267,11 @@
     
     .figures {
         display: flex;
-       /* flex-wrap: wrap;
+        /* flex-wrap: wrap;
         align-items: center;*/
     }
     
-    .figures > div {
+    .figures>div {
         width: 33.33%;
         /*padding: 20px !important;*/
     }
@@ -289,11 +288,9 @@
     }
     
     figure img {
-       /* max-height: 180px !important;*/
+        /* max-height: 180px !important;*/
         max-width: 100% !important;
     }
-   
-    
     /*dịch vụ game*/
     
     .bos {
@@ -570,6 +567,7 @@
     /*thongSo*/
     
     .thongSoss {
+        font-family: regular;
         background: url('https://baoquocte.vn/stores/news_dataimages/nguyennga/092019/06/09/in_article/0855_Screen_Shot_20190906_at_65100_AM.jpg');
         text-align: center;
         margin-top: 30px;
@@ -577,6 +575,7 @@
     
     .thongSos {
         display: flex;
+        flex-wrap: wrap;
     }
     
     .thongSo {
@@ -616,7 +615,12 @@
     }
     /*BÌNH LUẬN*/
     
+    .form-input {
+        font-family: regular;
+    }
+    
     .form-input h3 {
+        font-family: regular;
         color: #ffffff;
         animation: run 15s infinite;
         position: relative;
@@ -650,6 +654,7 @@
     }
     
     .historys {
+        font-family: regular;
         background: #f6f7f8;
         height: 300px;
         padding: 5px 40px;
@@ -823,6 +828,13 @@
     /*respondsive*/
     
     @media screen and (max-width: 1000px) {
+        .thongSo {
+            width: 50%;
+        }
+        #bambooRight,
+        #bambooLeft {
+            display: none;
+        }
         .devil {
             width: 130px;
         }
@@ -901,6 +913,9 @@
     }
     
     @media screen and (max-width:600px) {
+        .thongSo {
+            width: 100%;
+        }
         #navBar {
             display: block;
         }

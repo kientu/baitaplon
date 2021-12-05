@@ -30,10 +30,12 @@
 
     <!--carousel-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="css/trangchu.css" rel="stylesheet" />
+
 </head>
 
 <body onload="NapAcc()">
@@ -54,7 +56,7 @@
                 <li><a href="#" class="trangchu"><i class="fas fa-home">Trang chủ</i></a></li>
                 <li class="sub">
                     <a href="#lt"><i class="fas fa-graduation-cap">Lập Trình</i></a>
-                 <!--  <ul class="subcontent menu">
+                    <!--  <ul class="subcontent menu">
                         <li><a href="gioi-thieu-lap-trinh.html">Lập trình và ngôn ngữ C++</a></li>
                         <li><a href="bien&kieu-du-lieu.html">Biến và kiểu dữ liệu</a></li>
                         <li><a href="cau-lenh-dieu-khien.html">Câu lệnh điều khiển</a></li>
@@ -152,10 +154,10 @@
                         <div class="c4-reveal-up">
                             <div>
                                 <h2 style="margin-bottom: 5px;">
-                                     LẬP TRÌNH VÀ NGÔN NGỮ C++
+                                    LẬP TRÌNH VÀ NGÔN NGỮ C++
                                 </h2>
                                 <p>Một Khóa Học Free Dành Cho Tất Cả...</p>
-                                <a href="gioi-thieu-lap-trinh.html">   
+                                <a href="gioi-thieu-lap-trinh.html">
                                     <input style="outline: none;background: #1f467b;color:white;padding:5px;" type="button" value="HỌC NGAY" />
                                 </a>
                             </div>
@@ -175,7 +177,7 @@
                                 </h2>
                                 <p>Một Khóa Học Free Dành Cho Tất Cả...</p>
                                 <a href="bien&kieu-du-lieu.html">
-                                     <input style="outline: none;background: #1f467b;color:white;padding:5px;" type="button" value="HỌC NGAY" />
+                                    <input style="outline: none;background: #1f467b;color:white;padding:5px;" type="button" value="HỌC NGAY" />
                                 </a>
                             </div>
                         </div>
@@ -214,8 +216,8 @@
     <br>
     <img width="100px" src="img/sunny.gif" style="z-index:-2;position: fixed; top: 70px; right: 0px;" alt="">
     <img width="200px" class="devil" style="position: fixed;bottom: 0px; left: 0px;" src="img/devil1.gif" alt="">
-    <img width="450px" src="img/bamboo.png" style="position: fixed;bottom: 0px; left: -330px;" alt="">
-    <img width="450px" src="img/bamboo.png" style="position: fixed;bottom: 0px; right: -350px;" alt="">
+    <img width="450px" id="bambooLeft" src="img/bamboo.png" style="position: fixed;bottom: 0px; left: -330px;" alt="">
+    <img width="450px" id="bambooRight" src="img/bamboo.png" style="position: fixed;bottom: 0px; right: -350px;" alt="">
 
     <img width="200px" class="devil" style="position: fixed;bottom: 0px; right: 0px;" src="img/devil2.gif" alt="">
     <img class="action" src="img/chim.gif" alt="chim">
@@ -432,7 +434,12 @@
                 <span>Bình luận(*)</span>
                 <textarea name="comment" id="comment" cols="100" rows="100"></textarea>
                 <div class="nuts">
+                    <input type="button" class="B" value="B">
+                    <input type="button" class="I" value="I">
+                    <input type="button" class="U" value="U">
                     <input type="button" class="gui" value="GỬI" />
+                  
+
                     <input type="button" class="clear" value="XÓA" />
                 </div>
             </label>
