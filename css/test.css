@@ -1,0 +1,323 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: rgb(40, 139, 204);
+}
+/*Vi tri*/ 
+.start, .infoBox, .quizBox, .resultBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 4px 10px 10px 0px rgba(5, 5, 5, 0.4);
+    transition: all 0.3s ease;
+}
+
+.infoBox.activeInfo,
+.quizBox.activeQuiz,
+.resultBox.activeResult
+{
+    z-index:5;
+    pointer-events: auto;/*su kien con tro  co */
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.start button {
+    font-size: 27px;
+    font-weight: bold;
+    color: blue;
+    padding: 15px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    /*hien thi khi re chuot den*/
+    cursor: pointer; 
+}
+
+/*Noi dung*/
+.infoBox{
+    width: 540px;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    /*display: none;*/
+    pointer-events: none;/*su kien con tro ko co */
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+
+}
+.infoBox .title {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 0 35px;
+
+}
+.infoBox .list {
+    padding: 15px 30px;
+}
+.infoBox .list .info{
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+/*exit & continue*/
+.infoBox .buttons{
+  /*  height: 50px;*/
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px 30px;
+    border-top: 1px solid lightgrey;
+}
+.infoBox .buttons button{
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    background: rgb(74, 74, 223);
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons .exit{
+    background: lightblue !important;
+    color: darkblue !important;
+}
+/*xu ly hover*/
+.buttons .exit:hover{
+    background:rgb(74, 74, 223) !important;
+    color: lightblue !important;
+    
+}
+.buttons .next:hover{
+    background:rgb(19, 126, 161);
+    color: darkblue;
+   
+}
+
+/*Noi dung cau hoi*/
+.quizBox {
+    background: white;
+    width: 550px;
+    border-radius: 5px;
+    /*display: none;*/
+    pointer-events: none;/*su kien con tro ko co */
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+
+}
+.quizBox header {
+    height: 70px;
+    padding: 0 30px;
+    background: lightblue;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid grey;
+    position: relative;
+    z-index: 998;
+}
+.quizBox header .title {
+    font-size:19px;
+    font-weight: bold;
+}
+.quizBox header .time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 45px;
+    background: rgb(65, 179, 214);
+    border-radius: 5px;
+    padding: 0 8px;
+}
+.quizBox header .time .tText{
+    font-weight: bold;
+    user-select: none; /*text không thể được chọn*/
+}
+.quizBox header .time .sec{
+    font-weight: bold;
+    background: black;
+    color: white;
+    font-size: 20px;
+    width: 50px;
+    height: 35px;
+    border-radius: 5px;
+    text-align:center;
+    padding: 6px; 
+    user-select: none;
+}
+
+.quizBox header .tLine{/*phan thanh ngang*/
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: blue;
+    height: 2px;
+}
+.quizBox section{
+    padding: 25px;
+}
+.quizBox section .quiz{
+    font-size: 25px;
+    font-weight:bold;
+}
+.quizBox section .options{
+    padding: 20px 0;
+    display: block;
+}
+.quizBox section .options .option{
+    font-size: 16px;
+    background: rgb(220, 236, 241);
+    border: 1px solid lightblue;
+    border-radius:5px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.quizBox section .options .option:last-child{
+    margin-bottom:0;
+}
+.quizBox section .options .option:hover{
+    background: rgb(185, 227, 240);
+    border-color:rgb(72, 193, 233);
+}
+.quizBox section .options .option .icon {
+    height: 20px;
+    width: 20px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align:  center;
+    margin: 1px;
+}
+.quizBox section .options .option  .tick {
+    color: green;
+    border-color:green;
+    background: rgb(152, 236, 152);
+}
+.quizBox section .options .option.correct{
+    color: green;
+    border-color:green;
+    background: rgb(152, 236, 152);
+}
+
+.quizBox section .options .option  .cross {
+    color: red;
+    border-color: red;
+    background: rgb(236, 173, 173);
+}
+/*xu li dap an sai*/
+.quizBox section .options .option.incorrect{
+    color: red;
+    border-color: red;
+    background: rgb(236, 173, 173);
+}
+/*khong co su kien*/
+.quizBox section .options .option.disabled{
+    pointer-events: none;
+}
+/*phan footer cau hoi*/
+.quizBox footer{
+    height: 60px;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.quizBox footer .key span{
+    display: flex;
+    user-select: none;
+}
+.quizBox footer .key span p{
+    font-weight:bold;
+    padding: 0 5px;
+}
+.quizBox footer .key span p:first-child{
+    padding-left: 0px;
+}
+.quizBox footer .nextQuestion{
+    display: none; /* nut next bi an cho den khi chon dap an*/
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 13px;
+    border-radius: 5px;
+    border: 1px solid rgb(86, 122, 221);
+    background:rgb(43, 169, 211);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.quizBox footer .nextQuestion:hover{
+    background:rgb(41, 115, 158);
+}
+
+/*ket qua*/
+.resultBox{
+    background: white;
+    width: 600px;
+    padding: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    pointer-events: none;/*su kien con tro ko co */
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+.resultBox .icon{
+    font-size: 100px;
+    color:rgb(233, 229, 21);
+    margin-bottom: 10px;
+}
+.resultBox .head{
+    font-size: 20px;
+    font-weight: bold;
+}
+.resultBox .score span{
+    display:flex;
+    margin: 10px auto;
+    font-size: 16px;
+    font-weight: bold;
+}
+.resultBox .score span p{
+    padding: 0 4px ;
+}
+.resultBox .buttons{
+    display: flex;
+    margin: 20px 0;
+}
+.resultBox .buttons button {
+    margin: 0 10px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight:bold;
+    border-radius: 5px;
+    border: 1px solid blue;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}

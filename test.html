@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Trắc nghiệm</title>
+        <link rel="stylesheet" href="css/test.css">
+
+        <link href="css/trangchu.css" rel="stylesheet" />
+        <script src="js/trangchu.js"></script>
+        <link href="css/info.css" rel="stylesheet" />
+   
+        <!--font awesome-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    </head>
+
+    <body>
+
+         <!--Phần header-->
+         <header class="animate__animated animate__fadeInDown">
+            <div class="logo">
+                <h1 class="animate__animated animate__bounce"><a href="#">WebHoc360</a></h1>
+                <div id="navBar">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+    
+            <div class="search">
+                <input type="text" placeholder="search..">
+                <input type="button" id="click" value="search">
+            </div>
+            <nav class="menu">
+                <ul class="menu-x">
+                    <li><a href="trangchu.html" class="trangchu"><i class="fas fa-home">Trang chủ</i></a></li>
+                    <li class="sub">
+                        <a href="#lt"><i class="fas fa-graduation-cap">Lập Trình</i></a>
+                        <!--  <ul class="subcontent menu">
+                            <li><a href="gioi-thieu-lap-trinh.html">Lập trình và ngôn ngữ C++</a></li>
+                            <li><a href="bien&kieu-du-lieu.html">Biến và kiểu dữ liệu</a></li>
+                            <li><a href="cau-lenh-dieu-khien.html">Câu lệnh điều khiển</a></li>
+                        </ul>-->
+                    </li>
+                    <li >
+                        <a href="test.html" ><i class="fas fa-question">Trắc nghiệm</i></a>
+                    </li>
+                    <li class="sub">
+                        <a href="#" class="games"><i class="fas fa-gamepad">Dịch Vụ Game</i></a>
+                    </li>
+                </ul>
+    
+                <ul class="menuSign">
+                    <li><a href="login.html" class="btnL"><i class="fas fa-sign-in-alt"></i>  Đăng Nhập</a></li>
+    
+    
+                    <li><a href="register.html" class="btnR"><i class="fas fa-user-plus"></i>  Đăng Ký</a></li>
+                </ul>
+    
+            </nav>
+        </header>
+    
+
+        <!--phan trac nghiem-->
+        <div class="start"><button>Bắt đầu làm bài</button>
+        </div>
+        <div class="infoBox">
+            <div class="title">
+                <span>MỘT SỐ LƯU Ý KHI LÀM BÀI TRẮC NGHIỆM NÀY</span>
+            </div>
+            <div class="list">
+                <div class="info">1. Bạn chỉ có <span style="font-weight: bold; color: red">15 giây</span> để trả lời cho mỗi câu hỏi</div>
+                <div class="info">2. Bạn không thể chọn lại khi hết thời gian</div>
+                <div class="info">3. Bạn không thể thoát khi đang làm bài</div>
+                <div class="info">3. Bạn không thể thay đổi đáp án khi đã chọn</div>
+                <div class="info">4. Bạn chỉ nhận được số câu đúng khi làm xong</div>
+            </div>
+            <div class="buttons">
+                <button class="exit">Exit</button>
+                <button class="next">Continue</button>
+            </div>
+        </div>
+
+        <!--Cau hoi trac nghiem-->
+        <div class="quizBox">
+            <header>
+                <div class="title">CÂU HỎI</div>
+                <div class="time">
+                    <div class="tText">Thời gian còn lại</div>
+                    <div class="sec">15</div>
+                </div>
+                <div class="tLine"></div>
+            </header>
+            <section>
+                <div class="quiz">
+                   <!-- <span>Cau1</span>-->
+                </div>
+                <div class="options">
+                    <!-- <div class="option">
+                        <span>da1</span>
+                        <div class="icon tick"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="option">
+                        <span>da2</span>
+                        <div class="icon cross"><i class="fas fa-times"></i></div>
+                    </div>
+                    <div class="option">
+                        <span>da3</span>
+                    </div>
+                    <div class="option">
+                        <span>da4</span>
+                    </div> -->
+                </div>
+            </section>
+            <footer>
+                <div class="key">
+                    <!-- <span><p>2</p>of<p>5</p>Question</span> -->
+                </div>
+                <button class="nextQuestion">Câu hỏi kế tiếp</button>
+            </footer>
+        </div>
+        <!--ket qua-->
+        <div class="resultBox">
+            <div class="icon"><i class="fas fa-crown"></i></div>
+            <div class="head">CHÚC MỪNG BẠN ĐÃ HOÀN THÀNH BÀI TRẮC NGHIỆM</div>
+            <div class="score"><!--<span>BẠN ĐÚNG ĐƯỢC<p>2</p>TRÊN<p>5 </p>CÂU</span>--></div>
+            <div class="buttons">
+                <button class="next">Làm lại</button>
+                <button class="exit">Rời khỏi</button>
+            </div>
+        </div>
+
+        
+        <script src="js/test.js"></script>
+        <script src="js/questions.js"></script>
+
+        <!--footer-->
+    
+
+    </body>
+</html>
