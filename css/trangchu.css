@@ -65,6 +65,7 @@
     }
     
     .logo a {
+        font-size: 30px;
         font-family: myFont1;
         text-decoration: none;
         animation: doiMauLogo 3s infinite;
@@ -93,6 +94,7 @@
     
     .search {
         padding: 5px;
+        font-size: 12px;
     }
     /*input[type=text]{width: 60%;}
     input[type=button]{
@@ -268,7 +270,6 @@
     .figures {
         display: flex;
         padding: 20px;
-       
         /* flex-wrap: wrap;
         align-items: cente;*/
     }
@@ -997,4 +998,3 @@
     ul.netWork a:hover {
         transform: scale(1.2);
     }
-     

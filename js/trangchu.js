@@ -103,7 +103,11 @@ function NapAcc() {
 
 }
 $(document).ready(function() {
-
+    $("ul.menu-x").append(`
+    <li>
+        <a href="test.html"><i class="fas fa-question">Trắc nghiệm</i></a>
+    </li>
+    `)
     $('.act > div:not(:first-child)').hide()
     $('ul.tab').on('click', 'li > a', function() {
         $("ul.tab li").css('border-bottom', '1px solid #0bfd47')
@@ -203,7 +207,7 @@ $(document).ready(function() {
                         "left": 0,
                         "right": 0,
                         "z-index": 9999,
-                        "font-size": "13px",
+                        "font-size": "12px",
                         "opacity": "0.9",
                         "box-shadow": "5px 0px 10px black"
 
@@ -404,11 +408,7 @@ $(document).ready(function() {
     //devil dừng khi kéo xuống footer
 
     // menu-x option trắc nghiệm gắn vô cuối
-    $("ul.menu-x").append(`
-    <li>
-        <a href="test.html"><i class="fas fa-question">Trắc nghiệm</i></a>
-    </li>
-    `)
+
 
 
 

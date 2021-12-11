@@ -1,204 +1,194 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Giới thiệu lập trình và ngôn ngữ C++</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/noiDung.css">
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/noiDung.js"></script>
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 
-        <link href="css/trangchu.css" rel="stylesheet" />
-        <script src="js/trangchu.js"></script>
-        <link href="css/info.css" rel="stylesheet" />
-        <!--thư viện internet-->
-        <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
+<head>
+    <title>Giới thiệu lập trình và ngôn ngữ C++</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/noiDung.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/noiDung.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href="css/trangchu.css" rel="stylesheet" />
+    <script src="js/trangchu.js"></script>
+    <link href="css/info.css" rel="stylesheet" />
+    <!--thư viện internet-->
+    <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-        <!--bootrap font-awesome nằm dưới font-awesomw-->
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
 
-    </head>
+    <!--bootrap font-awesome nằm dưới font-awesomw-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <body>
-        <!--Phần header-->
-        <header class="animate__animated animate__fadeInDown">
-            <div class="logo">
-                <h1 class="animate__animated animate__bounce"><a href="#">WebHoc360</a></h1>
-                <div id="navBar">
-                    <i class="fas fa-bars"></i>
-                </div>
+</head>
+
+<body>
+    <!--Phần header-->
+    <header class="animate__animated animate__fadeInDown">
+        <div class="logo">
+            <h1 class="animate__animated animate__bounce"><a href="#">WebHoc360</a></h1>
+            <div id="navBar">
+                <i class="fas fa-bars"></i>
             </div>
-    
-            <div class="search">
-                <input type="text" placeholder="search..">
-                <input type="button" id="click" value="search">
-            </div>
-            <nav class="menu">
-                <ul class="menu-x">
-                    <li><a href="trangchu.html" class="trangchu"><i class="fas fa-home">Trang chủ</i></a></li>
-                    <li class="sub">
-                        <a href="#lt"><i class="fas fa-graduation-cap">Lập Trình</i></a>
-                        <!--  <ul class="subcontent menu">
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="search..">
+            <input type="button" id="click" value="search">
+        </div>
+        <nav class="menu">
+            <ul class="menu-x">
+                <li><a href="trangchu.html" class="trangchu"><i class="fas fa-home">Trang chủ</i></a></li>
+                <li class="sub">
+                    <a href="#lt"><i class="fas fa-graduation-cap">Lập Trình</i></a>
+                    <!--  <ul class="subcontent menu">
                             <li><a href="gioi-thieu-lap-trinh.html">Lập trình và ngôn ngữ C++</a></li>
                             <li><a href="bien&kieu-du-lieu.html">Biến và kiểu dữ liệu</a></li>
                             <li><a href="cau-lenh-dieu-khien.html">Câu lệnh điều khiển</a></li>
                         </ul>-->
-                    </li>
-                    <li >
+                </li>
+                <!-- <li >
                         <a href="test.html" ><i class="fas fa-question">Trắc nghiệm</i></a>
+                    </li> -->
+                <li class="sub">
+                    <a href="#" class="games"><i class="fas fa-gamepad">Dịch Vụ Game</i></a>
+                </li>
+            </ul>
+
+            <ul class="menuSign">
+                <li><a href="login.html" class="btnL"><i class="fas fa-sign-in-alt"></i>  Đăng Nhập</a></li>
+
+
+                <li><a href="register.html" class="btnR"><i class="fas fa-user-plus"></i>  Đăng Ký</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+
+
+    <!--Phần nội dung-->
+    <div>
+        <a id="gototop" href="javascript:;"><i class="fas fa-home">GO TO TOP</i></a>
+    </div>
+    <section class="body">
+
+
+        <h1 class="tag"><span>Giới thiệu về lập trình</span></h1>
+        <div class="der">
+            <ul>
+                <li><a href="#1">Lập trình là gì</a></li>
+                <li><a href="#2">Quy trình phát triển một chương trình</a></li>
+                <li><a href="#3">Một số ký hiệu dùng trong lưu đồ</a></li>
+                <li><a href="#4">Lịch sử của ngôn ngữ lập trình</a></li>
+                <li><a href="#5">Các thành phần cơ bản của một ngôn ngữ lập trình</a>
+                    <li><a href="#6">Chương trình dịch</a></li>
+                    <li><a href="#7">Các thành phần cơ bản của chương trình C++</a>
+                        <ul>
+                            <li><a href="#8">Chỉ thị tiền xử lý</a></li>
+                            <li><a href="#9">namespace</a></li>
+                            <li><a href="#10">Hàm </a></li>
+                            <li><a href="#11">Câu lệnh</a></li>
+                        </ul>
                     </li>
-                    <li class="sub">
-                        <a href="#" class="games"><i class="fas fa-gamepad">Dịch Vụ Game</i></a>
-                    </li>
-                </ul>
-    
-                <ul class="menuSign">
-                    <li><a href="login.html" class="btnL"><i class="fas fa-sign-in-alt"></i>  Đăng Nhập</a></li>
-    
-    
-                    <li><a href="register.html" class="btnR"><i class="fas fa-user-plus"></i>  Đăng Ký</a></li>
-                </ul>
-    
-            </nav>
-        </header>
-    
-
-        
-
-        <!--Phần nội dung-->
-        <div>
-            <a id="gototop" href="javascript:;" ><i class="fas fa-home">GO TO TOP</i></a>
-        </div>
-        <section class="body">
-
-       
-            <h1 class="tag"><span>Giới thiệu về lập trình</span></h1>
-            <div class="der">
-                    <ul>
-                        <li><a href="#1">Lập trình là gì</a></li>
-                        <li><a href="#2">Quy trình phát triển một chương trình</a></li>
-                        <li><a href="#3">Một số ký hiệu dùng trong lưu đồ</a></li>
-                        <li><a href="#4">Lịch sử của ngôn ngữ lập trình</a></li>
-                        <li><a href="#5">Các thành phần cơ bản của một ngôn ngữ lập trình</a>
-                        <li><a href="#6">Chương trình dịch</a></li>
-                        <li><a href="#7">Các thành phần cơ bản của chương trình C++</a>
-                            <ul>
-                                <li><a href="#8">Chỉ thị tiền xử lý</a></li>
-                                <li><a href="#9">namespace</a></li>
-                                <li><a href="#10">Hàm </a></li>
-                                <li><a href="#11">Câu lệnh</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#12">Tạo và thực thi chương trình C++</a></li>
-                        <li><a href="#13">Một số lỗi thường gặp</a></li>
-                    </ul>
-                <!--</div>
+                    <li><a href="#12">Tạo và thực thi chương trình C++</a></li>
+                    <li><a href="#13">Một số lỗi thường gặp</a></li>
+            </ul>
+            <!--</div>
                 <div class="subject">
                     <span>Ẩn/hiện</span>
                 </div>-->
-                
-            </div>
-            <h2  class="tags" id="1">Lập trình là gì?</h2>
-            <ul>
-                <li>
-                    <span class="blue">Máy tính</span> (computer) là máy lưu trữ dữ liệu (số, văn bản, hình
-                    ảnh), tương tác với các thiết bị (màn hình, máy in, loa) và
-                    thực thi chương trình
-                </li>
-                <li>
-                    <span class="blue">Chương trình máy tính</span> (computer program) là một chuỗi các
-                    chỉ dẫn/lệnh (instructions) để máy tính thực hiện nhằm hoàn
-                    thành một nhiệm vụ nào đó.
-                    <div class="item">
-                        <img src="img/CSLT/Noidung1/photo1.png" alt="photo1">
-                    </div>
-                </li>
-                <li>
-                    <span class="blue">Lập trình</span> (computer programming) là thiết kế (designing) và
-                    hiện thực (implementing) các chương trình máy tính bằng
-                    ngôn ngữ lập trình (programming language)
-                </li>
+
+        </div>
+        <h2 class="tags" id="1">Lập trình là gì?</h2>
+        <ul>
+            <li>
+                <span class="blue">Máy tính</span> (computer) là máy lưu trữ dữ liệu (số, văn bản, hình ảnh), tương tác với các thiết bị (màn hình, máy in, loa) và thực thi chương trình
+            </li>
+            <li>
+                <span class="blue">Chương trình máy tính</span> (computer program) là một chuỗi các chỉ dẫn/lệnh (instructions) để máy tính thực hiện nhằm hoàn thành một nhiệm vụ nào đó.
                 <div class="item">
-                    <img src="img/CSLT/Noidung1/photo2.png" alt="photo2">
+                    <img src="img/CSLT/Noidung1/photo1.png" alt="photo1">
                 </div>
-            </ul>
+            </li>
+            <li>
+                <span class="blue">Lập trình</span> (computer programming) là thiết kế (designing) và hiện thực (implementing) các chương trình máy tính bằng ngôn ngữ lập trình (programming language)
+            </li>
+            <div class="item">
+                <img src="img/CSLT/Noidung1/photo2.png" alt="photo2">
+            </div>
+        </ul>
 
-            <h2  class="tags" id="2">Quy trình phát triển một chương trình</h2>
-            <div class="item">
-                <img src="img/CSLT/Noidung1/photo3.png" alt="photo3">
-            </div>
+        <h2 class="tags" id="2">Quy trình phát triển một chương trình</h2>
+        <div class="item">
+            <img src="img/CSLT/Noidung1/photo3.png" alt="photo3">
+        </div>
 
-            <h2  class="tags" id="3">Một số ký hiệu dùng trong lưu đồ</h2>
-            <div class="item">
-                <img src="img/CSLT/Noidung1/photo4.png" alt="photo4">
-            </div>
-            <h2 >Truy cập <a href="http://www.flowgorithm.org">http://www.flowgorithm.org</a> để vẽ lưu đồ.</h2>
-            
-            <h2  class="tags" id="4">Lịch sử của ngôn ngữ lập trình</h2>
-            <h3><span class="blue">Ngôn ngữ máy</span> (machine language/machine code)</h3>
+        <h2 class="tags" id="3">Một số ký hiệu dùng trong lưu đồ</h2>
+        <div class="item">
+            <img src="img/CSLT/Noidung1/photo4.png" alt="photo4">
+        </div>
+        <h2>Truy cập <a href="http://www.flowgorithm.org">http://www.flowgorithm.org</a> để vẽ lưu đồ.</h2>
+
+        <h2 class="tags" id="4">Lịch sử của ngôn ngữ lập trình</h2>
+        <h3><span class="blue">Ngôn ngữ máy</span> (machine language/machine code)</h3>
+        <ul>
+            <li>1300042774</li>
+            <li>1400593419</li>
+            <li>1200274027</li>
+        </ul>
+        <h3><span class="blue">Ngôn ngữ assembly</span> (assembly language)</h3>
+        <ul>
+            <li>load basepay </li>
+            <li>add overpay </li>
+            <li>store grosspay</li>
+        </ul>
+        <h3><span class="blue">Ngôn ngữ cấp cao</span> (high-level language)<br>gross_pay = base_pay + overtime_pay</h3>
+        <ul>
+            <li>COBOL (Common Common Business-Oriented Language), BASIC(Beginner's All-Purpose Symbolic), C...</li>
+            <li>C++, C#, Java, Python, Ruby, Perl...</li>
+        </ul>
+
+        <h2 class="tags" id="5">Các thành phần cơ bản của một ngôn ngữ lập trình</h2>
+        <ul>
+            <li><span class="blue">Biến</span> (variables): là vùng nhớ dùng để lưu trữ một giá trị dữliệu, mỗi biến có một tên.</li>
+            <li><span class="blue">Cấu trúc điều khiển</span> (control structures/logic structures): điều khiển trật tự thực hiện các câu lệnh của chương trình (flow control).</li>
+            <li><span class="blue">Cấu trúc dữ liệu</span> (data structures): cách tổ chức và lưu trữ dữ liệu trong máy tính để sử dụng dữ liệu có hiệu quả.</li>
+            <li><span class="blue">Cú pháp</span> (syntax): tập hợp các quy tắc của một ngôn ngữ lập trình mà người lập trình cần phải tuân thủ.</li>
+            <li><span class="blue">Công cụ</span> (tools): là môi trường giúp người lập trình phát triển chương trình (Integrated Development Environment - IDE).</li>
+        </ul>
+
+        <h2 class="tags" id="6">Chương trình dịch</h2>
+        <ul>
+            <li><span class="blue">Chương trình nguồn</span> (source program) hay mã nguồn (source code) được viết bằng một ngôn ngữ lập trình cấp cao và được lưu trong một file (văn bản không định dạng - plain text).</li>
+            <li><span class="blue">Chương trình dịch</span> sẽ chuyển chương trình nguồn sang mã máy (machine code) để máy tính thực thi.</li>
             <ul>
-                <li>1300042774</li>
-                <li>1400593419</li>
-                <li>1200274027</li>
+                <li><span class="blue">Biên dịch</span> (compiler): chương trình dịch đọc toàn bộ mã nguồn của một chương trình và chuyển tất cả sang mã máy, sau đó máy tính sẽ thực hiện mã máy.</li>
+                <li><span class="blue">Thông dịch</span> (interpreter): chương trình dịch đọc mã nguồn và thực hiện từng dòng lệnh của mã nguồn đó.</li>
             </ul>
-            <h3><span class="blue">Ngôn ngữ assembly</span> (assembly language)</h3>
-            <ul>
-                <li>load basepay </li>
-                <li>add overpay </li>
-                <li>store grosspay</li>
-            </ul>
-            <h3><span class="blue">Ngôn ngữ cấp cao</span> (high-level language)<br>gross_pay = base_pay + overtime_pay</h3>
-            <ul>
-                <li>COBOL (Common Common Business-Oriented Language), BASIC(Beginner's All-Purpose Symbolic), C...</li>
-                <li>C++, C#, Java, Python, Ruby, Perl...</li>
-            </ul>
-            
-            <h2  class="tags" id="5">Các thành phần cơ bản của một ngôn ngữ lập trình</h2>
-            <ul>
-                <li><span class="blue">Biến</span> (variables): là vùng nhớ dùng để lưu trữ một giá trị dữliệu, mỗi biến có một tên.</li>
-                <li><span class="blue">Cấu trúc điều khiển</span> (control structures/logic structures): điều khiển trật tự thực hiện các câu lệnh của chương trình (flow control).</li>
-                <li><span class="blue">Cấu trúc dữ liệu</span> (data structures): cách tổ chức và lưu trữ dữ liệu trong máy tính để sử dụng dữ liệu có hiệu quả.</li>
-                <li><span class="blue">Cú pháp</span> (syntax): tập hợp các quy tắc của một ngôn ngữ lập trình mà người lập trình cần phải tuân thủ.</li>
-                <li><span class="blue">Công cụ</span> (tools): là môi trường giúp người lập trình phát triển chương trình (Integrated Development Environment - IDE).</li>
-            </ul>
-            
-            <h2  class="tags" id="6">Chương trình dịch</h2>
-            <ul>
-                <li><span class="blue">Chương trình nguồn</span> (source program) hay mã nguồn (source code) được viết bằng một ngôn ngữ lập trình cấp cao và được lưu trong một file (văn bản không định dạng - plain text).</li>
-                <li><span class="blue">Chương trình dịch</span> sẽ chuyển chương trình nguồn sang mã máy (machine code) để máy tính thực thi.</li>
-                <ul>
-                    <li><span class="blue">Biên dịch</span> (compiler): chương trình dịch đọc toàn bộ mã nguồn của một chương trình và chuyển tất cả sang mã máy, sau đó máy tính sẽ thực hiện mã máy.</li>
-                    <li><span class="blue">Thông dịch</span> (interpreter): chương trình dịch đọc mã nguồn và thực hiện từng dòng lệnh của mã nguồn đó.</li>
-                </ul>
-            </ul>
-            <div class="item">
-                <img src="img/CSLT/Noidung1/photo5.png" alt="photo5">
-            </div>
-            
-            <h1 class="tag"><span>Ngôn ngữ lập trình C++</span></h1>
-            <ul>
-                <li>C++ là ngôn ngữ biên dịch. Chương trình nguồn được trình
-                    biên dịch chuyển sang mã đối tượng (mã máy), sau đó liên
-                    kết với các mã đối tượng khác (thư viện) để tạo thành
-                    chương trình thực thi.
-                    <div class="item">
-                        <img src="img/CSLT/Noidung1/photo6.png" alt="photo6">
-                    </div>
-                </li>
-                <li>C++ là ngôn ngữ phân biệt ký tự hoa và thường (case 
-                    sensitive).
-                    someName khác với SomeName
-                </li>
-            </ul>
-            
-            <h2 class="tags" id="7">Các thành phần cơ bản của chương trình C++</h2>
-            <pre>
+        </ul>
+        <div class="item">
+            <img src="img/CSLT/Noidung1/photo5.png" alt="photo5">
+        </div>
+
+        <h1 class="tag"><span>Ngôn ngữ lập trình C++</span></h1>
+        <ul>
+            <li>C++ là ngôn ngữ biên dịch. Chương trình nguồn được trình biên dịch chuyển sang mã đối tượng (mã máy), sau đó liên kết với các mã đối tượng khác (thư viện) để tạo thành chương trình thực thi.
+                <div class="item">
+                    <img src="img/CSLT/Noidung1/photo6.png" alt="photo6">
+                </div>
+            </li>
+            <li>C++ là ngôn ngữ phân biệt ký tự hoa và thường (case sensitive). someName khác với SomeName
+            </li>
+        </ul>
+
+        <h2 class="tags" id="7">Các thành phần cơ bản của chương trình C++</h2>
+        <pre>
             <span class="green">// Chuong trinh dau tien: hello.cpp</span>
             <span class="gray">#include</span> <span class="red">&lt;iostream&gt;</span>
             <span class="blue">using namespace</span> std;
@@ -208,17 +198,17 @@
             <span class="blue">return</span> 0;
             }
             </pre>
-            
-            <h2 class="tags">Chú thích</h2>
-            <pre class="green">// Chuong trinh dau tien: hello.cpp</pre>
-            <ul>
-                <li>Chú thích/ghi chú (comment) dùng để mô tả, giải thích, sưu 
-                    liệu.</li>
-                <li>
-                    Có hai cách tạo chú thích:
-                    <ul>
-                        <li>trên một dòng: <span class="green">//</span></li>
-                        <li>trên nhiều dòng: <span class="green">/* */<span></li>
+
+        <h2 class="tags">Chú thích</h2>
+        <pre class="green">// Chuong trinh dau tien: hello.cpp</pre>
+        <ul>
+            <li>Chú thích/ghi chú (comment) dùng để mô tả, giải thích, sưu liệu.
+            </li>
+            <li>
+                Có hai cách tạo chú thích:
+                <ul>
+                    <li>trên một dòng: <span class="green">//</span></li>
+                    <li>trên nhiều dòng: <span class="green">/* */<span></li>
                     </ul>
                 </li>
                 <li>Ví dụ:</li>
@@ -229,103 +219,104 @@
                     Ngay: 1/1/2014
                     Tac gia: Tram Anh */
                 </span>
-            </pre>
-            
-            <h2 class="tags" id="8">Chỉ thị tiền xử lý</h2>
-            <p><span class="gray">#include</span> <span class="red">&lt;iostream&gt;</span>
-            </p>
-            <ul>
-                <li>Chỉ thị tiền xử lý (preprocessor directive), bắt đầu bằng ký tự  #.</li>
-                <li>Sử dụng các đối tượng nhập/xuất như cin, cout... có trong iostream (header file).</li>
-            </ul>
-            
-            <h2 class="tags" id="9">Namespace</h2>
-            <p class="blue">using namespace std;</p>
-            <ul>
-                <li>Sử dụng tên các đối tượng có trong vùng tên chuẩn std như các tên cin, cout.</li>
-                <li>Nếu không khai báo using namespace std; thì khi dùng cout phải ghi rõ: std::cout.</li>
-            </ul>
-            
-            <h2 class="tags" id="10">Hàm</h2>
-            <pre>
+                        </pre>
+
+                        <h2 class="tags" id="8">Chỉ thị tiền xử lý</h2>
+                        <p><span class="gray">#include</span> <span class="red">&lt;iostream&gt;</span>
+                        </p>
+                        <ul>
+                            <li>Chỉ thị tiền xử lý (preprocessor directive), bắt đầu bằng ký tự #.</li>
+                            <li>Sử dụng các đối tượng nhập/xuất như cin, cout... có trong iostream (header file).</li>
+                        </ul>
+
+                        <h2 class="tags" id="9">Namespace</h2>
+                        <p class="blue">using namespace std;</p>
+                        <ul>
+                            <li>Sử dụng tên các đối tượng có trong vùng tên chuẩn std như các tên cin, cout.</li>
+                            <li>Nếu không khai báo using namespace std; thì khi dùng cout phải ghi rõ: std::cout.</li>
+                        </ul>
+
+                        <h2 class="tags" id="10">Hàm</h2>
+                        <pre>
             <span class="blue">int</span> main()
             {
                     cout <span class="green">&lt;&lt;</span> <span class="red">"Hello, world!\n";</span> 
                     <span class="blue">return</span> 0;
             }
             </pre>
-            <ul>
-                <li>Chương trình C++ có thể có nhiều hàm (function) và chương trình bắt đầu thực hiện từ hàm main.</li>
-                <li>Mỗi hàm gồm:
-                    <ul>
-                        <li>Kiểu trả về.</li>
-                        <li>Tên hàm.</li>
-                        <li>Danh sách tham số đặt giữa hai dấu ngoặc đơn (). Thân hàm đặt giữa hai dấu ngoặc nhọn { }, liệt kê các câu lệnh/phát biểu mà hàm thực hiện.</li>
-                    </ul>
-                </li>
-                <li>Chương trình <b>hello.cpp</b> chỉ có một hàm:
-                    <ul>
-                        <li>Kiểu trả về là <b>int</b></li>
-                        <li>Tên hàm là <b>main</b></li>
-                        <li>Danh sách tham số trống.</li>
-                        <li>Thân hàm có hai câu lệnh.</li>
-                    </ul>
-                </li>
-            </ul>
+                        <ul>
+                            <li>Chương trình C++ có thể có nhiều hàm (function) và chương trình bắt đầu thực hiện từ hàm main.</li>
+                            <li>Mỗi hàm gồm:
+                                <ul>
+                                    <li>Kiểu trả về.</li>
+                                    <li>Tên hàm.</li>
+                                    <li>Danh sách tham số đặt giữa hai dấu ngoặc đơn (). Thân hàm đặt giữa hai dấu ngoặc nhọn { }, liệt kê các câu lệnh/phát biểu mà hàm thực hiện.</li>
+                                </ul>
+                            </li>
+                            <li>Chương trình <b>hello.cpp</b> chỉ có một hàm:
+                                <ul>
+                                    <li>Kiểu trả về là <b>int</b></li>
+                                    <li>Tên hàm là <b>main</b></li>
+                                    <li>Danh sách tham số trống.</li>
+                                    <li>Thân hàm có hai câu lệnh.</li>
+                                </ul>
+                            </li>
+                        </ul>
 
-            <h2 class="tags" id="11">Câu lệnh</h2>
-            <p>cout <span class="green">&lt;&lt;</span> <span class="red">"Hello, world!\n";</span></p>
-            <ul>
-                <li>Câu lệnh in ra màn hình dòng chữ Hello, world!,'\n' là ký tự xuống hàng. cout được khai báo trong iostream, (namespace std).</li>
-                <li>Chuỗi xuất ra màn hình được đặt giữa hai dấu nháy kép.</li>
-                <li>Có thể dùng ký hiệu endl để xuống hàng: <br>cout << "Hello, world!" << endl;</li>
-            </ul>
-            <p><span class="blue">return</span> 0;</p>
-            <ul>
-                <li>Câu lệnh trả về (return statement) giá trị 0, báo cho hệ thống chương trình kết thúc thành công.</li>
-                <li>Câu lệnh (statement) kết thúc bằng dấu chấm phẩy (;).</li>
-            </ul>
-            
+                        <h2 class="tags" id="11">Câu lệnh</h2>
+                        <p>cout <span class="green">&lt;&lt;</span> <span class="red">"Hello, world!\n";</span></p>
+                        <ul>
+                            <li>Câu lệnh in ra màn hình dòng chữ Hello, world!,'\n' là ký tự xuống hàng. cout được khai báo trong iostream, (namespace std).</li>
+                            <li>Chuỗi xuất ra màn hình được đặt giữa hai dấu nháy kép.</li>
+                            <li>Có thể dùng ký hiệu endl để xuống hàng: <br>cout
+                                << "Hello, world!" << endl;</li>
+                        </ul>
+                        <p><span class="blue">return</span> 0;</p>
+                        <ul>
+                            <li>Câu lệnh trả về (return statement) giá trị 0, báo cho hệ thống chương trình kết thúc thành công.</li>
+                            <li>Câu lệnh (statement) kết thúc bằng dấu chấm phẩy (;).</li>
+                        </ul>
 
-            <h2 class="tags" id="12">Tạo và thực thi chương trình C++</h2>
-            <p>Bước 1: ><span class="blue">Khởi động môi trường lập trình.</span></p>
-            <ul>
-                <li>Microsoft Visual Studio 2010</li>
-            </ul>
-            <p>Bước 2: ><span class="blue">Viết chương trình.</span></p>
-            <ul>
-                <li>Tạo project mới:
-                    <ul>
-                        <li>File→New Project→Win32 Console Application</li>
-                        <li>Chọn thư mục lưu trữ và đặt tên project.</li>
-                    </ul>
-                </li>
-                <li>Thêm vào project một file mới:
-                    <ul>
-                        <li>Project→Add New Item→C++ File (.cpp)</li>
-                        <li>Đặt tên file.</li>
-                    </ul>
-                </li>
-                <li>Gõ vào source code.</li>
-            </ul>
-            <p>Bước 3: <span class="blue">Biên dịch và thực thi chương trình.</span></p>
-            <ul>
-                <li>Biên dịch: Ctrl + F7</li>
-                <li>Thực thi: Ctrl + F5</li>
-            </ul>
-            <div class="item">
-                <img src="img/CSLT/Noidung1/photo7.png" alt="photo7">
-            </div>
-            
-            <h1 class="tag" id="13"><span>Lỗi</span></h1>
-            <ul>
-                <li>Lỗi do compiler phát hiện: <span class="blue">compile-time errors.</span></li>
-                <li>Lỗi do linker phát hiện: <span class="blue">link-time errors.</span></li>
-                <li>Lỗi khi chương trình thực thi: <span class="blue">run-time errors</span> hoặc <span class="blue">logic errors.</span></li>
-            </ul>
-            <h2 class="tags">Ví dụ một số lỗi</h2>
-            <h3 class="tagss">Không #include hoặc thiếu using namespace std</h3>
-            <pre>
+
+                        <h2 class="tags" id="12">Tạo và thực thi chương trình C++</h2>
+                        <p>Bước 1: ><span class="blue">Khởi động môi trường lập trình.</span></p>
+                        <ul>
+                            <li>Microsoft Visual Studio 2010</li>
+                        </ul>
+                        <p>Bước 2: ><span class="blue">Viết chương trình.</span></p>
+                        <ul>
+                            <li>Tạo project mới:
+                                <ul>
+                                    <li>File→New Project→Win32 Console Application</li>
+                                    <li>Chọn thư mục lưu trữ và đặt tên project.</li>
+                                </ul>
+                            </li>
+                            <li>Thêm vào project một file mới:
+                                <ul>
+                                    <li>Project→Add New Item→C++ File (.cpp)</li>
+                                    <li>Đặt tên file.</li>
+                                </ul>
+                            </li>
+                            <li>Gõ vào source code.</li>
+                        </ul>
+                        <p>Bước 3: <span class="blue">Biên dịch và thực thi chương trình.</span></p>
+                        <ul>
+                            <li>Biên dịch: Ctrl + F7</li>
+                            <li>Thực thi: Ctrl + F5</li>
+                        </ul>
+                        <div class="item">
+                            <img src="img/CSLT/Noidung1/photo7.png" alt="photo7">
+                        </div>
+
+                        <h1 class="tag" id="13"><span>Lỗi</span></h1>
+                        <ul>
+                            <li>Lỗi do compiler phát hiện: <span class="blue">compile-time errors.</span></li>
+                            <li>Lỗi do linker phát hiện: <span class="blue">link-time errors.</span></li>
+                            <li>Lỗi khi chương trình thực thi: <span class="blue">run-time errors</span> hoặc <span class="blue">logic errors.</span></li>
+                        </ul>
+                        <h2 class="tags">Ví dụ một số lỗi</h2>
+                        <h3 class="tagss">Không #include hoặc thiếu using namespace std</h3>
+                        <pre>
             <span class="green">//no #include here</span>
             <span class="blue">int</span> main()
             {
@@ -334,8 +325,8 @@
             }
             error: 'cout' : undeclared identifier
             </pre>
-            <h3  class="tagss">Gõ sai iostram</h3>
-            <pre> 
+                        <h3 class="tagss">Gõ sai iostram</h3>
+                        <pre> 
             <span class="gray">#include</span> <span class="red">&lt;iostram&gt;</span>
             <span class="blue">using namespace</span> std;
             <span class="blue">int</span> main()
@@ -346,8 +337,8 @@
             error: Cannot open include file: 'iostram': No such file or directory
             error: 'cout' : undeclared identifier  
             </pre>
-            <h3  class="tagss">Thiếu dấu nháy đôi kết thúc chuỗi</h3>
-            <pre>
+                        <h3 class="tagss">Thiếu dấu nháy đôi kết thúc chuỗi</h3>
+                        <pre>
             <span class="gray">#include</span> <span class="red">&lt;iostream&gt;</span>
             <span class="blue">using namespace</span> std;
             <span class="blue">int</span> main()
@@ -357,8 +348,8 @@
             }
             error: expected a ';'   
             </pre>
-            <h3 class="tagss">Gõ sai từ khóa int</h3>
-            <pre>
+                        <h3 class="tagss">Gõ sai từ khóa int</h3>
+                        <pre>
             <span class="gray">#include</span> <span class="red">&lt;iostream&gt;</span>
             <span class="blue">using namespace</span> std;
             integer main()
@@ -368,8 +359,8 @@
             }
             error: identifier "integer" is undefined    
             </pre>
-            <h3 class="tagss">Dùng &lt; thay vì &lt;&lt;</h3>
-            <pre>
+                        <h3 class="tagss">Dùng &lt; thay vì &lt;&lt;</h3>
+                        <pre>
                 <span class="gray">#include</span> <span class="red">&lt;iostream&gt;</span>
                 <span class="blue">using namespace</span> std;
                 <span class="blue">int</span> main()
@@ -379,8 +370,8 @@
                 }
             warning: '&lt;' : operator has no effect; expected operator with side-effect         
             </pre>
-            <h3 class="tagss">Dùng dấu nháy đơn thay vì dấu nháy đôi</h3>
-            <pre>
+                        <h3 class="tagss">Dùng dấu nháy đơn thay vì dấu nháy đôi</h3>
+                        <pre>
             <span class="gray">#include</span> <span class="red">&lt;iostream&gt;</span>
             <span class="blue">using namespace</span> std;
             <span class="blue">int</span> main()
@@ -390,8 +381,8 @@
             }
             error: too many characters in constant        
             </pre>
-            <h3  class="tagss">Thiếu dấu chấm phẩy;</h3>
-            <pre>
+                        <h3 class="tagss">Thiếu dấu chấm phẩy;</h3>
+                        <pre>
             <span class="gray">#include</span> <span class="red">&lt;iostream&gt;</span>
             <span class="blue">using namespace</span> std;
             <span class="blue">int</span> main()
@@ -401,67 +392,68 @@
             }
             error: missing ';' before 'return'     
             </pre>
-        </section>
+    </section>
 
-        
 
-        <!--Phần footer-->
-        <footer>
-            <div class=" boxFoots ">
-                <div class="boxFoot about-us ">
-                    <div>
-    
-                        <h3>GIỚI THIỆU</h3>
-                        <p>Chúng tôi luôn nỗ lực hàng ngày để gắn kết mối chia sẻ giao lưu và học hỏi cùng các bạn. Chúc các bạn 1 ngày học hỏi thật tốt</p>
-    
-                        <ul class="netWork ">
-                            <li><a href="# "><i class="fa fa-facebook "></i></a></li>
-                            <li>
-                                <a href="# "><i class="fa fa-youtube "></i></a>
-                            </li>
-                            <li>
-                                <a href="# "><i class="fa fa-instagram "></i></a>
-                            </li>
-                            <li>
-                                <a href="# "><i class="fa fa-twitter "></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="boxFoot lienket ">
-                    <div>
-                        <h3>LIÊN KẾT</h3>
-                        <ul class="link ">
-                            <li><a href="# " class="trangchu "><i class="far fa-hand-point-right "></i>  Trang chủ</a></li>
-                            <li><a href="# "><i class="far fa-hand-point-right "></i>  Lập trình</a></li>
-                            <li><a href="# " class="serviceGame"><i class="far fa-hand-point-right "></i>  Dịch Vụ Game</a></li>
-                            <li><a href="naptien.html "><i class="far fa-hand-point-right "></i>  Nạp thẻ</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="boxFoot ">
-                    <div>
-                        <h3>LIÊN HỆ</h3>
-                        <ul class="info ">
-                            <li>
-                                <span><i class="fa fa-map-marker "></i></span>
-                                <span><a href="https://goo.gl/maps/utvMFuRAP4oDHTwQ6">Đường xa lộ Hà Nội, phường Bình Thắng, tp Dĩ An, tỉnh Bình Dương</a></span>
-                            </li>
-                            <li>
-                                <span><i class="fa fa-phone "></i></span>
-                                <a href="#">+84 234 790 109</a>
-                            </li>
-                            <li>
-                                <span><i class="fa fa-envelope "></i></span>
-                                <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">vongngocthank@gmail.com</a></li>
-                            <li>
-                                <input type="text" placeholder="Liên hệ qua Email... " />
-                                <a href="mailto:vongngocthank@gmail.com"><input type="button" value="subscriber " /></a>
-                            </li>
-                        </ul>
-                    </div>
+
+    <!--Phần footer-->
+    <footer>
+        <div class=" boxFoots ">
+            <div class="boxFoot about-us ">
+                <div>
+
+                    <h3>GIỚI THIỆU</h3>
+                    <p>Chúng tôi luôn nỗ lực hàng ngày để gắn kết mối chia sẻ giao lưu và học hỏi cùng các bạn. Chúc các bạn 1 ngày học hỏi thật tốt</p>
+
+                    <ul class="netWork ">
+                        <li><a href="# "><i class="fa fa-facebook "></i></a></li>
+                        <li>
+                            <a href="# "><i class="fa fa-youtube "></i></a>
+                        </li>
+                        <li>
+                            <a href="# "><i class="fa fa-instagram "></i></a>
+                        </li>
+                        <li>
+                            <a href="# "><i class="fa fa-twitter "></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-    </body>
+            <div class="boxFoot lienket ">
+                <div>
+                    <h3>LIÊN KẾT</h3>
+                    <ul class="link ">
+                        <li><a href="# " class="trangchu "><i class="far fa-hand-point-right "></i>  Trang chủ</a></li>
+                        <li><a href="# "><i class="far fa-hand-point-right "></i>  Lập trình</a></li>
+                        <li><a href="# " class="serviceGame"><i class="far fa-hand-point-right "></i>  Dịch Vụ Game</a></li>
+                        <li><a href="naptien.html "><i class="far fa-hand-point-right "></i>  Nạp thẻ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boxFoot ">
+                <div>
+                    <h3>LIÊN HỆ</h3>
+                    <ul class="info ">
+                        <li>
+                            <span><i class="fa fa-map-marker "></i></span>
+                            <span><a href="https://goo.gl/maps/utvMFuRAP4oDHTwQ6">Đường xa lộ Hà Nội, phường Bình Thắng, tp Dĩ An, tỉnh Bình Dương</a></span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone "></i></span>
+                            <a href="#">+84 234 790 109</a>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope "></i></span>
+                            <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">vongngocthank@gmail.com</a></li>
+                        <li>
+                            <input type="text" placeholder="Liên hệ qua Email... " />
+                            <a href="mailto:vongngocthank@gmail.com"><input type="button" value="subscriber " /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
