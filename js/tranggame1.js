@@ -129,6 +129,7 @@ $(document).ready(function() {
                         img[i].setAttribute("src", "img/sold.jpg")
                         img[i].setAttribute("height", "140px")
                         h3[i].innerHTML = "ĐÃ BÁN"
+                        h3[i].style.color = "red"
                         break;
                     }
                 }

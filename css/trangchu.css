@@ -258,8 +258,11 @@
     }
     
     .subject {
-        background-image: url('https://i.pinimg.com/originals/73/28/90/7328900947083053f15de7c047690997.gif');
-        background: linear-gradient(90deg, purple, blue, purple)
+        font-family: regular;
+        /* background-image: url('https://i.pinimg.com/originals/73/28/90/7328900947083053f15de7c047690997.gif'); */
+        /* background: linear-gradient(90deg, purple, blue, purple); */
+        background: rgba(98, 207, 221, 0.637);
+        border: 4px double #007bff;
         /* background: linear-gradient(rgba(187, 129, 21, 0.541), rgba(173, 216, 230, 0.699), rgba(211, 131, 10, 0.575)); */
     }
     
@@ -275,8 +278,8 @@
     }
     
     .figures>div {
-        width: 33.33%;
         margin: 10px;
+        width: 33.33%;
         /*padding: 20px !important;*/
     }
     
@@ -466,6 +469,7 @@
     }
     
     .thongKe {
+        font-family: regular;
         width: 50%;
         margin: 10px;
         border: 1px solid red;
@@ -473,6 +477,7 @@
     }
     
     .thongKe2 {
+        font-family: regular;
         border-bottom: none;
         width: 50%;
         margin: 10px;
@@ -565,6 +570,8 @@
     
     .prize h4 {
         padding: 10px;
+        font-family: regular;
+        width: 700px;
         color: rgb(204, 43, 43);
         font-weight: bolder;
     }
@@ -583,6 +590,7 @@
     }
     
     .thongSo {
+        font-family: regular;
         width: 25%;
         text-align: center;
     }
@@ -811,6 +819,7 @@
     }
     
     ul.tab a {
+        font-family: regular;
         text-decoration: none;
         color: #fafafa;
         padding: 10px;
@@ -826,12 +835,50 @@
     
     .act {
         padding: 20px;
-        background: url('https://img1.kienthucvui.vn/uploads/2019/10/09/anh-bau-troi-dem-rat-dep_042051478.jpg');
+        background: black;
         border-radius: 20px 20px 0 0;
     }
     /*respondsive*/
     
-    @media screen and (max-width: 980px) {
+    @media screen and (max-width: 1150px) {
+        .logo a {
+            font-size: 20px;
+            left: 0;
+        }
+        ul.menu-x i {
+            font-size: 14px;
+        }
+        header input {
+            display: none;
+        }
+        figure h2,
+        figure p {
+            font-size: 13px;
+        }
+        figure a {
+            font-size: 12px;
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        header input {
+            display: inline-block;
+        }
+        .figures {
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        .figures>div {
+            width: 40%;
+        }
+        figure h2,
+        figure p {
+            font-size: 12px;
+        }
+        figure a {
+            font-size: 10px;
+        }
         .thongSo {
             width: 50%;
         }
@@ -853,9 +900,6 @@
         .thongKe,
         .thongKe2 {
             width: 100%;
-        }
-        .figures>div {
-            width: 49%;
         }
         #navBar {
             display: block;
@@ -916,7 +960,56 @@
         }
     }
     
+    @media screen and (max-width: 800px) {
+        .figures {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        div.figures>div {
+            width: 60%;
+        }
+    }
+    /* @media screen and (max-width: 420px) {
+        figure h2,
+        figure p {
+            font-size: 6px;
+        }
+        figure a {
+            margin: 0;
+            font-size: 5px;
+        }
+    } */
+    
     @media screen and (max-width:600px) {
+        figure h2,
+        figure p {
+            font-size: 9px;
+        }
+        figure a {
+            font-size: 8px;
+        }
+        .figures {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        div.figures>div {
+            width: 90%;
+        }
+        ul.tab li {
+            border: 1px solid #0bfd47;
+            border-radius: 5px 20px 0 0;
+        }
+        .act {
+            padding: 20px;
+            background: black;
+            border-radius: 5px 10px 0 0;
+        }
+        ul.tab {
+            padding-left: 0;
+        }
+        iframe {
+            max-width: 100%;
+        }
         .thongSo {
             width: 100%;
         }
@@ -955,10 +1048,32 @@
             width: 50%;
             font-size: 20px;
         }
-        div.figures>div {
-            width: 90%;
+        .bos {
+            justify-content: center;
         }
         .bo {
+            width: 80%;
+        }
+        .container {
+            width: 98%;
+        }
+        span.coinMax,
+        span.tens {
+            font-size: 10px;
+        }
+        span.tens {
+            font-size: 16px;
+        }
+        h4#DUATOP {
+            font-size: 15px;
+            text-align: left;
+            width: 300px;
+        }
+        .thoiGian {
+            font-size: 9px;
+            width: 100px;
+        }
+        .form-input {
             width: 100%;
         }
         /*footer*/

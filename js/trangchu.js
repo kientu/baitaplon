@@ -103,15 +103,20 @@ function NapAcc() {
 
 }
 $(document).ready(function() {
+    // thêm option trắc nghiệm
     $("ul.menu-x").append(`
     <li>
         <a href="test.html"><i class="fas fa-question">Trắc nghiệm</i></a>
     </li>
     `)
+        //click youtobe ca nhạc, mangXH
     $('.act > div:not(:first-child)').hide()
     $('ul.tab').on('click', 'li > a', function() {
         $("ul.tab li").css('border-bottom', '1px solid #0bfd47')
-        $(this).parent().css('border-bottom', '1px solid black')
+        $(this).parent().css({
+            "border-bottom": "1px solid black",
+
+        })
         event.preventDefault()
         $("ul.tab a").removeClass("act") // xóa cái ông click trước đó
         $(this).addClass("act")
