@@ -403,6 +403,12 @@ $(document).ready(function() {
     // thongSo
     //devil dừng khi kéo xuống footer
 
+    // menu-x option trắc nghiệm gắn vô cuối
+    $("ul.menu-x").append(`
+    <li>
+        <a href="test.html"><i class="fas fa-question">Trắc nghiệm</i></a>
+    </li>
+    `)
 
 
 
